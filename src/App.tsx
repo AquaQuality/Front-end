@@ -1,25 +1,31 @@
 import React from 'react';
+import Footer from './components/estaticos/footer/Footer';
+import Home from './paginas/home/Home';
+import Navbar from './components/estaticos/navbar/Navbar';
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Sobrenos from './paginas/sobrenos/Sobrenos';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+        <Switch>
+          <div>
+          <Route exact path='/'>
+              <Home />
+            </Route>
+            <Route path='/home'>
+              <Home />
+            </Route>
+            <Route path='/sobrenos'>
+              <Sobrenos />
+            </Route>
+          </div>
+        </Switch>
+      <Footer />
+    </Router>
   );
 }
 
