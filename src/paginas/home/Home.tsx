@@ -19,7 +19,7 @@ function Home() {
                 </Grid>
 
                 <Grid item xs={6}>
-                    <img src="./public/assets/img/imagem.png" alt="" width="500px" height="500px" />
+                    <img src="https://unric.org/pt/wp-content/uploads/sites/9/2019/01/SDG-icon-PT-RGB-06-1.jpg" alt="" width="500px" height="500px" />
                 </Grid>
 
                 <Grid xs={12} className='postagens'>

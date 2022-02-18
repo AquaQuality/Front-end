@@ -1,6 +1,8 @@
 import React from "react";
-import CarouselComponent from "../carousel/CarouselComponent";
-import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
 
 
 
@@ -9,41 +11,38 @@ function Sobrenos() {
 
     return (
         <>
+            <Typography variant="h3" gutterBottom color='textPrimary' component="h3" align="center"> Sobre Nós </Typography>
             <Grid container direction="row" alignItems="center">
-                <Grid item xs={12} alignItems="center">
-                    <Box>
-                        <Typography variant="h3" gutterBottom color='textPrimary' component="h3" align="center"> Sobre Nós </Typography>
-
-                        <CarouselComponent/>
-
-                    </Box>
-
-                </Grid >
-                <Grid item>
-                    <Box>
-                        <Typography variant="h3" gutterBottom color='textPrimary' component="h3" align="center">Contatos</Typography>
-
-                        <form>
-                            <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos'> Fale com a gente! </Typography>
-
-                            <TextField id='nome' label='nome' variant='outlined' name='Nome' margin='normal' fullWidth />
-                            <TextField id='email' label='email' variant='outlined' name='E-mail' margin='normal' type='password' fullWidth />
-                            <TextField id='assunto' label='assunto' variant='outlined' name='Assunto' margin='normal' type='password' fullWidth />
-
-                            <Box>
-
-                                <Button type='submit' variant='contained' color='primary'> Enviar </Button>
-
-                            </Box>
-
-                        </form>
-
-
-                    </Box>
-
-                </Grid>
-
+                <Grid xs={4}>Amanda</Grid>
+                <Grid xs={4}>Cibele</Grid>
+                <Grid xs={4}>Iago</Grid>
+                <Grid xs={4}>Lucas</Grid>
+                <Grid xs={4}>Bruno</Grid>
+                <Grid xs={4}>Vitoria</Grid>
+                <Grid xs={4}>Vitoria O</Grid>
             </Grid>
+
+            <Grid direction="row" alignItems="center">
+                <Grid item xs={6}>
+                    <Box> <div>
+                    1 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Santos_logo.svg/1200px-Santos_logo.svg.png" alt="" width="500px" height="550px" />
+                    </div>
+                    <div>
+                        <Typography>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae minima doloribus ducimus accusamus tempora aspernatur velit debitis non nesciunt quos optio pariatur rem, quo necessitatibus vel molestias, doloremque reiciendis deserunt.</Typography>
+                    </div>
+                    </Box>
+                </Grid>
+                <Grid item xs={6}>
+                    <Box>2</Box>
+                </Grid>
+                <Grid item xs={6}>
+                    <Box>3</Box>
+                </Grid>
+                <Grid item xs={6}>
+                    <Box>4</Box>
+                </Grid>
+            </Grid>
+
         </>
 
     )
