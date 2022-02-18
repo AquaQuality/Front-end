@@ -42,7 +42,6 @@ function Navbar() {
                                 </Typography>
                             </Box>
                         </Link>
-
                     </Box>
 
                 </Toolbar>
