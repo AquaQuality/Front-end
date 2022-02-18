@@ -1,6 +1,6 @@
 import React from 'react';
 import {Typography, Box, Grid } from '@material-ui/core';
-import './Footer.css'
+import './Footer.css';
 import EmailIcon from '@material-ui/icons/Email';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
