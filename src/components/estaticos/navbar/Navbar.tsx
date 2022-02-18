@@ -42,7 +42,6 @@ function Navbar() {
                                 </Typography>
                             </Box>
                         </Link>
-
                     </Box>
 
                 </Toolbar>
@@ -50,5 +49,6 @@ function Navbar() {
         </>
     )
 }
+
 
 export default Navbar;
