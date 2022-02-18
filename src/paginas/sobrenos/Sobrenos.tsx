@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel1 from "../carousel/Carousel";
+import CarouselComponent from "../carousel/CarouselComponent";
 import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
 
 
@@ -14,7 +14,7 @@ function Sobrenos() {
                     <Box>
                         <Typography variant="h3" gutterBottom color='textPrimary' component="h3" align="center"> Sobre Nós </Typography>
 
-                        <Carousel1 />
+                        <CarouselComponent/>
 
                     </Box>
 

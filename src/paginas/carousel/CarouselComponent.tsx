@@ -1,8 +1,8 @@
 import React from "react";
 import Carousel from 'react-elastic-carousel';
-import '.Carousel.css';
+import '.CarouselComponent.css';
 
-function Carousel1(){
+function CarouselComponent(){
     var items = [
         { img: "https://www.riotgames.com/darkroom/1440/b540da2b9afe5ec83e842a2d84f6dbb1:e95535ecd35e48592908762c9353926a/arcane-final-poster-16x9-no-text-no-border.jpg" },
         { img: "https://trecobox.com.br/wp-content/uploads/2021/11/Arcane-2.jpg" },
@@ -25,5 +25,5 @@ function Carousel1(){
 
 }
 
-export default Carousel1;
+export default CarouselComponent;
 
