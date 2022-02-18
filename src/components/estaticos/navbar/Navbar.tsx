@@ -8,44 +8,61 @@ function Navbar() {
         <>
             <AppBar position="static">
                 <Toolbar variant="dense" style={{ backgroundColor: "#1E90FF" }}>
-                    <Box className='cursor'>
-                        <Typography variant="h5" color="inherit">
-                           AcquaQuality
-                        </Typography>
-                    </Box>
-
-                    <Box display="flex" justifyContent="start">
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" color="inherit">
-                               Inicio
+                    <Link to='/home' className='text-decorator-none'>
+                        <Box className='cursor'>
+                            <Typography variant="h5" color="inherit">
+                                AcquaQuality
                             </Typography>
                         </Box>
+                    </Link>
+
+                    <Link to='/home' className='text-decorator-none'>
+                        <Box display="flex" justifyContent="start">
+                            <Box mx={1} className='cursor'>
+                                <Typography variant="h6" color="inherit">
+                                    Inicio
+                                </Typography>
+                            </Box>
+                        </Box>
+
+                    </Link>
+
+
+                    <Link to='/sobrenos' className='text-decorator-none'>
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
                                 Sobre nós
                             </Typography>
                         </Box>
+                    </Link>
+
+                    <Link to='/contato' className='text-decorator-none'>
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
                                 Contato
                             </Typography>
                         </Box>
+                    </Link>
+
+                    <Link to='/cadastrartema' className='text-decorator-none'>
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
                                 cadastrar tema
                             </Typography>
                         </Box>
-                        <Link to='/login' className='text-decorator-none'>
-                            <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit">
-                                    logout
-                                </Typography>
-                            </Box>
-                        </Link>
-                    </Box>
+                    </Link>
 
-                </Toolbar>
-            </AppBar>
+                    <Link to='/login' className='text-decorator-none'>
+                        <Box mx={1} className='cursor'>
+                            <Typography variant="h6" color="inherit">
+                                logout
+                            </Typography>
+                        </Box>
+                    </Link>
+
+
+                </Toolbar >
+            </AppBar >
         </>
     )
 }
