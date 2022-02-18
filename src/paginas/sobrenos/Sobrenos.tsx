@@ -25,7 +25,7 @@ function Sobrenos() {
             <Grid direction="row" alignItems="center">
                 <Grid item xs={6}>
                     <Box> <div>
-                    1 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Santos_logo.svg/1200px-Santos_logo.svg.png" alt="" width="500px" height="550px" />
+                    1 <img src="https://unric.org/pt/wp-content/uploads/sites/9/2019/01/SDG-icon-PT-RGB-06-1.jpg" alt="" width="500px" height="550px" />
                     </div>
                     <div>
                         <Typography>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae minima doloribus ducimus accusamus tempora aspernatur velit debitis non nesciunt quos optio pariatur rem, quo necessitatibus vel molestias, doloremque reiciendis deserunt.</Typography>
@@ -33,10 +33,20 @@ function Sobrenos() {
                     </Box>
                 </Grid>
                 <Grid item xs={6}>
-                    <Box>2</Box>
+                    <Box>2 <div>
+                    1 <img src="https://unric.org/pt/wp-content/uploads/sites/9/2019/01/SDG-icon-PT-RGB-06-1.jpg" alt="" width="500px" height="550px" />
+                    </div>
+                    <div>
+                        <Typography>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae minima doloribus ducimus accusamus tempora aspernatur velit debitis non nesciunt quos optio pariatur rem, quo necessitatibus vel molestias, doloremque reiciendis deserunt.</Typography>
+                    </div></Box>
                 </Grid>
                 <Grid item xs={6}>
-                    <Box>3</Box>
+                    <Box>3 <div>
+                    1 <img src="https://unric.org/pt/wp-content/uploads/sites/9/2019/01/SDG-icon-PT-RGB-06-1.jpg" alt="" width="500px" height="550px" />
+                    </div>
+                    <div>
+                        <Typography>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae minima doloribus ducimus accusamus tempora aspernatur velit debitis non nesciunt quos optio pariatur rem, quo necessitatibus vel molestias, doloremque reiciendis deserunt.</Typography>
+                    </div></Box>
                 </Grid>
                 <Grid item xs={6}>
                     <Box>4</Box>
