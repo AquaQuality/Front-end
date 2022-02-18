@@ -49,6 +49,8 @@ function Sobrenos() {
     )
 }
 
+export default Sobrenos;
+
 
 
 

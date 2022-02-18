@@ -5,19 +5,17 @@ import Navbar from './components/estaticos/navbar/Navbar';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Sobrenos from './paginas/sobrenos/Sobrenos';
 
 function App() {
   return (
     <Router>
       <Navbar />
         <Switch>
-          <div style={{minHeight: '100vh'}}>
+          <div>
           <Route exact path='/'>
               <Home />
             </Route>
-
-          
-
             <Route path='/home'>
               <Home />
             </Route>
