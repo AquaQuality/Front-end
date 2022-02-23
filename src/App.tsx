@@ -6,6 +6,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Sobrenos from './paginas/sobrenos/Sobrenos';
 import Contato from './paginas/contato/Contato';
+import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 
 function App() {
   return (
@@ -24,7 +25,10 @@ function App() {
             </Route>
             <Route path='/contato'>
               <Contato />
-            </Route>
+          </Route>
+          <Route path='/cadastro'>
+            <CadastroUsuario />
+          </Route>
           </div>
         </Switch>
       <Footer />
