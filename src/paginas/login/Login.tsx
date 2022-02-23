@@ -1,7 +1,6 @@
 import React, { ChangeEvent, useState, useEffect } from "react";
-import { Grid, Box, Typography, TextField, Button, Avatar, Checkbox } from '@material-ui/core';
+import { Grid, Box, Typography, TextField, Button, Avatar } from '@material-ui/core';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import { Link, useHistory } from 'react-router-dom';
 import useLocalStorage from "react-use-localstorage";
@@ -13,7 +12,6 @@ function Login() {
   let history = useHistory();
   const [token, setToken] = useLocalStorage('token')
   const [userLogin, setUserLogin] = useState<UserLogin>(
-
     {
       id: 0,
       usuario: '',
@@ -44,28 +42,42 @@ function Login() {
   }
 
   return (
-    <Grid container component="main" className='root'>
+    <Grid container direction='row' justifyContent='center' alignItems='center' className='root'>
       <CssBaseline />
-      <Grid item xs={false} sm={4} md={7} className='imagem' />
-      <Grid item xs={12} >
+      <Grid alignItems='center' xs={6} className='imagem'> </Grid>
+
+      <Grid item xs={6} >
+
         <div className='paper'>
           <Avatar className='avatar'>
             <LockOutlinedIcon />
           </Avatar>
-          <Typography component="h1" variant="h5">
-            Sign in
-          </Typography>
-          <form className='form' noValidate>
-            <TextField variant="outlined" margin="normal" required fullWidth id="email" label="Email Address" name="email" autoComplete="email" autoFocus />
 
-            <TextField variant="outlined" margin="normal" required fullWidth name="password" label="Password" type="password" id="password" autoComplete="current-password" />
+          <Typography component="h1" variant="h3" className="text"> Entrar </Typography>
 
-            <FormControlLabel control={<Checkbox value="remember" color="primary" />} label="Remember me" />
-            <Button type="submit" fullWidth variant="contained" color="primary" className='submit'>Sign In</Button>
+          <form onSubmit={onSubmit} className='form' noValidate>
+
+            <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+              id="usuario" label="Usuario" name="usuario" autoComplete="usuario" variant="outlined" margin="normal" autoFocus required fullWidth />
+
+            <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+              id="password" label="Senha" name="password" type="password" variant="outlined" margin="normal" autoComplete="current-password" required fullWidth />
+
+
+            <Button type="submit" fullWidth variant="contained" color="primary" className='submit'>Logar</Button>
 
             <Box mt={5}>
             </Box>
           </form>
+          <Box display='flex' justifyContent='center' marginTop={2}>
+            <Box marginRight={1}>
+              <Typography variant='subtitle1' gutterBottom align='center' className="texto" >Não tem uma conta?</Typography>
+            </Box>
+            <Link to='/cadastrousuario' className='text-decorator-none' >
+              <Typography variant='subtitle1' gutterBottom align='center' className='text'> Cadastre-se</Typography>
+            </Link>
+
+          </Box>
         </div>
       </Grid>
     </Grid>

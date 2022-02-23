@@ -13,7 +13,7 @@ function Sobrenos() {
     return (
         <>   
             <Typography variant="h3" gutterBottom color='textPrimary' component="h3" align="center"> Sobre Nós </Typography>
-            <Grid container direction="row" justifyContent="center" alignItems="center" >
+            <Grid container direction="row" justifyContent="center" alignItems="center" className="fundo">
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={10}>
                         <h1>Amanda Marques</h1>
@@ -22,7 +22,7 @@ function Sobrenos() {
                         </p>
                     </Box>
                 </Grid>
-                <Grid item xs={6} style={{ marginTop: 30, paddingLeft: 130 }}>
+                <Grid item xs={6} style={{ marginTop: 30, paddingLeft: 130 }} >
                     <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="" width="300px" height="350px" />
                 </Grid>
             </Grid>
