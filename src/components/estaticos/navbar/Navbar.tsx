@@ -24,7 +24,6 @@ function Navbar() {
                                 </Typography>
                             </Box>
                         </Box>
-
                     </Link>
 
 
@@ -47,7 +46,7 @@ function Navbar() {
                     <Link to='/cadastrartema' className='text-decorator-none'>
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                                cadastrar tema
+                                Novo tema
                             </Typography>
                         </Box>
                     </Link>
@@ -59,8 +58,6 @@ function Navbar() {
                             </Typography>
                         </Box>
                     </Link>
-
-
                 </Toolbar >
             </AppBar >
         </>

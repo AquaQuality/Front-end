@@ -7,8 +7,16 @@
 }
 
 .titulo{
-    color:  white !important;
+    color:  black !important;
     font-weight: bold !important;
+    /*background-color: #fd79a8 !important;
+    justify-content:center;
+    border-radius: 10px;
+    padding: 30px 30px 30px 30px;
+    margin: 30px;*/
+}
+.titulo1{
+    color: black !important;
 }
 
 .botao{
@@ -18,5 +26,5 @@
 }
 
 .postagens{
-    background-color: white;
+    background-image: linear-gradient(to left,#13b5ea,#72cdf4,#b8e0f7);
 }
