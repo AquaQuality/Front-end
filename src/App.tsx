@@ -26,9 +26,7 @@ function App() {
             <Route path='/contato'>
               <Contato />
           </Route>
-          <Route path='/cadastro'>
-            <CadastroUsuario />
-          </Route>
+         
           </div>
         </Switch>
       <Footer />
