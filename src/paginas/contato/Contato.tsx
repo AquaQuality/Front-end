@@ -5,7 +5,7 @@ function Contato() {
     return (
         <Grid container direction="row" justifyContent="center" alignItems="center">
             <Grid alignItems="center" item xs={6}>
-                <form>
+                <form >
                     <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos'> Fale com a gente! </Typography>
 
                     <TextField id='nome' label='nome' variant='outlined' name='Nome' margin='normal' fullWidth />
