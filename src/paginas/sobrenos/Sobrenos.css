@@ -3,6 +3,10 @@
     align-items: flex-end!important;
 }
 .geral{
-    background-image: url('https://i.pinimg.com/564x/17/db/97/17db9736d90ad3d24ac1840631497aea.jpg');
-    background-size: 100vh;
+    background-image: url('https://cdn.pixabay.com/photo/2020/04/19/08/17/watercolor-5062356__480.jpg')!important;
+    background-size: 100%;
+}
+
+.card{
+    background-color: #BFEAFD;
 }
