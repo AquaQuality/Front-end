@@ -1,5 +1,9 @@
 .caixa{
-    background-color: #3F51B5;
+    background-image: linear-gradient(to left,#13b5ea,#72cdf4,#b8e0f7);
+}
+
+.imagem{
+    background-image: url(../../assets/img/vetorlogo.png);
 }
 
 .titulo{
@@ -8,8 +12,8 @@
 }
 
 .botao{
-    border-color: white !important;
-    background-color: #3F51B5;
+    border-color: #005581!important;
+    background-color: #005581 !important;
     color: white !important;
 }
 

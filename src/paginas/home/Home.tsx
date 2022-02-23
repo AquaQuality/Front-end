@@ -14,12 +14,12 @@ function Home() {
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         </Box>
-                        <Button variant="outlined" className='botao'> Ver Postagens </Button>
+                        <Button variant="outlined" className='botao'> Postagens </Button>
                     </Box>
                 </Grid>
 
-                <Grid item xs={6}>
-                    <img src="https://unric.org/pt/wp-content/uploads/sites/9/2019/01/SDG-icon-PT-RGB-06-1.jpg" alt="" width="500px" height="500px" />
+                <Grid item xs={6} className='imagem'>
+                    
                 </Grid>
 
                 <Grid xs={12} className='postagens'>
