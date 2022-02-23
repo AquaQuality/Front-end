@@ -7647,11 +7647,7 @@ react-transition-group@^4.4.0, react-transition-group@^4.4.2:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-<<<<<<< HEAD
 react-use-localstorage@^3.5.3:
-=======
-react-use-localstorage@3.5.3:
->>>>>>> 8b4b1c3624604734bc8d5594e74ebd1af44f9d08
   version "3.5.3"
   resolved "https://registry.npmjs.org/react-use-localstorage/-/react-use-localstorage-3.5.3.tgz"
   integrity sha512-1oNvJmo72G4v5P9ytJZZTb6ywD3UzWBiainTtfbNlb+U08hc+SOD5HqgiLTKUF0MxGcIR9JSnZGmBttNLXaQYA==
