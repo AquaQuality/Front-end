@@ -1,31 +1,38 @@
 .imagem{
-    background-image: 'url(https://source.unsplash.com/random)';
-    background-repeat: no-repeat;
+    background-image: url(../../assets/img/AcquaQuality.jpeg);
+    background-repeat: 'no-repeat';
+    width: 80vh;
+    min-height: 90vh;
     background-size: cover;
     background-position: center;
     /*background-color:  theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],*/
 }
 
 .paper{
-       /* margin: theme.spacing(8, 4);*/
+        margin: (8, 4);
         display: flex;
         flex-direction: column;
         align-items: center;
 }
 
 .avatar{
-    /*margin: theme.spacing(1);
-    background-color: theme.palette.secondary.main;*/
+    margin: 20px;
+    background-color: black;
 }
 
 .form {
-   /* width: '100%', // Fix IE 11 issue;
-    margin-top: theme.spacing(1);*/
+    width: 80%;
+    margin-top: 10px
 }
 
 .submit {
-    /*margin: theme.spacing(3, 0, 2)*/
+    margin: (3, 0, 2);
 }
 .text-decoration-none{
     text-decoration: none;
+}
+
+.text{
+font-weight: bold !important; 
+color: black !important;   
 }
