@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Sobrenos from './paginas/sobrenos/Sobrenos';
 import Contato from './paginas/contato/Contato';
 import Login from './paginas/login/Login';
-import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 
 function App() {
   return (
@@ -16,25 +15,22 @@ function App() {
       <Switch>
         <div>
           <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route path='/home'>
-            <Home />
-          </Route>
-          <Route path='/sobrenos'>
-            <Sobrenos />
-          </Route>
-          <Route path='/contato'>
-            <Contato />
-          </Route>
-          <Route path='/login'>
-            <Login />
-          </Route>
-          <Route path='/cadastro'>
-            <CadastroUsuario />
-          </Route>
-        </div>
-      </Switch>
+              <Home />
+            </Route>
+            <Route path='/home'>
+              <Home />
+            </Route>
+            <Route path='/sobrenos'>
+              <Sobrenos />
+            </Route>
+            <Route path='/contato'>
+              <Contato />
+            </Route>
+            <Route path='/login'>
+              <Login />
+            </Route>
+          </div>
+        </Switch>
       <Footer />
     </Router>
   );

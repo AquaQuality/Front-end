@@ -26,3 +26,6 @@
 .submit {
     /*margin: theme.spacing(3, 0, 2)*/
 }
+.text-decoration-none{
+    text-decoration: none;
+}
