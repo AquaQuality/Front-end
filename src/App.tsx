@@ -6,6 +6,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Sobrenos from './paginas/sobrenos/Sobrenos';
 import Contato from './paginas/contato/Contato';
+import Login from './paginas/login/Login';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
             </Route>
             <Route path='/contato'>
               <Contato />
+            </Route>
+            <Route path='/login'>
+              <Login />
             </Route>
           </div>
         </Switch>
