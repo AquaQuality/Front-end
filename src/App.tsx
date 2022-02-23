@@ -14,6 +14,9 @@ function App() {
       <Navbar />
       <Switch>
         <div>
+        <Route path='/login'>
+              <Login />
+            </Route>
           <Route exact path='/'>
               <Login />
             </Route>
@@ -25,9 +28,6 @@ function App() {
             </Route>
             <Route path='/contato'>
               <Contato />
-            </Route>
-            <Route path='/login'>
-              <Login />
             </Route>
           </div>
         </Switch>
