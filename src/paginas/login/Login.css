@@ -1,5 +1,5 @@
 .imagem{
-    background-image: url(../../assets/img/AcquaQuality.jpeg);
+    background-image: url(../../assets/img/vetorlogo.png);
     background-repeat: 'no-repeat';
     width: 80vh;
     min-height: 90vh;
@@ -22,7 +22,9 @@
 
 .form {
     width: 80%;
-    margin-top: 10px
+    margin-top: 10px;
+    
+
 }
 
 .submit {
@@ -36,3 +38,15 @@
 font-weight: bold !important; 
 color: black !important;   
 }
+
+.root{
+    
+    background-image: linear-gradient(to left,#13b5ea,#72cdf4,#b8e0f7);
+    color: black;
+    margin: 0;
+    padding: 2em 0;
+      
+    
+}
+
+

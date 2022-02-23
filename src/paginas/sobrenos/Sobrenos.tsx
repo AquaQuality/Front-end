@@ -16,6 +16,7 @@ function Sobrenos() {
             <Grid container direction="row" justifyContent="center" alignItems="center" >
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={10}>
+                        <h1>Amanda Marques</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem inventore dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
                         </p>
@@ -31,6 +32,7 @@ function Sobrenos() {
                 </Grid>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={10}>
+                        <h1>Bruno Felix</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem inventore dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
                         </p>
@@ -42,6 +44,7 @@ function Sobrenos() {
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={10}>
+                        <h1>Cibele França</h1>
                         <p>
                             MeninoNey é top, nunca devia ter saído do Santos, amo vocês meus santistas
                         </p>
@@ -58,6 +61,7 @@ function Sobrenos() {
                 </Grid>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={10}>
+                        <h1>Iago Vieira</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem inventore dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
                         </p>
@@ -69,6 +73,7 @@ function Sobrenos() {
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={10}>
+                        <h1>Lucas Oi</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem inventore dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
                         </p>
@@ -97,6 +102,7 @@ function Sobrenos() {
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={10}>
+                        <h1>Vitoria Romão</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem inventore dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
                         </p>
