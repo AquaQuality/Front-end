@@ -22,12 +22,12 @@ function Sobrenos() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} style={{ marginTop: 30, paddingLeft: 130 }}>
-                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="" width="500px" height="550px" />
+                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="" width="300px" height="350px" />
                 </Grid>
             </Grid>
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid item xs={6} style={{ marginTop: 30, paddingLeft: 130 }}>
-                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="" width="500px" height="550px" />
+                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="" width="300px" height="350px" />
                 </Grid>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={10}>
@@ -48,13 +48,13 @@ function Sobrenos() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} style={{ marginTop: 30, paddingLeft: 130 }}>
-                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="" width="500px" height="550px" />
+                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="" width="300px" height="350px" />
                 </Grid>
             </Grid>
 
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid item xs={6} style={{ marginTop: 30, paddingLeft: 130 }}>
-                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="" width="500px" height="550px" />
+                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="" width="300px" height="350px" />
                 </Grid>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={10}>
@@ -75,13 +75,13 @@ function Sobrenos() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} style={{ marginTop: 30, paddingLeft: 130 }}>
-                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="" width="500px" height="550px" />
+                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="" width="300px" height="350px" />
                 </Grid>
             </Grid>
 
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid item xs={6} style={{ marginTop: 30, paddingLeft: 130 }}>
-                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="" width="500px" height="550px" />
+                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="" width="300px" height="350px" />
                 </Grid>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={10}>
@@ -102,7 +102,7 @@ function Sobrenos() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} style={{ marginTop: 30, paddingLeft: 130 }}>
-                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="" width="500px" height="550px" />
+                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="" width="300px" height="350px" />
                 </Grid>
             </Grid>
         </>
