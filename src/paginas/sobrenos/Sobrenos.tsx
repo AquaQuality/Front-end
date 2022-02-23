@@ -81,7 +81,7 @@ function Sobrenos() {
 
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid item xs={6} style={{ marginTop: 30, paddingLeft: 130 }}>
-                    <img className='img' src="https://imgur.com/OhuIOWe" alt="" width="300px" height="350px" />
+                    <img className='img' src="https://i.imgur.com/OhuIOWe.jpg" alt="" width="300px" height="350px" />
                 </Grid>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={10}>
