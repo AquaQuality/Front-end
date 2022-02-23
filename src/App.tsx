@@ -6,42 +6,35 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Sobrenos from './paginas/sobrenos/Sobrenos';
 import Contato from './paginas/contato/Contato';
-<<<<<<< HEAD
 import Login from './paginas/login/Login';
-=======
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
->>>>>>> 5fa2434626cb66a2507b7e9415ad92aa3386d3e1
 
 function App() {
   return (
     <Router>
       <Navbar />
-        <Switch>
-          <div>
+      <Switch>
+        <div>
           <Route exact path='/'>
-              <Home />
-            </Route>
-            <Route path='/home'>
-              <Home />
-            </Route>
-            <Route path='/sobrenos'>
-              <Sobrenos />
-            </Route>
-            <Route path='/contato'>
-              <Contato />
-<<<<<<< HEAD
-            </Route>
-            <Route path='/login'>
-              <Login />
-            </Route>
-=======
+            <Home />
           </Route>
-         <Route path='/cadastro'>
-              <CadastroUsuario />
+          <Route path='/home'>
+            <Home />
           </Route>
->>>>>>> 5fa2434626cb66a2507b7e9415ad92aa3386d3e1
-          </div>
-        </Switch>
+          <Route path='/sobrenos'>
+            <Sobrenos />
+          </Route>
+          <Route path='/contato'>
+            <Contato />
+          </Route>
+          <Route path='/login'>
+            <Login />
+          </Route>
+          <Route path='/cadastro'>
+            <CadastroUsuario />
+          </Route>
+        </div>
+      </Switch>
       <Footer />
     </Router>
   );
