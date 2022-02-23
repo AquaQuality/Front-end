@@ -24,15 +24,7 @@
     "react-elastic-carousel": "^0.11.5",
     "react-router-dom": "5.3.0",
     "react-scripts": "5.0.0",
-<<<<<<< HEAD
-    "react-use-localstorage": "^3.5.3",
-=======
-<<<<<<< HEAD
-    "react-use-localstorage": "^3.5.3",
-=======
     "react-use-localstorage": "3.5.3",
->>>>>>> 5981a831ed4d5c0fa78c91d33411838505a3817a
->>>>>>> 95157aca4b8f93b3df0dd3453a6d3922d7d6881f
     "typescript": "^4.5.5",
     "web-vitals": "^2.1.4"
   },
@@ -59,5 +51,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }
