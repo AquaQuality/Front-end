@@ -4,13 +4,8 @@ import './Contato.css';
 
 function Contato() {
     return (
-<<<<<<< HEAD
         <Grid container direction="row" justifyContent="center" alignItems="center" className='root'>
             <Grid alignItems="center" item xs={6} className='formulario'>
-=======
-        <Grid container direction="row" justifyContent="center" alignItems="center">
-            <Grid alignItems="center" item xs={6}>
->>>>>>> 05a69f6e103f5c5caebfa8a5b5871193a9557f7d
                 <form >
                     <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos'> Fale com a gente! </Typography>
 
