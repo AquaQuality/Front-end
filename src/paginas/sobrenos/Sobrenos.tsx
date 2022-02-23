@@ -42,6 +42,7 @@ function Sobrenos() {
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={10}>
+                        <h1>Cibele França</h1>
                         <p>
                             MeninoNey é top, nunca devia ter saído do Santos, amo vocês meus santistas
                         </p>
