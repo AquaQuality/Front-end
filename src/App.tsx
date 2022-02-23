@@ -30,9 +30,6 @@ function App() {
             <Route path='/contato'>
               <Contato />
             </Route>
-            <Route path='/login'>
-              <Login />
-            </Route>
             <Route path='/cadastrousuario'>
               <CadastroUsuario />
             </Route>
