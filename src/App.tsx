@@ -15,26 +15,26 @@ function App() {
       <Navbar />
       <Switch>
         <div>
+        <Route path='/login'>
+              <Login />
+            </Route>
           <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route path='/home'>
-            <Home />
-          </Route>
-          <Route path='/sobrenos'>
-            <Sobrenos />
-          </Route>
-          <Route path='/contato'>
-            <Contato />
-          </Route>
-          <Route path='/login'>
-            <Login />
-          </Route>
-          <Route path='/cadastro'>
-            <CadastroUsuario />
-          </Route>
-        </div>
-      </Switch>
+              <Login />
+            </Route>
+            <Route path='/home'>
+              <Home />
+            </Route>
+            <Route path='/sobrenos'>
+              <Sobrenos />
+            </Route>
+            <Route path='/contato'>
+              <Contato />
+            </Route>
+            <Route path='/cadastrousuario'>
+              <CadastroUsuario />
+            </Route>
+          </div>
+        </Switch>
       <Footer />
     </Router>
   );

@@ -7,7 +7,7 @@ function Navbar() {
     return (
         <>
             <AppBar position="static">
-                <Toolbar variant="dense" style={{ backgroundColor: "#1E90FF" }}>
+                <Toolbar variant="dense" style={{ backgroundColor: "#005581" }}>
                     <Link to='/home' className='text-decorator-none'>
                         <Box className='cursor'>
                             <Typography variant="h5" color="inherit">

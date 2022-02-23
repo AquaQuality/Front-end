@@ -1,11 +1,12 @@
 import React from 'react';
 import { Box, Grid, Typography, TextField, Button } from '@material-ui/core';
+import './Contato.css';
 
 function Contato() {
     return (
-        <Grid container direction="row" justifyContent="center" alignItems="center">
-            <Grid alignItems="center" item xs={6}>
-                <form>
+        <Grid container direction="row" justifyContent="center" alignItems="center" className='root'>
+            <Grid alignItems="center" item xs={6} className='formulario'>
+                <form >
                     <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos'> Fale com a gente! </Typography>
 
                     <TextField id='nome' label='nome' variant='outlined' name='Nome' margin='normal' fullWidth />
@@ -19,9 +20,8 @@ function Contato() {
                     </Box>
                 </form>
             </Grid>
-            <Grid item xs={6} style={{ marginTop: 30, paddingLeft: 130 }}>
-                <img src="https://unric.org/pt/wp-content/uploads/sites/9/2019/01/SDG-icon-PT-RGB-06-1.jpg
-                " alt="" width="900px"
+            <Grid item xs={6} className= 'imagem3'>
+                <img src="https://trello.com/1/cards/62161b323212cb2dd94f507e/attachments/62164d41d33baa46c2e8acc2/previews/62164d42d33baa46c2e8acfa/download/vetorlogo.png" alt=""  width="690px"
                 />
             </Grid>
         </Grid>
