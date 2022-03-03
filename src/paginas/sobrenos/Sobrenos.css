@@ -22,3 +22,7 @@
     font-weight: bold !important;
     color: black !important;
 }
+
+p{
+    text-align: justify;
+}
