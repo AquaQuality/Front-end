@@ -31,8 +31,8 @@ function Sobrenos() {
                             </p>
                         </Box>
                     </Grid>
-                    <Grid item xs={6} className='card' >
-                        <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="Amanda Marques" />
+                    <Grid item xs={6} className='card img-amanda img' >
+                       {/* <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="Amanda Marques" /> */}
                     </Grid>
                 </Grid>
 
@@ -61,7 +61,7 @@ function Sobrenos() {
                             </p>
                         </Box>
                     </Grid>
-                    <Grid item xs={6} className='card'>
+                    <Grid item xs={6} className='card img'>
                         <img className='img' src="https://p2.trrsf.com/image/fget/cf/1200/1200/filters:quality(85)/images.terra.com/2022/01/15/neymar-comecou-a-sua-carreira-jogando-pelo-santos-ricardo-saibun-santos-fc.jpeg" alt="" />
                     </Grid>
                 </Grid>
