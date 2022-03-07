@@ -53,8 +53,14 @@ function ListaTema() {
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
                 Tema
-              </Typography>
-              <Typography variant="h5" component="h2">
+                </Typography>
+                <Typography variant="h5" component="h2">
+                  {tema.categoriaPostagem}
+                </Typography>
+                <Typography color="textSecondary" gutterBottom>
+                  Descricao
+                </Typography>
+              <Typography variant="h5" component="h4">
                 {tema.descricao}
               </Typography>
             </CardContent>

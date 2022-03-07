@@ -17,11 +17,12 @@ function CadastroTema() {
     );
     const [tema, setTema] = useState<Tema>({
         id: 0,
+        categoriaPostagem : '',
         descricao: ''
     })
 
     useEffect(() => {
-        if (token == "") {
+        if (token === "") {
             toast.error('Você precisa estar logado', {
                 position: "top-right",
                 autoClose: 2000,
@@ -110,6 +111,7 @@ function CadastroTema() {
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro tema</Typography>
+                <TextField value={tema.categoriaPostagem} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="categoriaPostagem" label="Categoria" variant="outlined" name="categoriaPostagem" margin="normal" fullWidth />
                 <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
                 <Button type="submit" variant="contained" color="primary">
                     Finalizar

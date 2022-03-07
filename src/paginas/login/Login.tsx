@@ -3,14 +3,17 @@ import { Grid, Box, Typography, TextField, Button, Avatar } from '@material-ui/c
 import CssBaseline from '@material-ui/core/CssBaseline';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import { Link, useHistory } from 'react-router-dom';
-import useLocalStorage from "react-use-localstorage";
 import { login } from "../../services/Services";
 import UserLogin from "../../models/UserLogin";
 import './Login.css';
+import { toast } from "react-toastify";
+import { useDispatch } from "react-redux";
+import { addToken } from "../../store/tokens/actions";
 
 function Login() {
   let history = useHistory();
-  const [token, setToken] = useLocalStorage('token')
+  const dispatch = useDispatch();
+  const [token, setToken] = useState('');
   const [userLogin, setUserLogin] = useState<UserLogin>(
     {
       id: 0,
@@ -25,8 +28,10 @@ function Login() {
       [e.target.name]: e.target.value
     })
   }
+  
   useEffect(() => {
     if (token != '') {
+      dispatch(addToken(token))
       history.push('/home')
     }
   }, [token])
@@ -35,9 +40,28 @@ function Login() {
     e.preventDefault();
     try {
       await login(`/usuarios/logar`, userLogin, setToken)
-      alert("Usuário logado com sucesso !")
-    } catch (error) {
-      alert("Dados do usuário inconsistentes. Erro ao logar !")
+
+      toast.success('Usuario logade com sucesso!', {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          theme: "colored",
+          progress: undefined,
+      });
+  }catch{
+      toast.error('Dados do usuário inconsistentes. Erro ao logar', {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          theme: "colored",
+          progress: undefined,
+      });
     }
   }
 
