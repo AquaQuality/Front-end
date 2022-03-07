@@ -1,25 +1,11 @@
-<<<<<<< HEAD
+
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
 import './Navbar.css';
 import { Link, useHistory } from 'react-router-dom';
-=======
-import React from 'react';
-import { AppBar, Toolbar, Typography, Box } from '@material-ui/core';
-import { Link, useHistory } from 'react-router-dom';
-import './Navbar.css';
->>>>>>> a428bb4dc26755b0b3b5bba416838c7c6b8872ba
 import { useDispatch, useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { addToken } from '../../../store/tokens/actions';
