@@ -1,5 +1,6 @@
 interface Tema{
-    id:number;
+    id: number;
+    categoriaPostagem: string;
     descricao: string;
 }
 
