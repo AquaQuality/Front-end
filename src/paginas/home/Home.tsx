@@ -18,8 +18,13 @@ function Home() {
                     </Box>
                 </Grid>
 
+<<<<<<< HEAD
+                <Grid item xs={6}>
+                    <img src="https://trello.com/1/cards/62161b323212cb2dd94f507e/attachments/62164d41d33baa46c2e8acc2/previews/62164d42d33baa46c2e8acfa/download/vetorlogo.png" alt="" width="500px" height="500px" />
+=======
                 <Grid item xs={6} className='imagem'>
                     
+>>>>>>> 30e7549526b8b297be35824bb11fa11c7fe5b9e4
                 </Grid>
 
                 <Grid xs={12} className='postagens'>
