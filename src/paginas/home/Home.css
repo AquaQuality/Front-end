@@ -1,13 +1,5 @@
 .caixa{
-<<<<<<< HEAD
-    background-color: rgb(3, 140, 245);
-=======
     background-image: linear-gradient(to left,#13b5ea,#72cdf4,#b8e0f7);
-}
-
-.imagem{
-    background-image: url(../../assets/img/vetorlogo.png);
->>>>>>> 30e7549526b8b297be35824bb11fa11c7fe5b9e4
 }
 
 .titulo{
@@ -24,16 +16,20 @@
 }
 
 .botao{
-<<<<<<< HEAD
     border-color: white !important;
     background-color: rgb(7, 165, 238);
-=======
-    border-color: #005581!important;
-    background-color: #005581 !important;
->>>>>>> 30e7549526b8b297be35824bb11fa11c7fe5b9e4
     color: white !important;
 }
 
 .postagens{
     background-image: linear-gradient(to left,#13b5ea,#72cdf4,#b8e0f7);
+}
+
+.imagem1{
+    background-image: url(../../assets/img/vetorlogo.png);
+    background-repeat: no-repeat;
+    width: 80vh;
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
 }

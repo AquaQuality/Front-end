@@ -61,7 +61,7 @@ function Login() {
               id="usuario" label="Usuario" name="usuario" autoComplete="usuario" variant="outlined" margin="normal" autoFocus required fullWidth />
 
             <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-              id="password" label="Senha" name="password" type="password" variant="outlined" margin="normal" autoComplete="current-password" required fullWidth />
+              id="senha" label="Senha" name="senha" type="password" variant="outlined" margin="normal" autoComplete="current-password" required fullWidth />
 
 
             <Button type="submit" fullWidth variant="contained" color="primary" className='submit'>Logar</Button>
