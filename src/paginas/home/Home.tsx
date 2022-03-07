@@ -19,7 +19,7 @@ function Home() {
                 </Grid>
 
                 <Grid item xs={6}>
-                    <img src="https://unric.org/pt/wp-content/uploads/sites/9/2019/01/SDG-icon-PT-RGB-06-1.jpg" alt="" width="500px" height="500px" />
+                    <img src="https://trello.com/1/cards/62161b323212cb2dd94f507e/attachments/62164d41d33baa46c2e8acc2/previews/62164d42d33baa46c2e8acfa/download/vetorlogo.png" alt="" width="500px" height="500px" />
                 </Grid>
 
                 <Grid xs={12} className='postagens'>

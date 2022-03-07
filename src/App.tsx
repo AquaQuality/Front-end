@@ -15,10 +15,11 @@ function App() {
       <Navbar />
       <Switch>
         <div>
-        <Route path='/login'>
+        
+          <Route exact path='/'>
               <Login />
             </Route>
-          <Route exact path='/'>
+            <Route path='/login'>
               <Login />
             </Route>
             <Route path='/home'>
