@@ -11,6 +11,7 @@ import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import ListaTema from './components/temas/listaTema/ListaTema';
 import CadastroTema from './components/temas/cadastroTema/CadastroTema';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
+import Perfil from './paginas/perfil/Perfil';
 
 function App() {
   return (
@@ -48,6 +49,9 @@ function App() {
           </Route>
           <Route path='/deletarTema/:id'>
             <DeletarTema />
+          </Route>
+          <Route path='/perfil'>
+            <Perfil />
           </Route>
           </div>
         </Switch>
