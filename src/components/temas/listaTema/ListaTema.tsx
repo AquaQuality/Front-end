@@ -3,7 +3,7 @@ import { Link, useHistory } from 'react-router-dom'
 import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
 import './ListaTema.css';
 import Tema from '../../../models/Tema';
-import { busca } from '../../../services/Service';
+import { busca } from '../../../services/Services';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
