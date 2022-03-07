@@ -8,6 +8,9 @@ import Sobrenos from './paginas/sobrenos/Sobrenos';
 import Contato from './paginas/contato/Contato';
 import Login from './paginas/login/Login';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
+import ListaTema from './components/temas/listaTema/ListaTema';
+import CadastroTema from './components/temas/cadastroTema/CadastroTema';
+import DeletarTema from './components/temas/deletarTema/DeletarTema';
 
 function App() {
   return (
@@ -15,24 +18,13 @@ function App() {
       <Navbar />
       <Switch>
         <div>
-<<<<<<< HEAD
         
           <Route exact path='/'>
-              <Login />
+              <Login />             
             </Route>
             <Route path='/login'>
               <Login />
             </Route>
-=======
-          <Route exact path='/'>
-              <Login />
-          </Route>
-          
-        <Route path='/login'>
-              <Login />
-            </Route>
-          
->>>>>>> 30e7549526b8b297be35824bb11fa11c7fe5b9e4
             <Route path='/home'>
               <Home />
             </Route>
@@ -44,7 +36,19 @@ function App() {
             </Route>
             <Route path='/cadastrousuario'>
               <CadastroUsuario />
-            </Route>
+          </Route>
+          <Route path='/temas'>
+            <ListaTema />
+          </Route>
+          <Route exact path='/formularioTema'>
+            <CadastroTema />
+          </Route>
+          <Route exact path='/formularioTema/:id'>
+            <CadastroTema />
+          </Route>
+          <Route path='/deletarTema/:id'>
+            <DeletarTema />
+          </Route>
           </div>
         </Switch>
       <Footer />
