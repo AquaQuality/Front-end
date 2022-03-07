@@ -1,11 +1,10 @@
 .imagem{
     background-image: url(../../assets/img/vetorlogo.png);
     background-repeat: 'no-repeat';
-    width: 80vh;
-    min-height: 90vh;
+    width: 70vh;
+    min-height: 80vh;
     background-size: cover;
     background-position: center;
-    /*background-color:  theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],*/
 }
 
 .paper{
@@ -17,18 +16,18 @@
 
 .avatar{
     margin: 20px;
-    background-color: black;
+    background-color: #009ddc !important;
 }
 
 .form {
     width: 80%;
     margin-top: 10px;
-    
 
 }
 
 .submit {
     margin: (3, 0, 2);
+    background-color: #005581 !important;
 }
 .text-decoration-none{
     text-decoration: none;

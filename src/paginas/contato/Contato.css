@@ -6,3 +6,11 @@
     margin-top: 40;
     padding-left: 130;
 }
+
+.botao{
+    background-color: #005581;
+}
+
+.text{
+    font-weight: bold !important;
+}

@@ -1,8 +1,8 @@
 .imagem2{
-    background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
+    background-image: url(../../assets/img/vetorlogo.png);
     background-repeat: no-repeat;
-    width: 100vh;
-    min-height: 100vh;
+    width: 80vh;
+    min-height: 80vh;
     background-size: cover;
     background-position: center;
 }
@@ -11,6 +11,11 @@
     font-weight: bold !important;
 }
 
-.btnCancelar{
+.botoes{
     margin-right: 20px !important;
+    background-color: #005581 !important;
+}
+
+.fundo{
+    background-image: linear-gradient(to left,#13b5ea,#72cdf4,#b8e0f7);
 }

@@ -1,12 +1,38 @@
 .img{
     border-radius: 50% !important;
     align-items: flex-end!important;
-}
-.geral{
-    background-image: url('https://cdn.pixabay.com/photo/2020/04/19/08/17/watercolor-5062356__480.jpg')!important;
-    background-size: 100%;
+    width: 300px;
+    height: 350px;
+    background-repeat: no-repeat;
 }
 
 .card{
-    background-color: #BFEAFD;
+    margin-top: 30px; 
+    padding-left: 130px;
+}
+
+.fundo{
+    background-image: linear-gradient(to left,#13b5ea,#72cdf4,#b8e0f7);
+}
+
+.text{
+    text-align: justify;
+}
+
+.titulo{
+    font-weight: bold !important;
+    color: black !important;
+}
+
+p{
+    text-align: justify;
+}
+
+.img-amanda{
+    background-image: url('../../assets/img/Amanda.png');
+    
+}
+
+.img-cibele{
+    background-image: url('../../assets/img/cibele.png');
 }

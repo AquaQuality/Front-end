@@ -1,18 +1,39 @@
 .caixa{
+<<<<<<< HEAD
     background-color: rgb(3, 140, 245);
+=======
+    background-image: linear-gradient(to left,#13b5ea,#72cdf4,#b8e0f7);
+}
+
+.imagem{
+    background-image: url(../../assets/img/vetorlogo.png);
+>>>>>>> 30e7549526b8b297be35824bb11fa11c7fe5b9e4
 }
 
 .titulo{
-    color:  white !important;
+    color:  black !important;
     font-weight: bold !important;
+    /*background-color: #fd79a8 !important;
+    justify-content:center;
+    border-radius: 10px;
+    padding: 30px 30px 30px 30px;
+    margin: 30px;*/
+}
+.titulo1{
+    color: black !important;
 }
 
 .botao{
+<<<<<<< HEAD
     border-color: white !important;
     background-color: rgb(7, 165, 238);
+=======
+    border-color: #005581!important;
+    background-color: #005581 !important;
+>>>>>>> 30e7549526b8b297be35824bb11fa11c7fe5b9e4
     color: white !important;
 }
 
 .postagens{
-    background-color: white;
+    background-image: linear-gradient(to left,#13b5ea,#72cdf4,#b8e0f7);
 }
