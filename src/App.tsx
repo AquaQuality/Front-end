@@ -12,16 +12,23 @@ import ListaTema from './components/temas/listaTema/ListaTema';
 import CadastroTema from './components/temas/cadastroTema/CadastroTema';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
 import Perfil from './paginas/perfil/Perfil';
+import { ToastContainer } from 'react-toastify';
+import { Provider } from 'react-redux';
+import store from './store/store';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <div>
-        
-          <Route exact path='/'>
-              <Login />             
+    <Provider store={store}>
+      <ToastContainer />
+      <Router>
+        <Navbar />
+        <Switch>
+          <div>
+
+            <Route exact path='/'>
+              <Login />
             </Route>
             <Route path='/login'>
               <Login />
@@ -37,26 +44,27 @@ function App() {
             </Route>
             <Route path='/cadastrousuario'>
               <CadastroUsuario />
-          </Route>
-          <Route path='/temas'>
-            <ListaTema />
-          </Route>
-          <Route exact path='/formularioTema'>
-            <CadastroTema />
-          </Route>
-          <Route exact path='/formularioTema/:id'>
-            <CadastroTema />
-          </Route>
-          <Route path='/deletarTema/:id'>
-            <DeletarTema />
-          </Route>
-          <Route path='/perfil'>
-            <Perfil />
-          </Route>
+            </Route>
+            <Route path='/temas'>
+              <ListaTema />
+            </Route>
+            <Route exact path='/formularioTema'>
+              <CadastroTema />
+            </Route>
+            <Route exact path='/formularioTema/:id'>
+              <CadastroTema />
+            </Route>
+            <Route path='/deletarTema/:id'>
+              <DeletarTema />
+            </Route>
+            <Route path='/perfil'>
+              <Perfil />
+            </Route>
           </div>
         </Switch>
-      <Footer />
-    </Router>
+        <Footer />
+      </Router>
+    </Provider>
   );
 }
 
