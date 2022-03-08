@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { addToken } from '../../../store/tokens/actions';
 import { toast } from 'react-toastify';
+import { Avatar } from '@material-ui/core';
 
 function Navbar() {
 
@@ -58,15 +59,6 @@ function Navbar() {
                     </Box>
                 </Link>
 
-
-                <Link to='/sobrenos' className='text-decorator-none'>
-                    <Box mx={1} className='cursor'>
-                        <Typography variant="h6" color="inherit">
-                            Sobre nós
-                        </Typography>
-                    </Box>
-                </Link>
-
                 <Link to='/contato' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
                         <Typography variant="h6" color="inherit">
@@ -75,13 +67,13 @@ function Navbar() {
                     </Box>
                 </Link>
 
-                <Link to='/formularioTema' className='text-decorator-none'>
+                {/*<Link to='/formularioTema' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
                         <Typography variant="h6" color="inherit">
                             Novo tema
                         </Typography>
                     </Box>
-                </Link>
+    </Link>*/}
 
                 <Link to='/temas' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
@@ -106,10 +98,17 @@ function Navbar() {
                         </Typography>
                     </Box>
                 </Link>
+                <Link to='/sobrenos' className='text-decorator-none'>
+                    <Box mx={1} className='cursor'>
+                        <Typography variant="h6" color="inherit">
+                            Sobre nós
+                        </Typography>
+                    </Box>
+                </Link>
 
                 <Box mx={1} className='cursor'>
                     <Typography variant="h6" color="inherit" onClick={goLogout}>
-                        logout
+                    <Avatar alt="" src="/static/images/avatar/2.jpg" className='avatar-navbar' />
                     </Typography>
                 </Box>
             </Toolbar >

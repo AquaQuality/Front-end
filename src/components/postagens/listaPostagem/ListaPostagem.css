@@ -7,3 +7,13 @@
         color: #000000!important;
         border-radius: 30px!important; 
 }
+
+.text{
+    color: black !important;
+}
+
+.botao-postagens{
+    border-color: #0065a4!important;
+    background-color: #0065a4 !important;
+    color: white !important;
+}

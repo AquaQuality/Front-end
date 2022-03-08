@@ -54,7 +54,7 @@ function ListaPostagem() {
           <Box m={2} >
             <Card variant="outlined">
               <CardContent>
-                <Typography color="textSecondary" gutterBottom>
+                <Typography color="textSecondary" gutterBottom className='text'>
                   Postagens
                 </Typography>
                 <Typography variant="h5" component="h2">
@@ -64,21 +64,21 @@ function ListaPostagem() {
                   {post.texto}
                 </Typography>
                 <br></br>
-                <Typography variant="body1" component="h5">
+                <Typography variant="body1" component="h5"className='text' >
                        Tema
                 </Typography>
                 <Typography variant="body2" component="p">
                   {post.tema?.categoriaPostagem}
                 </Typography>
                 <br />
-                <Typography variant="body1" component="h5">
+                <Typography variant="body1" component="h5" className='text'>
                   Midia
                 </Typography>
                 <Typography variant="body2" component="p">
                   {post.midia}
                 </Typography>
                 <br />
-                <Typography variant="body1" component="h5">
+                <Typography variant="body1" component="h5" className='text'>
                   Usuario
                 </Typography>
                 <Typography variant="body2" component="p">
@@ -90,14 +90,14 @@ function ListaPostagem() {
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                      <Button variant="contained" className="botao-postagens" size='small' color="primary" >
                         atualizar
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary">
+                      <Button variant="contained" size='small' color="secondary" className="botao-postagens">
                         deletar
                       </Button>
                     </Box>

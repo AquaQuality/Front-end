@@ -1,3 +1,17 @@
+.fundo{
+    background-color:linear-gradient(to left,#13b5ea,#72cdf4,#b8e0f7);
+}
+
 .text-decorator-none{
     text-decoration: none;
+}
+
+.text{
+color: black !important;
+}
+
+.botao-temas{
+    border-color: #0065a4!important;
+    background-color: #0065a4 !important;
+    color: white !important;
 }

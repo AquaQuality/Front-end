@@ -1,14 +1,15 @@
 import React from 'react'
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
-import {Button,Box } from "@material-ui/core"
+import { Button, Box } from "@material-ui/core"
 import CloseIcon from '@material-ui/icons/Close';
-import './ModalPostagem.css';
-import CadastroPost from '../cadastroPost/CadastroPost';
+import './ModalTema.css';
+import CadastroTema from '../cadastroTema/CadastroTema';
 
 
 function getModalStyle() {
-  const top = 50 ;
+
+  const top = 50;
   const left = 50;
 
   return {
@@ -31,7 +32,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-function ModalPostagem () {
+function ModalTema() {
   const classes = useStyles();
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
@@ -47,18 +48,18 @@ function ModalPostagem () {
   const body = (
     <div style={modalStyle} className={classes.paper}>
       <Box display="flex" justifyContent="flex-end" className="cursor">
-        <CloseIcon onClick={handleClose}/>
-      
+        <CloseIcon onClick={handleClose} />
       </Box>
-      
-      <CadastroPost/>
-      
+      <CadastroTema />
     </div>
   );
 
   return (
     <div>
-      <Button variant="outlined" className="btnModal" onClick={handleOpen}>Nova Postagem</Button>
+      <Button
+        variant="outlined"
+        className="btnModalTema"
+        onClick={handleOpen}>Novo tema</Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -70,4 +71,4 @@ function ModalPostagem () {
     </div>
   );
 }
-export default ModalPostagem
+export default ModalTema;

@@ -1,3 +1,4 @@
+
 .caixa{
     background-image: linear-gradient(to left,#13b5ea,#72cdf4,#b8e0f7);
 }
@@ -16,9 +17,10 @@
 }
 
 .botao{
-    border-color: white !important;
-    background-color: #0065a4;
+    border-color: #0065a4!important;
+    background-color: #0065a4 !important;
     color: white !important;
+    
 }
 
 .postagens{
@@ -27,8 +29,8 @@
 
 .imagem1{
     background-image: url(../../assets/img/vetorlogo.png);
-    background-repeat: no-repeat;
-    width: 80vh;
+    background-repeat: 'no-repeat';
+    width: 70vh;
     min-height: 80vh;
     background-size: cover;
     background-position: center;

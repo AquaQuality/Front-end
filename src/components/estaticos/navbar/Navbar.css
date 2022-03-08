@@ -8,12 +8,16 @@
 }
 
 .barra{
-    background-color: blueviolet !important;
+    background-color:  #005581 !important;
 }
 
 .logo{
     width: 200px;
     margin-left: 0px;
+}
 
-    
+.avatar-navbar{
+    margin:0px;
+    margin-left: 600px;
+    background-color: #009ddc !important;
 }
