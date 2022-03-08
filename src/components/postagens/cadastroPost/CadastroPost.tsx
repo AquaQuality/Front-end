@@ -38,12 +38,14 @@ function CadastroPost() {
     const [tema, setTema] = useState<Tema>(
         {
             id: 0,
+            categoriaPostagem:'',
             descricao: ''
         })
     const [postagem, setPostagem] = useState<Postagem>({
         id: 0,
         titulo: '',
         texto: '',
+        midia:'',
         tema: null
     })
 
