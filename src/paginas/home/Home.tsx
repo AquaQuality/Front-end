@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useEffect } from 'react';
 import { Typography, Box, Grid, Button } from '@material-ui/core';
 import TabPostagem from '../../components/postagens/tabPostagem/TabPostagem';
@@ -9,16 +8,6 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
-=======
-import React, { useEffect } from "react";
-import {Typography, Box, Grid, Button} from '@material-ui/core';
-import './Home.css';
-import { useHistory } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { TokenState } from "../../store/tokens/tokensReducer";
-import { toast } from 'react-toastify';
-import TabPostagem from "../../components/postagens/tabPostagem/TabPostagem";
->>>>>>> b0c32eb198c0765c4a8fbd1f7cb426bdb695067e
 
 function Home() {
 
