@@ -15,6 +15,7 @@ import { Provider } from 'react-redux';
 import store from './store/store';
 import { ToastContainer } from 'react-toastify';
 import ListaPostagem from './components/postagens/listaPostagem/ListaPostagem';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <div>
+          <div style={{ minHeight: '100vh' }}>
 
             <Route exact path='/'>
               <Login />
