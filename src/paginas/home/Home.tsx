@@ -45,7 +45,7 @@ function Home() {
                     </Box>
                 </Grid>
 
-                <Grid item xs={6}>
+                <Grid item xs={6} >
                     <img src="https://trello.com/1/cards/62161b323212cb2dd94f507e/attachments/62164d41d33baa46c2e8acc2/previews/62164d42d33baa46c2e8acfa/download/vetorlogo.png" alt="" width="500px" height="500px" />
                 </Grid>
 
