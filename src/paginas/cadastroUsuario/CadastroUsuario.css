@@ -19,8 +19,7 @@
 }
 
 .botao-cadastrar{
-    margin-right: 20px !important;
-    background-color: #005581 !important;
+    background-color: #005581 !important;    
 }
 
 .fundo{
@@ -28,3 +27,4 @@
     height: 100vh;
     width: 100vh;
 }
+

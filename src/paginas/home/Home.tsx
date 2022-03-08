@@ -50,10 +50,7 @@ function Home() {
                         <Box marginRight={1} className='botao' >
                             <ModalPostagem />
                         </Box>
-                        <Link to="/postagens" className="text-decorator-none">
-                            <Button variant="outlined" className='botao'>Ver Postagens</Button>
-                        </Link>
-                    </Box>
+                                           </Box>
                     </Box>
                 </Grid>
                 <Grid item xs={6} className='imagem1' ></Grid>
