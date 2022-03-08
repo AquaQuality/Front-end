@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
-import {Typography, Box, Grid, Button} from '@material-ui/core';
-import './Home.css';
-import { Link, useHistory } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { TokenState } from "../../store/tokens/tokensReducer";
-import { toast } from 'react-toastify';
+import React, { useEffect } from 'react';
+import { Typography, Box, Grid, Button } from '@material-ui/core';
 import TabPostagem from '../../components/postagens/tabPostagem/TabPostagem';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
+import './Home.css';
+import { useHistory } from 'react-router';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../store/tokens/tokensReducer';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 function Home() {
 
@@ -47,13 +47,8 @@ function Home() {
                         <Box marginRight={1}>
                             <ModalPostagem />
                         </Box>
-<<<<<<< HEAD
                         <Link to='/postagens' className='text-decorator-none'>
                             <Button variant="outlined" className='botao'> Postagens </Button>
-=======
-                        <Link to = '/postagens' className='text-decorator-none'>
-                        <Button variant='outlined' className='botao'> Ver Postagens </Button>
->>>>>>> 070663c3d6e4718718edd2c3caaefd3978cd673d
                         </Link>
                     </Box>
 
