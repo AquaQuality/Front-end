@@ -72,6 +72,13 @@ function ListaPostagem() {
                 </Typography>
                 <br />
                 <Typography variant="body1" component="h5">
+                  Midia
+                </Typography>
+                <Typography variant="body2" component="p">
+                  {post.midia}
+                </Typography>
+                <br />
+                <Typography variant="body1" component="h5">
                   Usuario
                 </Typography>
                 <Typography variant="body2" component="p">
