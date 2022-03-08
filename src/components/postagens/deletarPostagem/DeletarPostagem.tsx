@@ -67,7 +67,7 @@ function DeletarPostagem() {
           }
         
           function nao() {
-            history.push('/posts')
+            history.push('/postagens')
           }
   return (
     <>
