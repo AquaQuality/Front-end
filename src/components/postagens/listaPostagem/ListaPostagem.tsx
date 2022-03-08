@@ -62,7 +62,10 @@ function ListaPostagem() {
             </Typography>
             <Typography variant="body2" component="p">
               {post.texto}
-            </Typography>
+                </Typography>
+                <Typography variant="body2" component="p">
+                  {post.usuario}
+                </Typography>
             <Typography variant="body2" component="p">
               {post.tema}
             </Typography>

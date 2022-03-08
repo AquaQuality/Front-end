@@ -11,10 +11,15 @@ import ListaTema from './components/temas/listaTema/ListaTema';
 import CadastroTema from './components/temas/cadastroTema/CadastroTema';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
 import Navbar from './components/estaticos/navbar/Navbar';
+import { Provider } from 'react-redux';
+import store from './store/store';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   
   return (
+    <Provider store={store}>
+      <ToastContainer />
     <Router>
       <Navbar />
       <Switch>
@@ -53,7 +58,8 @@ function App() {
         </div>
       </Switch>
       <Footer />
-    </Router>
+      </Router>
+    </Provider>
   );
 }
 
