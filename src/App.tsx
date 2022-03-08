@@ -16,6 +16,8 @@ import store from './store/store';
 import { ToastContainer } from 'react-toastify';
 import ListaPostagem from './components/postagens/listaPostagem/ListaPostagem';
 import 'react-toastify/dist/ReactToastify.css';
+import CadastroPost from './components/postagens/cadastroPost/CadastroPost';
+import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
 
 function App() {
 
@@ -52,6 +54,18 @@ function App() {
             <Route path='/postagens'>
               <ListaPostagem />
             </Route>
+
+            <Route exact path='/formularioPostagem'>
+            <CadastroPost />
+          </Route>
+
+          <Route exact path='/formularioPostagem/:id'>
+            <CadastroPost />
+          </Route>
+
+          <Route path='/deletarPostagem/:id'>
+            <DeletarPostagem />
+          </Route>
 
             <Route exact path='/formularioTema'>
               <CadastroTema />
