@@ -18,6 +18,7 @@ import ListaPostagem from './components/postagens/listaPostagem/ListaPostagem';
 import 'react-toastify/dist/ReactToastify.css';
 import CadastroPost from './components/postagens/cadastroPost/CadastroPost';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
+import Perfil from './paginas/perfil/Perfil';
 
 function App() {
 
@@ -76,6 +77,12 @@ function App() {
             <Route path='/deletarTema/:id'>
               <DeletarTema />
             </Route>
+
+            <Route path='/perfil'>
+              <Perfil />
+            </Route>
+
+
           </div>
         </Switch>
         <Footer />
