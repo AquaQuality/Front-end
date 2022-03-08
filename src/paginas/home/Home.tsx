@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import {Typography, Box, Grid, Button} from '@material-ui/core';
 import './Home.css';
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { TokenState } from "../../store/tokens/tokensReducer";
 import { toast } from 'react-toastify';
@@ -41,7 +41,9 @@ function Home() {
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         </Box>
-                        <Button variant="outlined" className='botao'> Postagens </Button>
+                        <Link to='/postagens' className='text-decorator-none'>
+                            <Button variant="outlined" className='botao'> Postagens </Button>
+                        </Link>
                     </Box>
                 </Grid>
 
