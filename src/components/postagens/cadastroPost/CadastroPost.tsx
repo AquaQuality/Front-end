@@ -108,6 +108,7 @@ function CadastroPost() {
                 theme: "colored",
                 progress: undefined,
             })
+
         } else {
             post(`/postagens`, postagem, setPostagem, {
                 headers: {
@@ -130,7 +131,7 @@ function CadastroPost() {
     }
 
     function back() {
-        history.push('/posts')
+        history.push('/postagens')
     }
 
  

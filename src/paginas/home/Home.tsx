@@ -42,8 +42,7 @@ function Home() {
                         <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center" className='titulo1'> Expresse aqui os seus pensamentos e opiniões!" </Typography>
                     </Box>
 
-                    
-
+                
                    <Box display='flex' justifyContent='center'>
                         <Box marginRight={1}>
                             <ModalPostagem />
