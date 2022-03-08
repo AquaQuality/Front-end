@@ -11,6 +11,7 @@ import ListaTema from './components/temas/listaTema/ListaTema';
 import CadastroTema from './components/temas/cadastroTema/CadastroTema';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
 import Navbar from './components/estaticos/navbar/Navbar';
+import ListaPostagem from './components/postagens/listaPostagem/ListaPostagem';
 
 function App() {
   
@@ -41,6 +42,11 @@ function App() {
           <Route path='/temas'>
             <ListaTema />
           </Route>
+
+          <Route path='/postagens'>
+              <ListaPostagem />
+            </Route>
+
           <Route exact path='/formularioTema'>
             <CadastroTema />
           </Route>

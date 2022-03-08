@@ -4,7 +4,7 @@ import './CadastroPost.css';
 import { useHistory, useParams } from 'react-router-dom';
 import Tema from '../../../models/Tema';
 import Postagem from '../../../models/Postagem';
-import { busca, buscaId, post, put } from '../../../services/Service';
+import { busca, buscaId, post, put } from '../../../services/Services';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import {toast} from 'react-toastify';
@@ -38,12 +38,14 @@ function CadastroPost() {
     const [tema, setTema] = useState<Tema>(
         {
             id: 0,
+            categoriaPostagem:'',
             descricao: ''
         })
     const [postagem, setPostagem] = useState<Postagem>({
         id: 0,
         titulo: '',
         texto: '',
+        midia:'',
         tema: null
     })
 
