@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Typography, Box, Grid, Button } from '@material-ui/core';
+import { Typography, Box, Grid, Button, BottomNavigation, BottomNavigationAction } from '@material-ui/core';
 import TabPostagem from '../../components/postagens/tabPostagem/TabPostagem';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 import './Home.css';
@@ -9,6 +9,10 @@ import { TokenState } from '../../store/tokens/tokensReducer';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import ModalTema from '../../components/temas/modalTema/ModalTema';
+import Perfil from '../perfil/Perfil';
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import HomeIcon from '@mui/icons-material/Home';
+import ListaPostagem from '../../components/postagens/listaPostagem/ListaPostagem';
 
 function Home() {
 
@@ -35,31 +39,31 @@ function Home() {
     }, [token])
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
-                <Grid alignItems="center" item xs={6}>
-                    <Box paddingX={20} className=''>
+            <Grid container spacing={2} direction="row" justifyContent="center" className='caixa'>
+                
+                <Grid alignItems="center" direction="column" item xs={4} className='paperpost'>
+                    <Box paddingX={20} className="bemvindo">
                         <Typography variant="h4" gutterBottom color="textPrimary" component="h4" align="center" className='titulo'>Seja bem vindo(a)!</Typography>
-                        <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center" className='titulo'>expresse aqui os seus pensamentos e opiniões!</Typography>
+                        <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center" className='titulo'>Comece uma nova publicação:</Typography>
                     </Box>
-                    <Box display="flex" justifyContent="center">
-                        <Box marginRight={1} className='botao' >
-                            <ModalTema />
-                        </Box>
 
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1} className='botao' >
                             <ModalPostagem />
                         </Box>
-                                           </Box>
-                    </Box>
+                        </Box>
+                    
+                        <Perfil />
+
                 </Grid>
-                <Grid item xs={6} className='imagem1' ></Grid>
-                <Grid xs={12} className='postagens'>
-                    <TabPostagem />
-                </Grid>
+
+                <Grid xs={7} className='postagens'>
+                    <ListaPostagem />
+                </Grid >
+
             </Grid>
         </>
     );
 }
 
-export default Home;
+export default Home; 
