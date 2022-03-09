@@ -1,13 +1,13 @@
 import Postagem from "./Postagem";
 
-interface User {
-    id: number;
-    nome: string;
-    usuario: string;
-    senha: string;
-    foto: string;
+// Altere a Model conforme a Model do Back
+interface User{
+    id: number
+    nome: string
+    usuario: string
+    senha: string
+    foto: string    // Add o campo Foto
     postagem?: Postagem | null
-
 }
 
-export default User;
+export default User

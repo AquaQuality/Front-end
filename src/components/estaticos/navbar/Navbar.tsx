@@ -7,14 +7,20 @@ import Typography from '@mui/material/Typography';
 import './Navbar.css';
 import { Link, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
-import { addToken } from '../../../store/tokens/actions';
+
+//import { TokenState } from '../../../store/tokens/tokensReducer';
+import { UserState } from '../../../store/user/userReducer';
+
+//import { addToken } from '../../../store/tokens/actions';
+import { addToken, addId } from '../../../store/user/action';
+
 import { toast } from 'react-toastify';
 import { Avatar } from '@material-ui/core';
 
 function Navbar() {
 
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    //const token = useSelector<TokenState, TokenState["tokens"]>(
+        const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     );
     let history = useHistory();

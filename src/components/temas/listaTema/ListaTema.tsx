@@ -5,12 +5,17 @@ import './ListaTema.css';
 import Tema from '../../../models/Tema';
 import { busca } from '../../../services/Services';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+
+//import { TokenState } from '../../../store/tokens/tokensReducer';
+import { UserState } from '../../../store/user/userReducer';
+
 import { toast } from 'react-toastify';
 
 function ListaTema() {
     const [temas, setTemas] = useState<Tema[]>([])
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+
+    //const token = useSelector<TokenState, TokenState["tokens"]>(
+      const token = useSelector<UserState, UserState["tokens"]>(
       (state) => state.tokens
     );
     let history = useHistory();

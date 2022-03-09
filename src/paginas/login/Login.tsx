@@ -8,39 +8,60 @@ import UserLogin from "../../models/UserLogin";
 import './Login.css';
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
-import { addToken } from "../../store/tokens/actions";
+//import { addToken } from "../../store/tokens/actions";
+import { addToken, addId } from "../../store/user/action";
 
 function Login() {
   let history = useHistory();
   const dispatch = useDispatch();
-  const [token, setToken] = useState('');
-  const [userLogin, setUserLogin] = useState<UserLogin>(
-    {
-      id: 0,
-      usuario: '',
-      senha: '',
-      token: ''
-    })
+  //const [token, setToken] = useState('');
 
-  function updatedModel(e: ChangeEvent<HTMLInputElement>) {
-    setUserLogin({
+  const [userLogin, setUserLogin] = useState<UserLogin>({
+    id: 0,
+    nome: "",
+    usuario: "",
+    senha: "",
+    token: "",
+    foto: ""
+})
+
+// Crie mais um State para pegar os dados retornados a API
+const [respUserLogin, setRespUserLogin] = useState<UserLogin>({
+    id: 0,
+    nome:'',
+    usuario: '',
+    senha: '',
+    token: '',
+    foto: ""
+})
+
+function updatedModel(e: ChangeEvent<HTMLInputElement>) {
+  setUserLogin({
       ...userLogin,
-      [e.target.name]: e.target.value
-    })
-  }
+      [e.target.name]: e.target.value           
+  })
+}
   
-  useEffect(() => {
-    if (token != '') {
-      dispatch(addToken(token))
+useEffect(() => {
+  if(respUserLogin.token !== ""){
+
+      // Verifica os dados pelo console (Opcional)
+      console.log("Token: " + respUserLogin.token)
+      console.log("ID: " + respUserLogin.id)
+
+      // Guarda as informações dentro do Redux (Store)
+      dispatch(addToken(respUserLogin.token)) 
+      dispatch(addId(respUserLogin.id.toString()))    // Faz uma conversão de Number para String
       history.push('/home')
-    }
-  }, [token])
+  }
+}, [respUserLogin.token])
 
   async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
     e.preventDefault();
     try {
-      await login(`/usuarios/logar`, userLogin, setToken)
-      toast.success('Usuário logado com sucesso!', {
+
+      await login(`/usuarios/logar`, userLogin, setRespUserLogin)
+        toast.success('Usuário logado com sucesso!', {
         position: "top-right",
         autoClose: 2000,
         hideProgressBar: false,
@@ -50,6 +71,7 @@ function Login() {
         theme: "colored",
         progress: undefined,
       });
+
     } catch (error) {
       toast.error('Dados do usuário inconsistentes. Erro ao logar!', {
         position: "top-right",
