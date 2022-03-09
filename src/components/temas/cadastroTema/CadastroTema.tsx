@@ -5,24 +5,18 @@ import './CadastroTema.css';
 import Tema from '../../../models/Tema';
 import { buscaId, post, put } from '../../../services/Services';
 import { useSelector } from 'react-redux';
-
-//import { TokenState } from '../../../store/tokens/tokensReducer';
 import { UserState } from '../../../store/user/userReducer';
-
 import { toast } from 'react-toastify';
-
 
 function CadastroTema() {
     let history = useHistory();
     const { id } = useParams<{ id: string }>();
-
-    //const token = useSelector<TokenState, TokenState["tokens"]>(
-        const token = useSelector<UserState, UserState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     );
     const [tema, setTema] = useState<Tema>({
         id: 0,
-        categoriaPostagem : '',
+        categoriaPostagem: '',
         descricao: ''
     })
 
@@ -113,22 +107,22 @@ function CadastroTema() {
     }
 
     return (
-        
+
         <Container maxWidth="sm" className="topo" >
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" className='text' >Cadastre um novo tema</Typography>
-                <TextField value={tema.categoriaPostagem} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} 
-                id="categoriaPostagem" label="Categoria" variant="outlined" name="categoriaPostagem" margin="normal" fullWidth />
-                
+                <TextField value={tema.categoriaPostagem} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)}
+                    id="categoriaPostagem" label="Categoria" variant="outlined" name="categoriaPostagem" margin="normal" fullWidth />
+
                 <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)}
-                id="descricao" label="Descrição" variant="outlined" name="descricao" margin="normal" fullWidth />
+                    id="descricao" label="Descrição" variant="outlined" name="descricao" margin="normal" fullWidth />
 
                 <Button type="submit" variant="contained" color="primary">
                     Finalizar
                 </Button>
             </form>
         </Container>
-        
+
     )
 }
 
