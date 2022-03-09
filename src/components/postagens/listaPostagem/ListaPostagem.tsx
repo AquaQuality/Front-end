@@ -8,6 +8,10 @@ import { useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/user/userReducer';
 import { toast } from 'react-toastify';
+import DeleteIcon from '@mui/icons-material/Delete';
+import UpdateIcon from '@mui/icons-material/Update';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import IconButton from '@mui/material/IconButton';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
@@ -87,19 +91,24 @@ function ListaPostagem() {
                 </Typography>
               </CardContent>
               <CardActions>
+              <Box>
+                <IconButton aria-label="add to favorites">
+                <FavoriteBorderIcon fontSize='large' className='favorite'/>
+                </IconButton>
+                </Box>
                 <Box display="flex" justifyContent="center" mb={1.5}>
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
                       <Button variant="contained" className="botao-postagens" size='small' color="primary" >
-                        atualizar
+                        <UpdateIcon fontSize='large' />
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
                       <Button variant="contained" size='small' color="secondary" className="botao-postagens">
-                        deletar
+                        <DeleteIcon fontSize='large'/>
                       </Button>
                     </Box>
                   </Link>

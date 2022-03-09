@@ -21,9 +21,10 @@
 }
 
 .card-imagem{
-    max-height: 500px;
+    max-height: 400px;
     border-radius: 32px;
     object-fit: cover;
+    padding-right: 50px;
 }
 
 .card-container-texto{

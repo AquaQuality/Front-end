@@ -11,6 +11,10 @@ function Sobrenos() {
 
     return (
         <>
+            
+                <Box padding={4}>
+                <Typography variant="h4" gutterBottom color='textPrimary' component="h4" align="center" className="titulo" > Nossa equipe </Typography>
+                </Box>
 
             <Box padding={4} className='fundo1'>
                 <Typography variant="h4" gutterBottom color='textPrimary' component="h4" align="center" className="titulo" > Nossa equipe </Typography>

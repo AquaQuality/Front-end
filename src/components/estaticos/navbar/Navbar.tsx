@@ -54,11 +54,13 @@ function Navbar() {
                     </Box>
                 </Link>
 
+                <Link to='/home' className='text-decorator-none'>
                 <Box mx={1} className='cursor'>
                     <Box marginRight={1}  >
                         <HomeIcon  fontSize="large" className='icone'/>
                     </Box>
                 </Box>
+                </Link>
 
 
                 <Box mx={1} className='cursor'>
@@ -94,14 +96,6 @@ function Navbar() {
                 <Box marginRight={1} className='botao' >
                     <ModalTema />
                 </Box>
-
-                <Link to='/contato' className='text-decorator-none'>
-                    <Box mx={1} className='cursor'>
-                        <Typography variant="h6" color="inherit">
-                            Contato
-                        </Typography>
-                    </Box>
-                </Link>
 
                 <Link to='/sobrenos' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
