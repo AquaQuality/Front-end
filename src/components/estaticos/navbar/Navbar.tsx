@@ -56,6 +56,11 @@ function Navbar() {
                     </Box>
                 </Link>
 
+                <Box mx={1} className='cursor'>
+                    <Box marginRight={1}  >
+                        <HomeIcon  fontSize="large" className='icone'/>
+                    </Box>
+                </Box>
 
 
                 <Box mx={1} className='cursor'>

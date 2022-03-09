@@ -3,13 +3,15 @@ import { Typography } from '@material-ui/core';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
+import EmailIcon from '@material-ui/icons/Email';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import './Sobrenos.css';
 
 function Sobrenos() {
 
     return (
         <>
-
+            
                         <Box padding={4}>
                     <Typography variant="h4" gutterBottom color='textPrimary' component="h4" align="center" className="titulo" > Nossa equipe </Typography>
                 </Box>
@@ -108,6 +110,12 @@ function Sobrenos() {
                                 adipisicing elit. A ab nesciunt soluta ea alias necessitatibus, quia eum voluptatibus,
                                 libero nobis deserunt ad modi. Voluptatem deserunt doloribus odit repellendus temporibus. Debitis!
                             </p>
+                            <a href="https://github.com/AquaQuality" target="_blank">
+                            <GitHubIcon className='redes'/>
+                             </a>
+                            <a href="acquaquality.pi@gmail.com" target="_blank">
+                            <EmailIcon className='redes' />
+                             </a>
                         </Box>
                     </Grid>
                 </Grid>
