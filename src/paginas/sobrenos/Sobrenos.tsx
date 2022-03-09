@@ -9,9 +9,8 @@ function Sobrenos() {
 
     return (
         <>
-            <Grid className="fundo">
 
-                <Box padding={4}>
+                        <Box padding={4}>
                     <Typography variant="h4" gutterBottom color='textPrimary' component="h4" align="center" className="titulo" > Nossa equipe </Typography>
                 </Box>
 
@@ -27,8 +26,8 @@ function Sobrenos() {
                             </p>
                         </Box>
                     </Grid>
-                    <Grid item xs={6} className='card img-amanda img' >
-                        {/* <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="Amanda Marques" /> */}
+                    <Grid item xs={6} className='card'>
+                        <img className='img' src="https://i.imgur.com/cZ4j2f7.png" alt="Bruno Feliz" />
                     </Grid>
                 </Grid>
 
@@ -58,7 +57,7 @@ function Sobrenos() {
                         </Box>
                     </Grid>
                     <Grid item xs={6} className='card img'>
-                        <img className='img' src="https://p2.trrsf.com/image/fget/cf/1200/1200/filters:quality(85)/images.terra.com/2022/01/15/neymar-comecou-a-sua-carreira-jogando-pelo-santos-ricardo-saibun-santos-fc.jpeg" alt="" />
+                        <img className='img' src="https://i.imgur.com/BOdWp3q.png" alt="" />
                     </Grid>
                 </Grid>
 
@@ -129,7 +128,6 @@ function Sobrenos() {
                     </Grid>
                 </Grid>
 
-            </Grid>
         </>
 
     )
