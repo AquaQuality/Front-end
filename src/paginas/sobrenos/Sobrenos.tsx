@@ -12,8 +12,8 @@ function Sobrenos() {
     return (
         <>
             
-                        <Box padding={4}>
-                    <Typography variant="h4" gutterBottom color='textPrimary' component="h4" align="center" className="titulo" > Nossa equipe </Typography>
+                <Box padding={4}>
+                <Typography variant="h4" gutterBottom color='textPrimary' component="h4" align="center" className="titulo" > Nossa equipe </Typography>
                 </Box>
 
                 <Grid container direction="row" justifyContent="center" alignItems="center" >

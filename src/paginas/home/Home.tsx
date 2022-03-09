@@ -39,7 +39,7 @@ function Home() {
 
                 <Grid alignItems="center" direction="column" item xs={4} className='paperpost'>
                     <Box paddingX={20} className="bemvindo">
-                        <Typography variant="h4" gutterBottom color="textPrimary" component="h4" align="center" className='titulo'>Seja bem vindo(a)!</Typography>
+                        <Typography variant="h4" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Seja bem vindo(a)!</Typography>
                         <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center" className='titulo'>Comece uma nova publicação:</Typography>
                     </Box>
 

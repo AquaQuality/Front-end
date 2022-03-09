@@ -42,9 +42,6 @@ function App() {
             <Route path='/sobrenos'>
               <Sobrenos />
             </Route>
-            <Route path='/contato'>
-              <Contato />
-            </Route>
             <Route path='/cadastrousuario'>
               <CadastroUsuario />
             </Route>
