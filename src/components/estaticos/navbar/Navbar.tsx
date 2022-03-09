@@ -8,15 +8,13 @@ import './Navbar.css';
 import { Link, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { UserState } from '../../../store/user/userReducer';
-import { addToken, addId } from '../../../store/user/action';
+import { addToken} from '../../../store/user/action';
 import HomeIcon from '@mui/icons-material/Home';
 import { toast } from 'react-toastify';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import LogoutIcon from '@mui/icons-material/Logout';
 import ModalPostagem from '../../postagens/modalPostagem/ModalPostagem';
 import ModalTema from '../../temas/modalTema/ModalTema';
-import { IconButton } from '@material-ui/core';
-import DehazeIcon from '@mui/icons-material/Dehaze';
 
 function Navbar() {
 

@@ -24,5 +24,9 @@
         transform: scale(1.3);
 }
 .midia img{
+<<<<<<< HEAD
+    width: 200px;
+=======
     width: 600px;
+>>>>>>> e88faa48d859b902ac839467216472f2a022fd07
 }
