@@ -1,7 +1,5 @@
 import React, { ChangeEvent, useState, useEffect } from "react";
-import { Grid, Box, Typography, TextField, Button, Avatar } from '@material-ui/core';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
 import { Link, useHistory } from 'react-router-dom';
 import { login } from "../../services/Services";
 import UserLogin from "../../models/UserLogin";
@@ -10,7 +8,6 @@ import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { addToken } from "../../store/tokens/actions";
 import LoginIcon from '@mui/icons-material/Login';
-import { url } from "inspector";
 
 function Login() {
   let history = useHistory();
@@ -68,7 +65,6 @@ function Login() {
 
   return (
     <Grid container direction='row' justifyContent='center' alignItems='center' className='root' xs={12}>
-      <CssBaseline />
         <div className='paper'>
             <img src="https://trello.com/1/cards/6225f916e75ffb899608d7b8/attachments/6227abd045822c7f9ef4f192/previews/6227abd145822c7f9ef4f1ba/download/vetorlogobolinha1.png" alt=""/>
 

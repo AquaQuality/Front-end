@@ -14,6 +14,7 @@ import { toast } from 'react-toastify';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import LogoutIcon from '@mui/icons-material/Logout';
 import ModalPostagem from '../../postagens/modalPostagem/ModalPostagem';
+import ModalTema from '../../temas/modalTema/ModalTema';
 
 function Navbar() {
 
@@ -91,6 +92,10 @@ function Navbar() {
                         </Typography>
                     </Box>
                 </Link>
+
+                <Box marginRight={1} className='botao' >
+                            <ModalTema />
+                        </Box>
 
                 <Link to='/contato' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
