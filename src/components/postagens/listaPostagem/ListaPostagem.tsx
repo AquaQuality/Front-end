@@ -59,9 +59,7 @@ function ListaPostagem() {
           <Box m={2} >
             <Card variant="outlined">
               <CardContent>
-                <Typography color="textSecondary" gutterBottom className='text'>
-                  Postagens
-                </Typography>
+                
                 <Typography variant="h5" component="h2">
                   {post.titulo}
                 </Typography>

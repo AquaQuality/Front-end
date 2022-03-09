@@ -12,7 +12,7 @@
 }
 
 .fundo{
-    background-color: #f0f2f5;
+    background-color: #f0f2f5!important;
 }
 
 .text{
@@ -27,4 +27,20 @@
 
 p{
     text-align: justify;
+}
+
+.fundo1{
+    background-color: #f0f2f5!important;
+    color: black;
+}
+
+.card1{
+    background-color: #f0f2f5;
+    border-radius: 20%;
+}
+
+.redes1{
+    color: black;
+    padding: 5px;
+    font-size: 35px !important;
 }
