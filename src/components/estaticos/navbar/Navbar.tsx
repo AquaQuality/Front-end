@@ -15,6 +15,8 @@ import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import LogoutIcon from '@mui/icons-material/Logout';
 import ModalPostagem from '../../postagens/modalPostagem/ModalPostagem';
 import ModalTema from '../../temas/modalTema/ModalTema';
+import { IconButton } from '@material-ui/core';
+import DehazeIcon from '@mui/icons-material/Dehaze';
 
 function Navbar() {
 
@@ -44,7 +46,9 @@ function Navbar() {
 
     if (token !== "") {
         navbarComponent = <AppBar position="static">
+
             <Toolbar variant="dense" className='barra'>
+           
                 <Link to='/home' className='text-decorator-none'>
                     <Box className='cursor'>
                         <Typography variant="h5" color="inherit">
@@ -53,21 +57,13 @@ function Navbar() {
                     </Box>
                 </Link>
 
-                <Link to='/home' className='text-decorator-none'>
-                    <Box display="flex" justifyContent="start">
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" color="inherit">
-                            <HomeIcon fontSize="large" className='icone'/>
-                            </Typography>
-                        </Box>
-                    </Box>
-                </Link>
+
 
                 <Box mx={1} className='cursor'>
-                <Box marginRight={1} className='botao' >
-                            <ModalPostagem />
-                        </Box>
+                    <Box marginRight={1} className='botao' >
+                        <ModalPostagem />
                     </Box>
+                </Box>
 
                 {/*<Link to='/formularioTema' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
@@ -94,8 +90,8 @@ function Navbar() {
                 </Link>
 
                 <Box marginRight={1} className='botao' >
-                            <ModalTema />
-                        </Box>
+                    <ModalTema />
+                </Box>
 
                 <Link to='/contato' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
@@ -116,14 +112,14 @@ function Navbar() {
                 <Link to='/perfil' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
                         <Typography variant='h6' color='inherit'>
-                            <PersonOutlineIcon fontSize="large" className='icone'/>
+                            <PersonOutlineIcon fontSize="large" className='icone' />
                         </Typography>
                     </Box>
                 </Link>
 
                 <Box mx={1} className='cursor'>
                     <Typography variant="h6" color="inherit" onClick={goLogout}>
-                    <LogoutIcon fontSize="large" className='icone'/>
+                        <LogoutIcon fontSize="large" className='icone' />
                     </Typography>
                 </Box>
             </Toolbar >

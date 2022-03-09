@@ -13,9 +13,7 @@ function Sobrenos() {
     return (
         <>
 
-            <Grid className="fundo">
-
-                <Box padding={4}>
+                        <Box padding={4}>
                     <Typography variant="h4" gutterBottom color='textPrimary' component="h4" align="center" className="titulo" > Nossa equipe </Typography>
                 </Box>
 
@@ -31,8 +29,8 @@ function Sobrenos() {
                             </p>
                         </Box>
                     </Grid>
-                    <Grid item xs={6} className='card img-amanda img' >
-                       {/* <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="Amanda Marques" /> */}
+                    <Grid item xs={6} className='card'>
+                        <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="Bruno Feliz" />
                     </Grid>
                 </Grid>
 
@@ -133,7 +131,6 @@ function Sobrenos() {
                     </Grid>
                 </Grid>
 
-            </Grid>
         </>
 
     )
