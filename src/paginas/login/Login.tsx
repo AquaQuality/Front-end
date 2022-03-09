@@ -6,13 +6,13 @@ import UserLogin from "../../models/UserLogin";
 import './Login.css';
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
-<<<<<<< HEAD
+
 //import { addToken } from "../../store/tokens/actions";
 import { addToken, addId } from "../../store/user/action";
-=======
-import { addToken } from "../../store/tokens/actions";
+
+
 import LoginIcon from '@mui/icons-material/Login';
->>>>>>> 27f00dc674f970a0f279c0c1e49cda0fd30f6103
+
 
 function Login() {
   let history = useHistory();
