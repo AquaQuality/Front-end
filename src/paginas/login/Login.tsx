@@ -9,6 +9,8 @@ import './Login.css';
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { addToken } from "../../store/tokens/actions";
+import LoginIcon from '@mui/icons-material/Login';
+import { url } from "inspector";
 
 function Login() {
   let history = useHistory();
@@ -65,16 +67,10 @@ function Login() {
   }
 
   return (
-    <Grid container direction='row' justifyContent='center' alignItems='center' className='root'>
+    <Grid container direction='row' justifyContent='center' alignItems='center' className='root' xs={12}>
       <CssBaseline />
-      <Grid alignItems='center' xs={6} className='imagem'> </Grid>
-
-      <Grid item xs={6} >
-
         <div className='paper'>
-          <Avatar className='avatar'>
-            <LockOutlinedIcon />
-          </Avatar>
+            <img src="https://trello.com/1/cards/6225f916e75ffb899608d7b8/attachments/6227abd045822c7f9ef4f192/previews/6227abd145822c7f9ef4f1ba/download/vetorlogobolinha1.png" alt=""/>
 
           <Typography component="h1" variant="h3" className="text"> Entrar </Typography>
 
@@ -87,7 +83,7 @@ function Login() {
               id="senha" label="Senha" name="senha" type="password" variant="outlined" margin="normal" autoComplete="current-password" required fullWidth />
 
 
-            <Button type="submit" fullWidth variant="contained" color="primary" className='submit'>Logar</Button>
+            <Button type="submit" fullWidth variant="contained" color="primary" className='submit'><LoginIcon fontSize="large"/></Button>
 
             <Box mt={5}>
             </Box>
@@ -103,7 +99,6 @@ function Login() {
           </Box>
         </div>
       </Grid>
-    </Grid>
   );
 }
 
