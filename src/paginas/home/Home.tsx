@@ -6,12 +6,8 @@ import './Home.css';
 import { useHistory } from 'react-router';
 import { useSelector } from 'react-redux';
 import { UserState } from '../../store/user/userReducer';
-import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import ModalTema from '../../components/temas/modalTema/ModalTema';
 import Perfil from '../perfil/Perfil';
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import HomeIcon from '@mui/icons-material/Home';
 import ListaPostagem from '../../components/postagens/listaPostagem/ListaPostagem';
 
 function Home() {
@@ -52,8 +48,9 @@ function Home() {
                             <ModalPostagem />
                         </Box>
                     </Box>
-
+                    <Box className='perfil'>
                     <Perfil />
+                    </Box>
 
                 </Grid>
 

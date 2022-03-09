@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Postagem from '../../../models/Postagem';
 import { busca } from '../../../services/Services'
-import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
+import { Box, Card, CardActions, CardContent, Button, Typography, CardMedia } from '@material-ui/core';
 import './ListaPostagem.css';
 import { useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -75,8 +75,10 @@ function ListaPostagem() {
                 <Typography variant="body1" component="h5" className='text'>
                   Midia
                 </Typography>
-                <Typography variant="body2" component="p">
-                  {post.midia}
+                <Typography variant="body2" className='midia'>
+                {/* <a href={post.midia} target="_blank" rel="noreferrer noopener">
+                {post.midia}</a>  */}
+                <img src={post.midia} alt="" /> 
                 </Typography>
                 <br />
                 <Typography variant="body1" component="h5" className='text'>

@@ -12,7 +12,7 @@
 }
 
 .fundo{
-    background-image: linear-gradient(to left,#13b5ea,#72cdf4,#b8e0f7);
+    background-color: #f0f2f5;
 }
 
 .text{
@@ -22,17 +22,9 @@
 .titulo{
     font-weight: bold !important;
     color: black !important;
+    background-color: #f0f2f5
 }
 
 p{
     text-align: justify;
-}
-
-.img-amanda{
-    background-image: url('../../assets/img/Amanda.png');
-    
-}
-
-.img-cibele{
-    background-image: url('../../assets/img/cibele.png');
 }

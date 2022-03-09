@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Box } from '@material-ui/core';
+import { Box, Grid } from '@material-ui/core';
 import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { UserState } from '../../store/user/userReducer';
@@ -49,7 +49,7 @@ function Perfil() {
     }, [id])
 
     return (
-        <Box className='card-principal'>
+        <Grid container className='card-principal'>
             <Box className='card-container-imagem'>
                 <img className='card-imagem'
                     src={user.foto}
@@ -72,7 +72,7 @@ function Perfil() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur tempore enim hic ad, optio ratione repellendus et. Nemo facilis laborum eum facere ipsam ab ad iusto eligendi deleniti qui?
                 </p>
             </Box>
-        </Box>
+        </Grid>
     )
 }
 
