@@ -4,11 +4,11 @@ import './Footer.css';
 import EmailIcon from '@material-ui/icons/Email';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+import { UserState } from '../../../store/user/userReducer';
 
 function Footer() {
 
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+        const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
       );
 

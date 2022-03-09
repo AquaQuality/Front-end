@@ -1,9 +1,9 @@
 .card-principal{
     display: flex;
-    border-radius: 32px 0;
+    border-radius: 30px;
     padding: 20px;
     margin: 20px;
-    background-color: #3f51b5;
+    background-color: #009edcd7;
 }
 
 .card-container-imagem{

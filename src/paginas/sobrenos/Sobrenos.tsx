@@ -5,15 +5,18 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import './Sobrenos.css';
 
-
-
-
 function Sobrenos() {
 
     return (
         <>
+<<<<<<< HEAD
 
                         <Box padding={4}>
+=======
+            <Grid className="fundo">
+
+                <Box padding={4}>
+>>>>>>> c36de50d63e3d7158976f457b929830dc5869b8d
                     <Typography variant="h4" gutterBottom color='textPrimary' component="h4" align="center" className="titulo" > Nossa equipe </Typography>
                 </Box>
 
@@ -23,14 +26,19 @@ function Sobrenos() {
                         <Box paddingX={10} >
                             <h1>Amanda Marques</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis 
-                                reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis
+                                reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem
                                 inventore dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
                             </p>
                         </Box>
                     </Grid>
+<<<<<<< HEAD
                     <Grid item xs={6} className='card'>
                         <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="Bruno Feliz" />
+=======
+                    <Grid item xs={6} className='card img-amanda img' >
+                        {/* <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="Amanda Marques" /> */}
+>>>>>>> c36de50d63e3d7158976f457b929830dc5869b8d
                     </Grid>
                 </Grid>
 
@@ -42,8 +50,8 @@ function Sobrenos() {
                         <Box paddingX={10}>
                             <h1>Bruno Felix</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio 
-                                corporis reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                corporis reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem
                                 dolorem inventore dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
                             </p>
                         </Box>
@@ -72,8 +80,8 @@ function Sobrenos() {
                         <Box paddingX={10}>
                             <h1>Iago Vieira</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis 
-                                reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem inventore 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis
+                                reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem inventore
                                 dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
                             </p>
                         </Box>
@@ -86,8 +94,8 @@ function Sobrenos() {
                         <Box paddingX={10}>
                             <h1>Lucas Oi</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis 
-                                reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem inventore 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis
+                                reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem inventore
                                 dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
                             </p>
                         </Box>
@@ -105,10 +113,10 @@ function Sobrenos() {
                         <Box paddingX={10}>
                             <h1>Vitoria Oliveira</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente non nihil 
-                                ipsam facilis assumenda eligendi saepe blanditiis a quis minus laboriosam odit soluta 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente non nihil
+                                ipsam facilis assumenda eligendi saepe blanditiis a quis minus laboriosam odit soluta
                                 dolore adipisci nam, cupiditate delectus deserunt. Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. A ab nesciunt soluta ea alias necessitatibus, quia eum voluptatibus, 
+                                adipisicing elit. A ab nesciunt soluta ea alias necessitatibus, quia eum voluptatibus,
                                 libero nobis deserunt ad modi. Voluptatem deserunt doloribus odit repellendus temporibus. Debitis!
                             </p>
                         </Box>

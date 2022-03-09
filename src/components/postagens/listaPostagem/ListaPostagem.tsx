@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Postagem from '../../../models/Postagem';
 import { busca } from '../../../services/Services'
 import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
 import './ListaPostagem.css';
-import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+import { UserState } from '../../../store/user/userReducer';
 import { toast } from 'react-toastify';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
   let history = useHistory();
-  const token = useSelector<TokenState, TokenState["tokens"]>(
+  const token = useSelector<UserState, UserState["tokens"]>(
     (state) => state.tokens
   );
 
@@ -51,7 +51,7 @@ function ListaPostagem() {
     <>
       {
         posts.map(post => (
-          
+
           <Box m={2} >
             <Card variant="outlined">
               <CardContent>
@@ -65,8 +65,8 @@ function ListaPostagem() {
                   {post.texto}
                 </Typography>
                 <br></br>
-                <Typography variant="body1" component="h5"className='text' >
-                       Tema
+                <Typography variant="body1" component="h5" className='text' >
+                  Tema
                 </Typography>
                 <Typography variant="body2" component="p">
                   {post.tema?.categoriaPostagem}

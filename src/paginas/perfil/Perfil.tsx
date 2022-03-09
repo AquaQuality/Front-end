@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import { Box } from '@material-ui/core'
-import { useSelector } from 'react-redux'
-import { useHistory } from 'react-router-dom'
-import { UserState } from '../../store/user/userReducer'
-
-import User from '../../models/User'
-import { buscaId } from '../../services/Services'
-
-import './Perfil.css'
+import React, { useEffect, useState } from 'react';
+import { Box } from '@material-ui/core';
+import { useSelector } from 'react-redux';
+import { useHistory } from 'react-router-dom';
+import { UserState } from '../../store/user/userReducer';
+import User from '../../models/User';
+import { buscaId } from '../../services/Services';
+import './Perfil.css';
 
 function Perfil() {
 
@@ -22,7 +20,7 @@ function Perfil() {
     )
 
     const [user, setUser] = useState<User>({
-        id: +id,    
+        id: +id,     // Faz uma conversão de String para Number
         nome: '',
         usuario: '',
         senha: '',
@@ -54,13 +52,13 @@ function Perfil() {
         <Box className='card-principal'>
             <Box className='card-container-imagem'>
                 <img className='card-imagem'
-                    src={ user.foto }
-                    alt={ user.nome } />
+                    src={user.foto}
+                    alt={user.nome} />
             </Box>
 
             <Box className='card-container-info'>
                 <Box>
-                    <h1>{ user.nome }</h1>
+                    <h1>{user.nome}</h1>
                     <hr />
                 </Box>
 

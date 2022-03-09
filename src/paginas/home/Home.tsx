@@ -5,7 +5,7 @@ import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostage
 import './Home.css';
 import { useHistory } from 'react-router';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../store/tokens/tokensReducer';
+import { UserState } from '../../store/user/userReducer';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import ModalTema from '../../components/temas/modalTema/ModalTema';
@@ -17,7 +17,7 @@ import ListaPostagem from '../../components/postagens/listaPostagem/ListaPostage
 function Home() {
 
     let history = useHistory();
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     );
 
@@ -40,7 +40,7 @@ function Home() {
     return (
         <>
             <Grid container spacing={2} direction="row" justifyContent="center" className='caixa'>
-                
+
                 <Grid alignItems="center" direction="column" item xs={4} className='paperpost'>
                     <Box paddingX={20} className="bemvindo">
                         <Typography variant="h4" gutterBottom color="textPrimary" component="h4" align="center" className='titulo'>Seja bem vindo(a)!</Typography>
@@ -51,9 +51,9 @@ function Home() {
                         <Box marginRight={1} className='botao' >
                             <ModalPostagem />
                         </Box>
-                        </Box>
-                    
-                        <Perfil />
+                    </Box>
+
+                    <Perfil />
 
                 </Grid>
 

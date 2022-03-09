@@ -6,15 +6,15 @@ import Tema from '../../../models/Tema';
 import Postagem from '../../../models/Postagem';
 import { busca, buscaId, post, put } from '../../../services/Services';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
-import {toast} from 'react-toastify';
+import { UserState } from '../../../store/user/userReducer';
+import { toast } from 'react-toastify';
 
 function CadastroPost() {
 
     let history = useHistory();
     const { id } = useParams<{ id: string }>();
     const [temas, setTemas] = useState<Tema[]>([])
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     );
 
@@ -38,18 +38,18 @@ function CadastroPost() {
     const [tema, setTema] = useState<Tema>(
         {
             id: 0,
-            categoriaPostagem:'',
+            categoriaPostagem: '',
             descricao: ''
         })
     const [postagem, setPostagem] = useState<Postagem>({
         id: 0,
         titulo: '',
         texto: '',
-        midia:'',
+        midia: '',
         tema: null
     })
 
-    useEffect(() => { 
+    useEffect(() => {
         setPostagem({
             ...postagem,
             tema: tema
@@ -134,7 +134,6 @@ function CadastroPost() {
         history.push('/postagens')
     }
 
- 
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
@@ -153,7 +152,7 @@ function CadastroPost() {
                                 'Authorization': token
                             }
                         })}>
-                             {
+                        {
                             temas.map(tema => (
                                 <MenuItem value={tema.id}>{tema.descricao}</MenuItem>
                             ))

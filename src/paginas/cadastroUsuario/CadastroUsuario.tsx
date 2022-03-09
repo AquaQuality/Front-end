@@ -90,6 +90,9 @@ function CadastroUsuario() {
                         <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id='nome' label='Nome' variant='outlined' name='nome' margin='normal' fullWidth required />
 
+                        <TextField value={user.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                            id='foto' label='Foto' variant='outlined' name='foto' margin='normal' fullWidth required />
+
                         <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id='usuario' label='Usuario' variant='outlined' name='usuario' margin='normal' fullWidth required />
 

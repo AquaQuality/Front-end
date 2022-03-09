@@ -7,8 +7,8 @@ import Typography from '@mui/material/Typography';
 import './Navbar.css';
 import { Link, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
-import { addToken } from '../../../store/tokens/actions';
+import { UserState } from '../../../store/user/userReducer';
+import { addToken, addId } from '../../../store/user/action';
 import HomeIcon from '@mui/icons-material/Home';
 import { toast } from 'react-toastify';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
@@ -20,7 +20,7 @@ import DehazeIcon from '@mui/icons-material/Dehaze';
 
 function Navbar() {
 
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+        const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     );
     let history = useHistory();
@@ -40,7 +40,6 @@ function Navbar() {
         });
         history.push('/login')
     }
-
 
     var navbarComponent;
 
@@ -71,7 +70,7 @@ function Navbar() {
                             Novo tema
                         </Typography>
                     </Box>
-    </Link>*/}
+                </Link>*/}
 
                 <Link to='/temas' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
