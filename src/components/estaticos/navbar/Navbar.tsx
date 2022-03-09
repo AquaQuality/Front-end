@@ -9,8 +9,11 @@ import { Link, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { addToken } from '../../../store/tokens/actions';
+import HomeIcon from '@mui/icons-material/Home';
 import { toast } from 'react-toastify';
-import { Avatar } from '@material-ui/core';
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import LogoutIcon from '@mui/icons-material/Logout';
+import ModalPostagem from '../../postagens/modalPostagem/ModalPostagem';
 
 function Navbar() {
 
@@ -53,19 +56,17 @@ function Navbar() {
                     <Box display="flex" justifyContent="start">
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                                Inicio
+                            <HomeIcon fontSize="large" className='icone'/>
                             </Typography>
                         </Box>
                     </Box>
                 </Link>
 
-                <Link to='/contato' className='text-decorator-none'>
-                    <Box mx={1} className='cursor'>
-                        <Typography variant="h6" color="inherit">
-                            Contato
-                        </Typography>
+                <Box mx={1} className='cursor'>
+                <Box marginRight={1} className='botao' >
+                            <ModalPostagem />
+                        </Box>
                     </Box>
-                </Link>
 
                 {/*<Link to='/formularioTema' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
@@ -91,13 +92,14 @@ function Navbar() {
                     </Box>
                 </Link>
 
-                <Link to='/perfil' className='text-decorator-none'>
+                <Link to='/contato' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
-                        <Typography variant='h6' color='inherit'>
-                            Perfil
+                        <Typography variant="h6" color="inherit">
+                            Contato
                         </Typography>
                     </Box>
                 </Link>
+
                 <Link to='/sobrenos' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
                         <Typography variant="h6" color="inherit">
@@ -106,9 +108,17 @@ function Navbar() {
                     </Box>
                 </Link>
 
+                <Link to='/perfil' className='text-decorator-none'>
+                    <Box mx={1} className='cursor'>
+                        <Typography variant='h6' color='inherit'>
+                            <PersonOutlineIcon fontSize="large" className='icone'/>
+                        </Typography>
+                    </Box>
+                </Link>
+
                 <Box mx={1} className='cursor'>
                     <Typography variant="h6" color="inherit" onClick={goLogout}>
-                    <Avatar alt="" src="/static/images/avatar/2.jpg" className='avatar-navbar' />
+                    <LogoutIcon fontSize="large" className='icone'/>
                     </Typography>
                 </Box>
             </Toolbar >
