@@ -4,6 +4,7 @@ import User from '../../models/User';
 import { cadastroUsuario } from '../../services/Services';
 import { Grid, Box, Typography, Button, TextField } from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import './CadastroUsuario.css';
 import { toast } from 'react-toastify';
 
@@ -77,11 +78,14 @@ function CadastroUsuario() {
         }
     }
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center'>
-            <Grid item xs={6} alignItems='center'>
+        <Grid container direction='row' justifyContent='center' alignItems='center' className='root' xs={12}>
+      <CssBaseline />
+        <div className='paper2'>
+            <img src="https://trello.com/1/cards/6225f916e75ffb899608d7b8/attachments/6227abd045822c7f9ef4f192/previews/6227abd145822c7f9ef4f1ba/download/vetorlogobolinha1.png" alt=""/>
                 <Box paddingX={10}>
+                <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Cadastre-se</Typography>
+
                     <form onSubmit={onSubmit}>
-                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Cadastre-se</Typography>
 
                         <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id='nome' label='Nome' variant='outlined' name='nome' margin='normal' fullWidth required />
@@ -107,11 +111,8 @@ function CadastroUsuario() {
                         </Box>
                     </form>
                 </Box>
+                </div>
             </Grid>
-            <Grid item xs={6} alignItems='center' className="fundo">
-                <Grid  className='imagem2'></Grid>
-            </Grid>
-        </Grid>
     );
 }
 

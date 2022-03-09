@@ -1,15 +1,18 @@
 import React, { ChangeEvent, useState, useEffect } from "react";
-import { Grid, Box, Typography, TextField, Button, Avatar } from '@material-ui/core';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
 import { Link, useHistory } from 'react-router-dom';
 import { login } from "../../services/Services";
 import UserLogin from "../../models/UserLogin";
 import './Login.css';
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
+<<<<<<< HEAD
 //import { addToken } from "../../store/tokens/actions";
 import { addToken, addId } from "../../store/user/action";
+=======
+import { addToken } from "../../store/tokens/actions";
+import LoginIcon from '@mui/icons-material/Login';
+>>>>>>> 27f00dc674f970a0f279c0c1e49cda0fd30f6103
 
 function Login() {
   let history = useHistory();
@@ -87,16 +90,9 @@ useEffect(() => {
   }
 
   return (
-    <Grid container direction='row' justifyContent='center' alignItems='center' className='root'>
-      <CssBaseline />
-      <Grid alignItems='center' xs={6} className='imagem'> </Grid>
-
-      <Grid item xs={6} >
-
+    <Grid container direction='row' justifyContent='center' alignItems='center' className='root' xs={12}>
         <div className='paper'>
-          <Avatar className='avatar'>
-            <LockOutlinedIcon />
-          </Avatar>
+            <img src="https://trello.com/1/cards/6225f916e75ffb899608d7b8/attachments/6227abd045822c7f9ef4f192/previews/6227abd145822c7f9ef4f1ba/download/vetorlogobolinha1.png" alt=""/>
 
           <Typography component="h1" variant="h3" className="text"> Entrar </Typography>
 
@@ -109,7 +105,7 @@ useEffect(() => {
               id="senha" label="Senha" name="senha" type="password" variant="outlined" margin="normal" autoComplete="current-password" required fullWidth />
 
 
-            <Button type="submit" fullWidth variant="contained" color="primary" className='submit'>Logar</Button>
+            <Button type="submit" fullWidth variant="contained" color="primary" className='submit'><LoginIcon fontSize="large"/></Button>
 
             <Box mt={5}>
             </Box>
@@ -125,7 +121,6 @@ useEffect(() => {
           </Box>
         </div>
       </Grid>
-    </Grid>
   );
 }
 
