@@ -56,10 +56,10 @@ function Home() {
                 <Grid item xs={6} className='imagem1' ></Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />
-                </Grid>
+                </Grid >
             </Grid>
         </>
     );
 }
 
-export default Home;
+export default Home; 
