@@ -7,6 +7,7 @@ import Postagem from '../../../models/Postagem';
 import { busca, buscaId, post, put } from '../../../services/Services';
 import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/user/userReducer';
+//import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
 
 function CadastroPost() {
@@ -133,6 +134,7 @@ function CadastroPost() {
     function back() {
         history.push('/postagens')
     }
+
 
     return (
         <Container maxWidth="sm" className="topo">
