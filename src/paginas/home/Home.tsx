@@ -38,23 +38,19 @@ function Home() {
             <Grid container spacing={2} direction="row" justifyContent="center" className='caixa'>
 
                 <Grid alignItems="center" direction="column" item xs={4} className='paperpost'>
-                    <Box paddingX={20} className="bemvindo">
-                        <Typography variant="h4" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Seja bem vindo(a)!</Typography>
-                        <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center" className='titulo'>Comece uma nova publicação:</Typography>
-                    </Box>
-
-                    <Box display="flex" justifyContent="center">
-                        <Box marginRight={1} className='botao' >
-                            <ModalPostagem />
-                        </Box>
-                    </Box>
                     <Box className='perfil'>
-                    <Perfil />
+                        <Perfil />
                     </Box>
-
                 </Grid>
 
                 <Grid xs={7} className='postagens'>
+                    <Box display="flex" justifyContent="center" >
+                        <Typography className="titulo" variant="h6" gutterBottom color="textPrimary" component="h6" align="center" >Comece uma nova publicação:</Typography>
+                        </Box>
+                       <Box display="flex" justifyContent="center" marginBottom={10}>
+                       <ModalPostagem /> 
+                    </Box>
+                    
                     <ListaPostagem />
                 </Grid >
 

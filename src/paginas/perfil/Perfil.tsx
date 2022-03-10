@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Grid } from '@material-ui/core';
+import { Box, Grid, Typography } from '@material-ui/core';
 import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { UserState } from '../../store/user/userReducer';
@@ -58,19 +58,13 @@ function Perfil() {
 
             <Box className='card-container-info'>
                 <Box>
-                    <h1>{user.nome}</h1>
+                    <h2>{user.nome}</h2>
                     <hr />
                 </Box>
+                <Box alignItems='center' className=''>
+                    <img src="https://i.imgur.com/fflDO4i.png" alt="logo" width='400px' height='200' />
 
-                <p className='card-container-texto'>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam accusantium totam incidunt architecto maiores, perferendis eius. Tempora ullam magni dolore voluptatibus, quidem sunt tempore distinctio ut aliquam modi aliquid officiis.
-                    Assumenda voluptatibus, animi pariatur voluptatum magnam ullam aspernatur optio suscipit incidunt dolor modi quos aperiam. Quam possimus rerum iste nobis quas porro unde sequi, sed nisi labore est voluptas corrupti.
-                    Deleniti officiis sint perspiciatis nisi iste, voluptate sunt asperiores dolor sapiente non corporis omnis voluptatem soluta. Nulla odio alias aperiam, magnam eaque assumenda tempora! Inventore odit iure unde placeat iste.
-                </p>
-
-                <p className='card-container-texto'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur tempore enim hic ad, optio ratione repellendus et. Nemo facilis laborum eum facere ipsam ab ad iusto eligendi deleniti qui?
-                </p>
+                </Box>
             </Box>
         </Grid>
     )

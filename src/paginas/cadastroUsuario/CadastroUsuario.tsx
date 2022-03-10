@@ -78,15 +78,14 @@ function CadastroUsuario() {
         }
     }
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center' className='root' xs={12}>
+        <Grid container direction='row' justifyContent='center' alignItems='center' className='root2' xs={12}>
       <CssBaseline />
-        <div className='paper2'>
-            <img src="https://trello.com/1/cards/6225f916e75ffb899608d7b8/attachments/6227abd045822c7f9ef4f192/previews/6227abd145822c7f9ef4f1ba/download/vetorlogobolinha1.png" alt=""/>
+        <div className='paper2' >
+            <img src="https://i.imgur.com/U8cvwuV.png" alt="logo"/>
                 <Box paddingX={10}>
                 <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Cadastre-se</Typography>
 
-                    <form onSubmit={onSubmit}>
-
+                    <form onSubmit={onSubmit} className=''>
                         <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id='nome' label='Nome' variant='outlined' name='nome' margin='normal' fullWidth required />
 

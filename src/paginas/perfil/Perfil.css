@@ -25,10 +25,12 @@
     border-radius: 32px;
     object-fit: cover;
     padding-right: 50px;
+    
 }
 
 .card-container-texto{
     max-width: 550px;
     color: #fff;
-    text-align: justify;
+    text-align: center;
 }
+

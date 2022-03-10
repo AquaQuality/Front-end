@@ -5,8 +5,7 @@
     min-height: 80vh;
     background-size: cover;
     background-position: center;
-    padding-left: 100px;
-    
+    padding-left: 100px;  
 }
 
 .textos2{
@@ -22,13 +21,7 @@
     background-color: #005581 !important;    
 }
 
-.fundo{
-    background-color: linear-gradient(to left,#13b5ea,#72cdf4,#b8e0f7) !important;
-    height: 100vh;
-    width: 100vh;
-}
 .paper2{
-    margin: (8,4);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,11 +30,16 @@
     padding-bottom: 20px;
 }
 .root2{
-    
     background-image: url(../../assets/img/Água.png);
     color: black;
     margin: 0;
     padding: 2em 0;
     height: 100vh;
           
+}
+
+.form-cadastrar {
+    width: 80%;
+    margin-top: 10px;
+
 }
