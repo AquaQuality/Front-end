@@ -66,8 +66,8 @@ function Perfil() {
 
             </Box>
 
-            <Box className='card-container-info'>
-                <Box>
+            <Box >
+                <Box>                    
                     <h2>{user.nome}</h2>
                     <hr />
                 </Box>

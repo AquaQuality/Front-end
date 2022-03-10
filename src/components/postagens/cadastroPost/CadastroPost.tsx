@@ -144,7 +144,7 @@ function CadastroPost() {
                 <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} 
                 id="titulo" label="Titulo" variant="outlined" name="titulo" margin="normal" placeholder='Insira um titulo' autoFocus required fullWidth />
                 <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
-                 id="texto" label="Texto" name="texto" variant="outlined" margin="normal" placeholder='Insira um texto' autoFocus required  fullWidth />
+                 id="texto" label="Texto" name="texto" variant="outlined" margin="normal" placeholder='Insira no minimo 10 caracteres para o texto' autoFocus required  fullWidth />
                 <TextField value={postagem.midia} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
                  id="midia" label="Midia" variant="outlined" name="midia" margin="normal" placeholder='Insira o link de uma imagem ou vídeo' fullWidth />
 
