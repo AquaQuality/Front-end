@@ -140,7 +140,7 @@ function CadastroPost() {
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" component="h1" align="center" >Criar publicação</Typography>
+                <Typography variant="h3" component="h1" align="center" >Crie uma publicação</Typography>
                 <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} 
                 id="titulo" label="Titulo" variant="outlined" name="titulo" margin="normal" placeholder='Insira um titulo' autoFocus required fullWidth />
                 <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}

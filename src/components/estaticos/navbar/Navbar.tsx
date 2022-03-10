@@ -47,14 +47,6 @@ function Navbar() {
             <Toolbar variant="dense" className='barra'>
 
                 <Link to='/home' className='text-decorator-none'>
-                    <Box mx={1} className='cursor'>
-                        <Box marginRight={1}  >
-                            <HomeIcon fontSize="large" className='icone' />
-                        </Box>
-                    </Box>
-                </Link>
-
-                <Link to='/home' className='text-decorator-none'>
                     <Box className='cursor'>
                         <Typography variant="h5" color="inherit">
                             AcquaQuality
@@ -62,7 +54,13 @@ function Navbar() {
                     </Box>
                 </Link>
 
-
+                <Link to='/home' className='text-decorator-none'>
+                    <Box mx={1} className='cursor'>
+                        <Box marginRight={1}  >
+                            <HomeIcon fontSize="large" className='icone' />
+                        </Box>
+                    </Box>
+                </Link>
 
                 {/*<Link to='/formularioTema' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
@@ -87,10 +85,6 @@ function Navbar() {
                         </Typography>
                     </Box>
                 </Link>
-
-                <Box marginRight={1} className='botao' >
-                    <ModalTema />
-                </Box>
 
                 <Link to='/sobrenos' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>

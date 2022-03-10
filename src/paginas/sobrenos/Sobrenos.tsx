@@ -3,74 +3,151 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Box, Button, Grid, Typography } from '@material-ui/core';
 import "./Sobrenos.css";
+import EmailIcon from '@material-ui/icons/Email';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 function Sobrenos() {
-  return (
-    <>
-      <Box className='fundo'>
-        <Box paddingX={20} className="box">
-          <Grid className="container2">
-            <Grid item xs={9}>
-              <Typography variant="h3" className="sobre">Sobre nós</Typography>
-              <Typography variant="h6" className="texto">Somos desenvolvedores que visando a qualidade de vida das gerações futuras, decidimos começar mudando o presente.</Typography>
+    return (
+        <>
+            <Box className='fundo'>
+                <Box paddingX={20} className="box">
+                    <Grid className="container2" justifyContent='center'>
+                        <Grid item xs={12} alignItems='center' justifyContent='center'>
+                        <img src="https://i.imgur.com/U8cvwuV.png" alt="" className='logo2'/>
+                            <Typography variant="h3" className="sobre">AcquaQuality</Typography>
+                            <Typography variant="h6" className="texto">Falar de valores é algo imprescindível aqui na AcquaQuality, pois não há como sustentar nossa palavra sem levar nossos ideais. Foram eles que nos fizeram chegar até aqui e com isso nos conectamos várias pessoas com o mesmo propósito: Ajudar o meio ambiente. </Typography>
 
-              <Typography variant="h6" className="texto">Pensando na ODS-6, Água limpa e saneamento, que visa garantir disponibilidade e manejo sustentável de água e saneamento para todos, nós criamos uma rede social que busca interação entre professores e alunos desenvolvendo o conhecimento de todos. </Typography>
+                            <Typography variant="h4" className="texto">Nossos valores são: </Typography>
 
-              <Typography variant="h6" className="texto">O Projeto Água Viva tem como objetivo unir educação e ideias em beneficio da população, ensinando desde jovem como pode ser divertido e fácil racionalizar água e melhorar a qualidade de vida com a reciclagem.</Typography>
-            </Grid>
+                            <Typography variant="h6" className="texto"><p>Sustentabilidade;</p>
+                                <p>Respeito à vida, às pessoas e ao meio ambiente;</p>
+                                <p>Honestidade;</p>
+                                <p>Inovação;</p>
+                                <p>Paixão por tecnologia;</p>
+                                <p>Transparência;</p>
+                                .</Typography>
+                        </Grid>
 
-            <Grid item xs={3}>
-              <img src="" width="170" height="170" className='' />
-            </Grid>
+                    </Grid>
+                </Box>
 
-          </Grid>
-        </Box>
+                <Box paddingX={20} className='alinha'>
+                    <Grid className="container">
+                        <Grid item xs={12}>
+                            <Typography className="time" variant="h3">Equipe de Desenvolvimento</Typography>
+                        </Grid>
+                        <Grid item xs={4} className='alinhar'>
+                            <div id="passar_mouse">
+                                <img src="https://i.imgur.com/cZ4j2f7.png" width="150" height="150" className='img3' />
+                                <div id="mostrar">Amanda</div></div>
+                            <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
+                                <GitHubIcon className='redes1' />
+                            </a>
+                            <a href="acquaquality.pi@gmail.com" target="_blank">
+                                <EmailIcon className='redes1' />
+                            </a>
+                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                                <LinkedInIcon className='redes1' />
+                            </a>
+                        </Grid>
+                        <Grid item xs={4} className='alinhar'>
+                            <div id="passar_mouse">
+                                <img src="https://i.imgur.com/KS5OGHd.jpg" width="150" height="150" className='img3' />
+                                <div id="mostrar">Bruno <p>Um fanático por tecnologia e suas diretrizes em desenvolvimento, busco sempre estar atento a tendências tecnológicas e conhecer sobre os assuntos dos quais quero me especializar e agregar
+                                    habilidades em minha carreira, tais como desenvolvimento de sistemas, cloud computing, banco de
+                                    dados, gestão ágil entre outras.
+                                </p></div>
+                            </div>
+                            <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
+                                <GitHubIcon className='redes1' />
+                            </a>
+                            <a href="acquaquality.pi@gmail.com" target="_blank">
+                                <EmailIcon className='redes1' />
+                            </a>
+                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                                <LinkedInIcon className='redes1' />
+                            </a>
+                        </Grid>
+                        <Grid item xs={4} className='alinhar'>
+                            <div id="passar_mouse">
+                                <img src="https://i.imgur.com/5dVrzyQ.jpg" width="150" height="150" className='img3' />
+                                <div id="mostrar">Cibele França<p>
+                                    Sou uma pessoa bastante comunicativa e extrovertida, por isso, gosto de fazer o lugar no qual estou um lugar engraçado e descontraído. Gosto de sair com meus amigos, assistir séries e ouvir músicas.
 
-        <Box paddingX={20} className='alinha'>
-          <Grid className="container">
-            <Grid item xs={12}>
-              <Typography className="time" variant="h3">Nossa equipe</Typography>
-            </Grid>
-            <Grid item xs={4} className='alinhar'>
-              <div id="passar_mouse">
-                <img src="https://i.imgur.com/cZ4j2f7.png" width="150" height="150" />
-                <div id="mostrar">Amanda, com 30 anos e espírito aventureiro, é uma mulher curiosa, que antes de entrar no mundo da tecnologia, se desenvolveu em logística e hotelaria. Fala inglês e começou a aprender coreano. Comunicativa, divertida, gosta de ajudar os amigos e resolver problemas, busca se realocar no mercado tech.</div></div>
-            </Grid>
-            <Grid item xs={4} className='alinhar'>
-              <div id="passar_mouse">
-                <img src="https://i.imgur.com/49wY73O.png" width="150" height="150" />
-                <div id="mostrar">Cleyfson Angelo 25 anos, apaixonado por esportes e também por filmes de drama, formado como desenvolvedor junior através da GeneratonBrasil e também licenciado em história pela Uninove. Proativo, ama trabalhar em equipe e participar com o grupo , sempre buscando aprender coisas novas.</div></div>
-            </Grid>
-            <Grid item xs={4} className='alinhar'>
-              <div id="passar_mouse">
-                <img src="https://i.imgur.com/1EV9fty.png" width="150" height="150" />
-                <div id="mostrar">Sou o Evandro, tenho 31 anos, formado recentemente como desenvolvedor Fullstack em Java pela Generation Brasil. Busco sempre aperfeiçoar meus conhecimentos técnicos através de cursos e vídeos. Gosto de ajudar meus colegas, trocando informações e ouvindo opiniões, atrás sempre da melhor resolução.</div></div>
-            </Grid>
-            <Grid item xs={3} className='alinhar'>
-              <div id="passar_mouse">
-                <img src="https://i.imgur.com/VWdWENY.png" width="150" height="150" />
-                <div id="mostrar">Sou o Raif, tenho 25 anos, formado como desenvolvedor Fullstack em Java pela Generation Brasil. Gosto de criar coisas novas e entender como elas funcionam. Prefiro sempre trabalhar em equipe, pois me ensina muito sobre comunicação e resiliência. Atualmente continuo estudando novas tecnologias.</div></div>
-            </Grid>
-            <Grid item xs={3} className='alinhar'>
-              <div id="passar_mouse">
-                <img src="https://i.imgur.com/aFMXsKS.png" width="150" height="150" />
-                <div id="mostrar">Sabrina Moura Gandra, 21 anos residente de Guarulhos, gosta de pinta quadros e ir ao teatro/cinema, é estudante de Análise e Desenvolvimento de Sistemas. Ingressou na área de tecnologia recentemente motivada pela curiosidade e objetivo de proporcionar uma melhor experiêcia ao cliente.</div></div>
-            </Grid>
-            <Grid item xs={3} className='alinhar'>
-              <div id="passar_mouse">
-                <img src="https://i.imgur.com/OhuIOWe.jpg" width="150" height="150" />
-                <div id="mostrar">Scarlatt, com 24 anos e ama ficção científica. Uma pessoa não binária. Desmontou eletrônicos e brinquedos quando menor para descobrir como funcionavam. Fala inglês, é comunicative, proative, ama desafios e planejar soluções. Desenvolvedore Java FullStack em busca de uma oportunidade na área tech.</div></div>
-            </Grid>
-            <Grid item xs={3} className='alinhar'>
-              <div id="passar_mouse">
-                <img src="https://i.imgur.com/srrPksO.png" width="150" height="150" />
-                <div id="mostrar">Olá! Eu sou a Vicky, tenho 23 anos e sou extremamente curiosa, brincalhona, calma e que gosta de ajudar. Tenho uma enorme paixão por tecnologia e trabalhar nesse projeto, além de aumentar isso, me proporcionou adquirir habilidades e conhecimentos, que com certeza me ajudarão nessa nova jornada!</div></div>
-            </Grid>
-          </Grid>
-        </Box>
-      </Box>
-    </>
-  )
+                                    Procuro sempre estar aprendendo sobre tudo, novas culturas, novas histórias. Gosto muito de me comunicar com tudo, sou uma pessoa muito esforçada, se tem algo que eu não sei eu sempre faço de tudo para entender e aprender, e por meio da tecnologia pretendo ajudar o máximo de pessoas que eu conseguir.
+                                </p></div></div>
+                            <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
+                                <GitHubIcon className='redes1' />
+                            </a>
+                            <a href="acquaquality.pi@gmail.com" target="_blank">
+                                <EmailIcon className='redes1' />
+                            </a>
+                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                                <LinkedInIcon className='redes1' />
+                            </a>
+                        </Grid>
+                        <Grid item xs={3} className='alinhar'>
+                            <div id="passar_mouse">
+                                <img src="https://imgur.com/3zTAXAL.jpg" width="150" height="150" className='img3' />
+                                <div id="mostrar">Iago Vieira<p>Tenho 21 anos e sou um apaixonado por tecnologia. Procuro sempre me mantar informado nas novas tecnologias do mercado e me aperfeiçoar mais. Espero contribuir para um mundo cada vez mais integrado e conectado</p></div></div>
+                            <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
+                                <GitHubIcon className='redes1' />
+                            </a>
+                            <a href="acquaquality.pi@gmail.com" target="_blank">
+                                <EmailIcon className='redes1' />
+                            </a>
+                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                                <LinkedInIcon className='redes1' />
+                            </a>
+                        </Grid>
+                        <Grid item xs={3} className='alinhar'>
+                            <div id="passar_mouse">
+                                <img src="https://i.imgur.com/lVwgmAG.jpg" width="150" height="150" className='img3' />
+                                <div id="mostrar">Lucas Oi<p> Sou formado como pessoa desenvolvedora Fullstack Java JR. pela Generation Brasil, além de cursar o 6º ciclo de engenharia elétrica, estou sempre em busca de novos desafios, gosto de café, estar na natureza e tocar violão.</p></div></div>
+                            <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
+                                <GitHubIcon className='redes1' />
+                            </a>
+                            <a href="acquaquality.pi@gmail.com" target="_blank">
+                                <EmailIcon className='redes1' />
+                            </a>
+                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                                <LinkedInIcon className='redes1' />
+                            </a>
+                        </Grid>
+                        <Grid item xs={3} className='alinhar'>
+                            <div id="passar_mouse">
+                                <img src="https://i.imgur.com/OhuIOWe.jpg" width="150" height="150" className='img3' />
+                                <div id="mostrar">Vitoria Oliveira</div></div>
+                            <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
+                                <GitHubIcon className='redes1' />
+                            </a>
+                            <a href="acquaquality.pi@gmail.com" target="_blank">
+                                <EmailIcon className='redes1' />
+                            </a>
+                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                                <LinkedInIcon className='redes1' />
+                            </a>
+                        </Grid>
+                        <Grid item xs={3} className='alinhar'>
+                            <div id="passar_mouse">
+                                <img src="https://i.imgur.com/yS7HM9o.jpg" width="150" height="150" className='img3' />
+                                <div id="mostrar">Vitoria Romão<p>Adoro desafios que aumentam meu horizonte e mudam meu modo de ver a vida, por esse motivo decidi fazer a transição de carreira. Sou uma pessoa criativa, que ama novos conhecimentos, e com isso me encontrei como desenvolvedora. Acredito que levarei boa parte da minha bagagem adquirida nessa nova etapa da minha jornada.</p></div></div>
+                            <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
+                                <GitHubIcon className='redes1' />
+                            </a>
+                            <a href="acquaquality.pi@gmail.com" target="_blank" >
+                                <EmailIcon className='redes1' />
+                            </a>
+                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                                <LinkedInIcon className='redes1' />
+                            </a>
+                        </Grid>
+                    </Grid>
+                </Box>
+            </Box>
+        </>
+    )
 }
 
 export default Sobrenos;

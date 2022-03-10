@@ -1,8 +1,8 @@
-.img{
-    border-radius: 50% !important;
+.img3{
+    border-radius: 30px !important;
     align-items: flex-end!important;
-    width: 300px;
-    height: 350px;
+    width: 150px;
+    height: 150px;
     background-repeat: no-repeat;
 }
 
@@ -12,7 +12,8 @@
 }
 
 .fundo{
-    background-color: #f0f2f5!important;
+    background-image: url(../../assets/img/Água.png);
+    height: 150%;
 }
 
 .text{
@@ -31,7 +32,7 @@ p{
 
 .redes1{
     font-size: 20px!important;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 5px;
 }
 
@@ -39,19 +40,21 @@ p{
     display: flex;
     flex-flow:wrap;
     justify-content: center;
-    background: linear-gradient(36deg, #1a71a490 8%, #ce455e90 89%)!important;
+    background-color: #f0f2f5!important;
     border-radius: 30PX;
     
 } 
 
 .container2{
+    margin: (8,4);
     display: flex;
-    flex-flow:wrap;
+    flex-direction: column;
     justify-content: center;
-    background: linear-gradient(36deg, #1a71a490 8%, #ce455e90 89%)!important;
+    background-color: #f0f2f5!important;
     border-radius: 30PX;
     padding-left: 60px;   
     padding-bottom: 30px; 
+    align-items: center;
 } 
 
 .imagem{
@@ -64,10 +67,7 @@ p{
     text-align:left;
     padding-bottom: 25px;
     padding-top: 20px;
-    color: #1a71a490;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #ffffffc9;
-}
+    color: #000000;}
 
 
 .box{
@@ -78,7 +78,7 @@ p{
 
 #mostrar{
     display: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
   
 #passar_mouse:hover #mostrar{
@@ -88,12 +88,13 @@ p{
 .alinhar{
     justify-content: center;
     text-align: center;
-    padding: 25px;
+    padding: 30px;
 }
 
 .texto{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
    font-size: 16px !important;
+   justify-content: center;
 
 }
 
@@ -106,7 +107,15 @@ p{
 
 
 .time{
-    color: #1a71a490;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #ffffffc9;
+    color: #000000;
 }
+.logo2{
+    justify-content: center;
+    text-align: center;
+    padding-left: 300px;
+}
+
+p{
+    text-align: justify;
+}
+ 
