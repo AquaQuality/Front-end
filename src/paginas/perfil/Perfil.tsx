@@ -5,10 +5,10 @@ import { useHistory } from 'react-router-dom';
 import { UserState } from '../../store/user/userReducer';
 import User from '../../models/User';
 import { buscaId } from '../../services/Services';
-import { styled } from '@mui/material/styles';
 import './Perfil.css';
 import Avatar from '@mui/material/Avatar';
-import Badge from '@mui/material/Badge';
+import ListaPostagem from '../../components/postagens/listaPostagem/ListaPostagem';
+
 
 function Perfil() {
 
@@ -54,13 +54,15 @@ function Perfil() {
 
     return (
         <Grid container className='card-principal'>
+
+            
             <Box className='card-container-imagem'>
                 <Avatar className='card-imagem'
                     src={user.foto}
-                    alt={user.nome} 
-                    sx={{ width: 300, height: 300 }} 
+                    alt={user.nome}
+                    sx={{ width: 300, height: 300 }}
                     variant="square" />
-                    
+
 
             </Box>
 
@@ -70,10 +72,12 @@ function Perfil() {
                     <hr />
                 </Box>
                 <Box alignItems='center' className=''>
-                    <img src="https://i.imgur.com/fflDO4i.png" alt="logo" width='400px' height='200' />
-
+                    <Typography><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum possimus repudiandae maxime </p> <p>placeat vel qui,perferendis dolores minima voluptatum nulla magni voluptatibus temporibus. Ea, aliquam.</p> <p>placeat vel qui,perferendis dolores minima voluptatum nulla magni voluptatibus temporibus. Ea, aliquam.</p></Typography>
                 </Box>
             </Box>
+            <Grid>
+                <ListaPostagem />
+            </Grid>
         </Grid>
     )
 }

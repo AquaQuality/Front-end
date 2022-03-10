@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import { Typography, Box, Grid, Button, BottomNavigation, BottomNavigationAction } from '@material-ui/core';
-import TabPostagem from '../../components/postagens/tabPostagem/TabPostagem';
+import { Typography, Box, Grid} from '@material-ui/core';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 import './Home.css';
 import { useHistory } from 'react-router';
@@ -9,7 +8,6 @@ import { UserState } from '../../store/user/userReducer';
 import { toast } from 'react-toastify';
 import Perfil from '../perfil/Perfil';
 import ModalTema from '../../components/temas/modalTema/ModalTema'
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ListaPostagem from '../../components/postagens/listaPostagem/ListaPostagem';
 
 function Home() {

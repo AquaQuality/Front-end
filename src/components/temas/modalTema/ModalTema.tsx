@@ -58,7 +58,7 @@ function ModalTema() {
       <Button
         variant="outlined"
         className="btnModalTema"
-        onClick={handleOpen}> <ExpandMoreIcon fontSize='large'/></Button>
+        onClick={handleOpen}>Tema</Button>
       <Modal
         open={open}
         onClose={handleClose}
