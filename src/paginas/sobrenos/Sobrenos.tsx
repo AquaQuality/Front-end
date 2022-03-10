@@ -5,6 +5,7 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import EmailIcon from '@material-ui/icons/Email';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import './Sobrenos.css';
 
 function Sobrenos() {
@@ -16,10 +17,6 @@ function Sobrenos() {
                 <Typography variant="h4" gutterBottom color='textPrimary' component="h4" align="center" className="titulo" > Nossa equipe </Typography>
                 </Box>
 
-            <Box padding={4} className='fundo1'>
-                <Typography variant="h4" gutterBottom color='textPrimary' component="h4" align="center" className="titulo" > Nossa equipe </Typography>
-            </Box>
-
             <Grid container direction="row" justifyContent="center" alignItems="center" className='fundo1' >
 
                 <Grid alignItems="center" item xs={6} className='card1'>
@@ -30,12 +27,18 @@ function Sobrenos() {
                             reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem
                             inventore dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
                         </p>
-                        <a href="https://github.com/AquaQuality" target="_blank">
+                        <a href="https://www.linkedin.com/in/amanda-marques-furtado/" target="_blank"rel="noreferrer" >
+                            <LinkedInIcon className='redes1' />
+                        </a>
+                        <a href="https://github.com/AmandaMFurtado" target="_blank" rel="noreferrer" >
                             <GitHubIcon className='redes1' />
                         </a>
-                        <a href="acquaquality.pi@gmail.com" target="_blank">
+                        <a href="andaemc@gmail.com" target="_blank">
                             <EmailIcon className='redes1' />
                         </a>
+                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                          <LinkedInIcon className='redes1' />
+                      </a>
                     </Box>
                 </Grid>
                 <Grid item xs={6} className='card'>
@@ -55,12 +58,15 @@ function Sobrenos() {
                             corporis reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem
                             dolorem inventore dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
                         </p>
-                        <a href="https://github.com/AquaQuality" target="_blank">
+                        <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
                             <GitHubIcon className='redes1' />
                         </a>
                         <a href="acquaquality.pi@gmail.com" target="_blank">
                             <EmailIcon className='redes1' />
                         </a>
+                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                          <LinkedInIcon className='redes1' />
+                      </a>
                     </Box>
                 </Grid>
             </Grid>
@@ -72,12 +78,15 @@ function Sobrenos() {
                         <p>
                             MeninoNey é top, nunca devia ter saído do Santos, amo vocês meus santistas
                         </p>
-                        <a href="https://github.com/AquaQuality" target="_blank">
+                        <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
                             <GitHubIcon className='redes1' />
                         </a>
                         <a href="acquaquality.pi@gmail.com" target="_blank">
                             <EmailIcon className='redes1' />
                         </a>
+                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                          <LinkedInIcon className='redes1' />
+                      </a>
                     </Box>
                 </Grid>
                 <Grid item xs={6} className='card'>
@@ -97,11 +106,14 @@ function Sobrenos() {
                             reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem inventore
                             dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
                         </p>
-                        <a href="https://github.com/AquaQuality" target="_blank">
+                        <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
                             <GitHubIcon className='redes1' />
                         </a>
-                        <a href="acquaquality.pi@gmail.com" target="_blank">
+                        <a href="acquaquality.pi@gmail.com" target="_blank" >
                             <EmailIcon className='redes1' />
+                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                          <LinkedInIcon className='redes1' />
+                      </a>
                         </a>
                     </Box>
                 </Grid>
@@ -115,12 +127,15 @@ function Sobrenos() {
                         <p>
                             Olá, eu sou o Lucas Oi o desenvolvedor mais cafeterio deste grupo!! 😜
                         </p>
-                        <a href="https://github.com/AquaQuality" target="_blank">
+                        <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
                             <GitHubIcon className='redes1' />
                         </a>
-                        <a href="acquaquality.pi@gmail.com" target="_blank">
+                        <a href="acquaquality.pi@gmail.com" target="_blank" >
                             <EmailIcon className='redes1' />
                         </a>
+                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                          <LinkedInIcon className='redes1' />
+                      </a>
                     </Box>
                 </Grid>
                 <Grid item xs={6} className='card'>
@@ -136,18 +151,19 @@ function Sobrenos() {
                     <Box paddingX={10}>
                         <h1>Vitoria Oliveira</h1>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente non nihil
-                            ipsam facilis assumenda eligendi saepe blanditiis a quis minus laboriosam odit soluta
-                            dolore adipisci nam, cupiditate delectus deserunt. Lorem, ipsum dolor sit amet consectetur
-                            adipisicing elit. A ab nesciunt soluta ea alias necessitatibus, quia eum voluptatibus,
-                            libero nobis deserunt ad modi. Voluptatem deserunt doloribus odit repellendus temporibus. Debitis!
+                        Full Stack Java Developer Jr
+                        Estudante de Engenharia da Computação
+                        
                         </p>
-                        <a href="https://github.com/AquaQuality" target="_blank">
+                        <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
                             <GitHubIcon className='redes1' />
                         </a>
-                        <a href="acquaquality.pi@gmail.com" target="_blank">
+                        <a href="acquaquality.pi@gmail.com" target="_blank"  >
                             <EmailIcon className='redes1' />
                         </a>
+                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                          <LinkedInIcon className='redes1'/>
+                      </a>
                     </Box>
                 </Grid>
             </Grid>
@@ -161,12 +177,15 @@ function Sobrenos() {
                             reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem inventore
                             dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
                         </p>
-                        <a href="https://github.com/AquaQuality" target="_blank">
+                        <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
                             <GitHubIcon className='redes1' />
                         </a>
-                        <a href="acquaquality.pi@gmail.com" target="_blank">
+                        <a href="acquaquality.pi@gmail.com" target="_blank" >
                             <EmailIcon className='redes1' />
                         </a>
+                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                          <LinkedInIcon className='redes1' />
+                      </a>
                     </Box>
                 </Grid>
                 <Grid item xs={6} className='card'>
@@ -180,3 +199,10 @@ function Sobrenos() {
 }
 
 export default Sobrenos;
+
+
+
+
+
+
+

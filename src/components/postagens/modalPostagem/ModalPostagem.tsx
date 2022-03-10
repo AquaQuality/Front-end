@@ -7,7 +7,6 @@ import './ModalPostagem.css';
 import AddBoxIcon from '@mui/icons-material/AddBox';
 import CadastroPost from '../cadastroPost/CadastroPost';
 
-
 function getModalStyle() {
   const top = 50;
   const left = 50;
@@ -25,7 +24,7 @@ const useStyles = makeStyles((theme: Theme) =>
       position: 'absolute',
       width: 600,
       backgroundColor: theme.palette.background.paper,
-      border: '2px solid #000',
+      border: '2px solid #0065a4',
       boxShadow: theme.shadows[5],
       padding: theme.spacing(2, 4, 3),
     },
@@ -49,17 +48,14 @@ function ModalPostagem() {
     <div style={modalStyle} className={classes.paper}>
       <Box display="flex" justifyContent="flex-end" className="cursor">
         <CloseIcon onClick={handleClose} />
-
       </Box>
-
       <CadastroPost />
-
     </div>
   );
 
   return (
     <div>
-      <Button variant="outlined" className="btnModal" onClick={handleOpen}><AddBoxIcon fontSize='large' /></Button>
+      <Button variant="outlined" className="btnModal" onClick={handleOpen}><AddBoxIcon fontSize='small' /></Button>
       <Modal
         open={open}
         onClose={handleClose}

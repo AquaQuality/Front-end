@@ -90,7 +90,7 @@ function Login() {
 
         <Typography component="h1" variant="h3" className="text"> Entrar </Typography>
 
-        <form onSubmit={onSubmit} className='form' noValidate>
+        <form onSubmit={onSubmit} className='form-login' noValidate>
 
           <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
             id="usuario" label="Usuario" name="usuario" autoComplete="usuario" variant="outlined" margin="normal" autoFocus required fullWidth />

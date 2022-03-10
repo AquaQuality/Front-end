@@ -57,9 +57,9 @@ function ListaPostagem() {
         posts.map(post => (
 
           <Box m={2} >
-            <Card variant="outlined">
+            <Card variant="outlined" className='post' >
               <CardContent>
-                
+
                 <Typography variant="h5" component="h2">
                   {post.titulo}
                 </Typography>
@@ -78,9 +78,9 @@ function ListaPostagem() {
                   Midia
                 </Typography>
                 <Typography variant="body2" className='midia'>
-                {/* <a href={post.midia} target="_blank" rel="noreferrer noopener">
+                  {/* <a href={post.midia} target="_blank" rel="noreferrer noopener">
                 {post.midia}</a>  */}
-                <img src={post.midia} alt="" /> 
+                  <img src={post.midia} alt="" />
                 </Typography>
                 <br />
                 <Typography variant="body1" component="h5" className='text'>
@@ -91,12 +91,14 @@ function ListaPostagem() {
                 </Typography>
               </CardContent>
               <CardActions>
-              <Box>
-                <IconButton aria-label="add to favorites">
-                <FavoriteBorderIcon fontSize='large' className='favorite'/>
-                </IconButton>
-                </Box>
+
                 <Box display="flex" justifyContent="center" mb={1.5}>
+
+                <Box mx={1}>
+                    <Button variant="contained" size='small' color="secondary" className="botao-postagens">
+                      <FavoriteBorderIcon fontSize='large' className='favorite botao-postagens' />
+                    </Button>
+                </Box>
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
@@ -105,13 +107,15 @@ function ListaPostagem() {
                       </Button>
                     </Box>
                   </Link>
+
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
                       <Button variant="contained" size='small' color="secondary" className="botao-postagens">
-                        <DeleteIcon fontSize='large'/>
+                        <DeleteIcon fontSize='large' />
                       </Button>
                     </Box>
                   </Link>
+                  
                 </Box>
               </CardActions>
             </Card>
