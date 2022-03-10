@@ -28,7 +28,12 @@
     border-radius: 30px;
     padding: 20px;
 }
-
+.bemvindo{
+    margin-top: 50px;
+    background-color: #0065a4a1;
+    border-radius: 30px;
+    font-size: xx-large;
+}
 .perfil{
     margin-right: 20px!important;
 }

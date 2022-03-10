@@ -38,6 +38,15 @@ function Home() {
             <Grid container spacing={2} direction="row" justifyContent="center" className='caixa'>
 
                 <Grid alignItems="center" direction="column" item xs={4} className='paperpost'>
+                    <Box paddingX={20} className="bemvindo">
+                        <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center" >Comece uma nova publicação:</Typography>
+                    </Box>
+
+                    <Box display="flex" justifyContent="center">
+                        <Box marginRight={1} className='botao' >
+                            <ModalPostagem />
+                        </Box>
+                    </Box>
                     <Box className='perfil'>
                         <Perfil />
                     </Box>
