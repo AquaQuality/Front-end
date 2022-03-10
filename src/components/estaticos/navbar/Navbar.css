@@ -16,10 +16,13 @@
     margin-left: 0px;
 }
 
-.logo-navbar{
-    background-image: url('../../../assets/img/logo-navbar.png') !important;
+.logonav{
+    width: 100px;
 }
 .icone{
     margin-top: 10px;
     background-color: #005581;
+    padding-left: 200px;
+    text-align: center;
 }
+

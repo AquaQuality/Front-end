@@ -13,8 +13,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import { toast } from 'react-toastify';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import LogoutIcon from '@mui/icons-material/Logout';
-import ModalPostagem from '../../postagens/modalPostagem/ModalPostagem';
-import ModalTema from '../../temas/modalTema/ModalTema';
+import WorkIcon from '@material-ui/icons/Work';
 
 function Navbar() {
 
@@ -49,7 +48,7 @@ function Navbar() {
                 <Link to='/home' className='text-decorator-none'>
                     <Box className='cursor'>
                         <Typography variant="h5" color="inherit">
-                            AcquaQuality
+                            ACQUAQUALITY
                         </Typography>
                     </Box>
                 </Link>
@@ -62,15 +61,7 @@ function Navbar() {
                     </Box>
                 </Link>
 
-                {/*<Link to='/formularioTema' className='text-decorator-none'>
-                    <Box mx={1} className='cursor'>
-                        <Typography variant="h6" color="inherit">
-                            Novo tema
-                        </Typography>
-                    </Box>
-                </Link>*/}
-
-                <Link to='/temas' className='text-decorator-none'>
+                {/*<Link to='/temas' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
                         <Typography variant="h6" color="inherit">
                             Temas
@@ -83,13 +74,12 @@ function Navbar() {
                         <Typography variant='h6' color='inherit'>
                             Postagens
                         </Typography>
-                    </Box>
-                </Link>
+                    </Box> </Link>*/}
 
                 <Link to='/sobrenos' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
                         <Typography variant="h6" color="inherit">
-                            Sobre nós
+                        <WorkIcon fontSize="large" className='icone' />
                         </Typography>
                     </Box>
                 </Link>
