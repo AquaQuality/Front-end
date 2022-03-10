@@ -113,9 +113,7 @@ function Sobrenos() {
                     <Box paddingX={10}>
                         <h1>Lucas Oi</h1>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis
-                            reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem inventore
-                            dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
+                            Olá, eu sou o Lucas Oi o desenvolvedor mais cafeterio deste grupo!! 😜
                         </p>
                         <a href="https://github.com/AquaQuality" target="_blank">
                             <GitHubIcon className='redes1' />
@@ -126,7 +124,7 @@ function Sobrenos() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} className='card'>
-                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="Lucas Oi" />
+                    <img className='img' src="https://i.imgur.com/lVwgmAG.jpg" alt="Lucas Oi" />
                 </Grid>
             </Grid>
 
