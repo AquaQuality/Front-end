@@ -55,7 +55,7 @@ function ModalPostagem() {
 
   return (
     <div>
-      <Button variant="outlined" className="btnModal" onClick={handleOpen}><AddIcon fontSize='large' /></Button>
+      <Button variant="outlined" className="btnModal" onClick={handleOpen}><AddIcon fontSize='medium' /></Button>
       <Modal
         open={open}
         onClose={handleClose}

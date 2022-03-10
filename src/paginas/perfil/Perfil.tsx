@@ -55,29 +55,26 @@ function Perfil() {
     return (
         <Grid container className='card-principal'>
 
-            
             <Box className='card-container-imagem'>
                 <Avatar className='card-imagem'
                     src={user.foto}
                     alt={user.nome}
                     sx={{ width: 300, height: 300 }}
                     variant="square" />
-
-
             </Box>
-
-            <Box >
-                <Box>                    
+            <Box>
+                <Box alignItems='center'>                    
                     <h2>{user.nome}</h2>
                     <hr />
                 </Box>
                 <Box alignItems='center' className=''>
-                    <Typography><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum possimus repudiandae maxime </p> <p>placeat vel qui,perferendis dolores minima voluptatum nulla magni voluptatibus temporibus. Ea, aliquam.</p> <p>placeat vel qui,perferendis dolores minima voluptatum nulla magni voluptatibus temporibus. Ea, aliquam.</p></Typography>
+                    <Typography><p>Lorem atum nulla magni voluptatibus temporibus. Ea, aliquam.</p> <p>placeat vel qui,perferendis dolores minima voluptatum nulla magni voluptatibus temporibus. Ea, aliquam.</p></Typography>
                 </Box>
             </Box>
-            <Grid>
+            {/** <Grid>
                 <ListaPostagem />
-            </Grid>
+            </Grid> */}
+           
         </Grid>
     )
 }

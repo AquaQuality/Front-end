@@ -39,21 +39,21 @@ function Sobrenos() {
                         </Grid>
                         <Grid item xs={4} className='alinhar'>
                             <div id="passar_mouse">
-                                <img src="https://i.imgur.com/cZ4j2f7.png" width="150" height="150" className='img3' />
-                                <div id="mostrar">Amanda</div></div>
-                            <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
+                                <img src="https://i.imgur.com/cZ4j2f7.png"  alt='Amanda Marques'width="150" height="150" className='img3' />
+                                <div id="mostrar">Amanda Marques<p></p></div></div>
+                            <a href="https://github.com/AmandaMFurtado" target="_blank" rel="noreferrer" >
                                 <GitHubIcon className='redes1' />
                             </a>
-                            <a href="acquaquality.pi@gmail.com" target="_blank">
+                            <a href="andaemc@gmail.com" target="_blank">
                                 <EmailIcon className='redes1' />
                             </a>
-                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                            <a href="https://www.linkedin.com/in/amanda-marques-furtado/" target="_blank" rel="noreferrer">
                                 <LinkedInIcon className='redes1' />
                             </a>
                         </Grid>
                         <Grid item xs={4} className='alinhar'>
                             <div id="passar_mouse">
-                                <img src="https://i.imgur.com/KS5OGHd.jpg" width="150" height="150" className='img3' />
+                                <img src="https://i.imgur.com/KS5OGHd.jpg"alt='Bruno Felix' width="150" height="150" className='img3' />
                                 <div id="mostrar">Bruno <p>Um fanático por tecnologia e suas diretrizes em desenvolvimento, busco sempre estar atento a tendências tecnológicas e conhecer sobre os assuntos dos quais quero me especializar e agregar
                                     habilidades em minha carreira, tais como desenvolvimento de sistemas, cloud computing, banco de
                                     dados, gestão ágil entre outras.
@@ -65,13 +65,13 @@ function Sobrenos() {
                             <a href="acquaquality.pi@gmail.com" target="_blank">
                                 <EmailIcon className='redes1' />
                             </a>
-                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank" rel="noreferrer">
                                 <LinkedInIcon className='redes1' />
                             </a>
                         </Grid>
                         <Grid item xs={4} className='alinhar'>
                             <div id="passar_mouse">
-                                <img src="https://i.imgur.com/5dVrzyQ.jpg" width="150" height="150" className='img3' />
+                                <img src="https://i.imgur.com/5dVrzyQ.jpg" alt='Cibele França' width="150" height="150" className='img3' />
                                 <div id="mostrar">Cibele França<p>
                                     Sou uma pessoa bastante comunicativa e extrovertida, por isso, gosto de fazer o lugar no qual estou um lugar engraçado e descontraído. Gosto de sair com meus amigos, assistir séries e ouvir músicas.
 
@@ -83,13 +83,13 @@ function Sobrenos() {
                             <a href="acquaquality.pi@gmail.com" target="_blank">
                                 <EmailIcon className='redes1' />
                             </a>
-                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank" rel="noreferrer">
                                 <LinkedInIcon className='redes1' />
                             </a>
                         </Grid>
                         <Grid item xs={3} className='alinhar'>
                             <div id="passar_mouse">
-                                <img src="https://imgur.com/3zTAXAL.jpg" width="150" height="150" className='img3' />
+                                <img src="https://imgur.com/3zTAXAL.jpg" alt='Iago Vieira' width="150" height="150" className='img3' />
                                 <div id="mostrar">Iago Vieira<p>Tenho 21 anos e sou um apaixonado por tecnologia. Procuro sempre me mantar informado nas novas tecnologias do mercado e me aperfeiçoar mais. Espero contribuir para um mundo cada vez mais integrado e conectado</p></div></div>
                             <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
                                 <GitHubIcon className='redes1' />
@@ -97,27 +97,27 @@ function Sobrenos() {
                             <a href="acquaquality.pi@gmail.com" target="_blank">
                                 <EmailIcon className='redes1' />
                             </a>
-                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank" rel="noreferrer">
                                 <LinkedInIcon className='redes1' />
                             </a>
                         </Grid>
                         <Grid item xs={3} className='alinhar'>
                             <div id="passar_mouse">
-                                <img src="https://i.imgur.com/lVwgmAG.jpg" width="150" height="150" className='img3' />
-                                <div id="mostrar">Lucas Oi<p> Sou formado como pessoa desenvolvedora Fullstack Java JR. pela Generation Brasil, além de cursar o 6º ciclo de engenharia elétrica, estou sempre em busca de novos desafios, gosto de café, estar na natureza e tocar violão.</p></div></div>
+                                <img src="https://i.imgur.com/lVwgmAG.jpg" alt='Lucas Oi' width="150" height="150" className='img3' />
+                                <div id="mostrar">Lucas Oi<p> Formado como pessoa desenvolvedora Fullstack Java JR. pela Generation Brasil, além de cursar o 6º ciclo de engenharia elétrica, estou sempre em busca de novos desafios, gosto de café, estar na natureza e tocar violão.</p></div></div>
                             <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
                                 <GitHubIcon className='redes1' />
                             </a>
                             <a href="acquaquality.pi@gmail.com" target="_blank">
                                 <EmailIcon className='redes1' />
                             </a>
-                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank" rel="noreferrer">
                                 <LinkedInIcon className='redes1' />
                             </a>
                         </Grid>
                         <Grid item xs={3} className='alinhar'>
                             <div id="passar_mouse">
-                                <img src="https://i.imgur.com/OhuIOWe.jpg" width="150" height="150" className='img3' />
+                                <img src="https://i.imgur.com/OhuIOWe.jpg" alt='Vitoria Oliveira' width="150" height="150" className='img3' />
                                 <div id="mostrar">Vitoria Oliveira</div></div>
                             <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
                                 <GitHubIcon className='redes1' />
@@ -125,21 +125,21 @@ function Sobrenos() {
                             <a href="acquaquality.pi@gmail.com" target="_blank">
                                 <EmailIcon className='redes1' />
                             </a>
-                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank" rel="noreferrer">
                                 <LinkedInIcon className='redes1' />
                             </a>
                         </Grid>
                         <Grid item xs={3} className='alinhar'>
                             <div id="passar_mouse">
-                                <img src="https://i.imgur.com/yS7HM9o.jpg" width="150" height="150" className='img3' />
+                                <img src="https://i.imgur.com/yS7HM9o.jpg" alt='Vitoria Romão' width="150" height="150" className='img3' />
                                 <div id="mostrar">Vitoria Romão<p>Adoro desafios que aumentam meu horizonte e mudam meu modo de ver a vida, por esse motivo decidi fazer a transição de carreira. Sou uma pessoa criativa, que ama novos conhecimentos, e com isso me encontrei como desenvolvedora. Acredito que levarei boa parte da minha bagagem adquirida nessa nova etapa da minha jornada.</p></div></div>
-                            <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
+                            <a href="https://github.com/vitoriaromao" target="_blank" rel="noreferrer" >
                                 <GitHubIcon className='redes1' />
                             </a>
-                            <a href="acquaquality.pi@gmail.com" target="_blank" >
+                            <a href="vitoria.rmoura2@hotmail.com" target="_blank" >
                                 <EmailIcon className='redes1' />
                             </a>
-                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank" rel="noreferrer">
                                 <LinkedInIcon className='redes1' />
                             </a>
                         </Grid>

@@ -28,7 +28,7 @@
     border-radius: 30px;
     padding: 10px;
 }
-.bemvindo{
+.criar-post{
     margin-top: 50px;
     background-color: #d8dbdda1;
     border-radius: 30px;
@@ -36,6 +36,8 @@
 }
 .perfil{
     margin-right: 10px!important;
+    margin-top: 50px;
+    
 }
 
 .card-publicacao{

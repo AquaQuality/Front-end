@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Postagem from '../../../models/Postagem';
 import { busca } from '../../../services/Services'
-import { Box, Card, CardActions, CardContent, Button, Typography, CardMedia } from '@material-ui/core';
+import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
 import './ListaPostagem.css';
 import { useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -12,6 +12,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import UpdateIcon from '@mui/icons-material/Update';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import IconButton from '@mui/material/IconButton';
+import ShareIcon from '@mui/icons-material/Share';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
@@ -57,8 +58,8 @@ function ListaPostagem() {
         posts.map(post => (
 
           <Box m={2} >
-            <Card variant="outlined" className='post' >
-              <CardContent>
+            <Card variant="outlined" className='post'  >
+              <CardContent >
 
                 <Typography variant="h5" component="h2">
                   {post.titulo}
@@ -99,7 +100,11 @@ function ListaPostagem() {
                       <FavoriteBorderIcon fontSize='large' className='favorite botao-postagens' />
                     </Button>
                 </Box>
-
+                <Box mx={1}>
+                    <Button variant="contained" size='small' color="secondary" className="botao-postagens">
+                      <ShareIcon fontSize='large' className='favorite botao-postagens' />
+                    </Button>
+                </Box>
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
                       <Button variant="contained" className="botao-postagens" size='small' color="primary" >
