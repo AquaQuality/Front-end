@@ -5,7 +5,7 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import EmailIcon from '@material-ui/icons/Email';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import './Sobrenos.css';
 
 function Sobrenos() {
@@ -36,6 +36,9 @@ function Sobrenos() {
                         <a href="andaemc@gmail.com" target="_blank">
                             <EmailIcon className='redes1' />
                         </a>
+                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                          <LinkedInIcon className='redes1' />
+                      </a>
                     </Box>
                 </Grid>
                 <Grid item xs={6} className='card'>
@@ -61,6 +64,9 @@ function Sobrenos() {
                         <a href="acquaquality.pi@gmail.com" target="_blank">
                             <EmailIcon className='redes1' />
                         </a>
+                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                          <LinkedInIcon className='redes1' />
+                      </a>
                     </Box>
                 </Grid>
             </Grid>
@@ -78,6 +84,9 @@ function Sobrenos() {
                         <a href="acquaquality.pi@gmail.com" target="_blank">
                             <EmailIcon className='redes1' />
                         </a>
+                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                          <LinkedInIcon className='redes1' />
+                      </a>
                     </Box>
                 </Grid>
                 <Grid item xs={6} className='card'>
@@ -102,6 +111,9 @@ function Sobrenos() {
                         </a>
                         <a href="acquaquality.pi@gmail.com" target="_blank" >
                             <EmailIcon className='redes1' />
+                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                          <LinkedInIcon className='redes1' />
+                      </a>
                         </a>
                     </Box>
                 </Grid>
@@ -123,6 +135,9 @@ function Sobrenos() {
                         <a href="acquaquality.pi@gmail.com" target="_blank" >
                             <EmailIcon className='redes1' />
                         </a>
+                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                          <LinkedInIcon className='redes1' />
+                      </a>
                     </Box>
                 </Grid>
                 <Grid item xs={6} className='card'>
@@ -138,11 +153,9 @@ function Sobrenos() {
                     <Box paddingX={10}>
                         <h1>Vitoria Oliveira</h1>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente non nihil
-                            ipsam facilis assumenda eligendi saepe blanditiis a quis minus laboriosam odit soluta
-                            dolore adipisci nam, cupiditate delectus deserunt. Lorem, ipsum dolor sit amet consectetur
-                            adipisicing elit. A ab nesciunt soluta ea alias necessitatibus, quia eum voluptatibus,
-                            libero nobis deserunt ad modi. Voluptatem deserunt doloribus odit repellendus temporibus. Debitis!
+                        Full Stack Java Developer Jr
+                        Estudante de Engenharia da Computação
+                        
                         </p>
                         <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
                             <GitHubIcon className='redes1' />
@@ -150,6 +163,9 @@ function Sobrenos() {
                         <a href="acquaquality.pi@gmail.com" target="_blank"  >
                             <EmailIcon className='redes1' />
                         </a>
+                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                          <LinkedInIcon className='redes1'/>
+                      </a>
                     </Box>
                 </Grid>
             </Grid>
@@ -169,6 +185,9 @@ function Sobrenos() {
                         <a href="acquaquality.pi@gmail.com" target="_blank" >
                             <EmailIcon className='redes1' />
                         </a>
+                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
+                          <LinkedInIcon className='redes1' />
+                      </a>
                     </Box>
                 </Grid>
                 <Grid item xs={6} className='card'>
@@ -182,3 +201,10 @@ function Sobrenos() {
 }
 
 export default Sobrenos;
+
+
+
+
+
+
+
