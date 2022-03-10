@@ -64,12 +64,12 @@ function Perfil() {
 
             </Box>
 
-            <Box>
-                <Box>
+            <Box >
+                <Box>                    
                     <h2>{user.nome}</h2>
                     <hr />
                 </Box>
-                <Box alignItems='center' className=''>
+                <Box alignItems='center' className='' >
                     <img src="https://i.imgur.com/fflDO4i.png" alt="logo" width='400px' height='200' />
 
                 </Box>
