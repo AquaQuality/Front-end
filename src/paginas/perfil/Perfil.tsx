@@ -51,48 +51,16 @@ function Perfil() {
         }
     }, [id])
 
-    const StyledBadge = styled(Badge)(({ theme }) => ({
-        '& .MuiBadge-badge': {
-            backgroundColor: '#44b700',
-            color: '#44b700',
-            boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
-            '&::after': {
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                borderRadius: '50%',
-                animation: 'ripple 1.2s infinite ease-in-out',
-                border: '1px solid currentColor',
-                content: '""',
-            },
-        },
-        '@keyframes ripple': {
-            '0%': {
-                transform: 'scale(.8)',
-                opacity: 1,
-            },
-            '100%': {
-                transform: 'scale(2.4)',
-                opacity: 0,
-            },
-        },
-    }));
 
     return (
         <Grid container className='card-principal'>
             <Box className='card-container-imagem'>
-                <StyledBadge
-                    overlap="circular"
-                    anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-                    variant="dot">
-                    <Avatar className='card-imagem'
-                        src={user.foto}
-                        alt={user.nome}
-                        sx={{ width: 300, height: 300 }}
-                        variant="square" />
-                </StyledBadge>
+                <Avatar className='card-imagem'
+                    src={user.foto}
+                    alt={user.nome} 
+                    sx={{ width: 300, height: 300 }} 
+                    variant="square" />
+                    
 
             </Box>
 
