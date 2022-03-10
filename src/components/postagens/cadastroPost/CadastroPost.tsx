@@ -41,13 +41,14 @@ function CadastroPost() {
             categoriaPostagem: '',
             descricao: ''
         })
-    const [postagem, setPostagem] = useState<Postagem>({
-        id: 0,
-        titulo: '',
-        texto: '',
-        midia: '',
-        tema: null
-    })
+        const [postagem, setPostagem] = useState<Postagem>({
+            id: 0,
+            user:'',
+            titulo: '',
+            texto: '',
+            midia: '',
+            tema: null
+        })
 
     useEffect(() => {
         setPostagem({
