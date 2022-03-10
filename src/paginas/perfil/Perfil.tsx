@@ -90,7 +90,7 @@ function Perfil() {
                 <Avatar className='card-imagem'
                     src={user.foto}
                     alt={user.nome} 
-                    sx={{ width: 200, height: 200 }} 
+                    sx={{ width: 300, height: 300 }} 
                     variant="square" />
                     </StyledBadge>
 

@@ -24,7 +24,7 @@
 .card-imagem{
     max-height: 400px;
     border-radius: 32px;
-    object-fit: cover;
+    object-fit: center;
     padding-right: 50px;
     
 }

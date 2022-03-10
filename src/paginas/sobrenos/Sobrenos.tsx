@@ -1,208 +1,76 @@
-import React from "react";
-import { Typography } from '@material-ui/core';
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import Box from '@mui/material/Box';
-import EmailIcon from '@material-ui/icons/Email';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import './Sobrenos.css';
+import React from 'react';
+
+import { Link } from 'react-router-dom';
+import { Box, Button, Grid, Typography } from '@material-ui/core';
+import "./Sobrenos.css";
 
 function Sobrenos() {
+  return (
+    <>
+      <Box className='fundo'>
+        <Box paddingX={20} className="box">
+          <Grid className="container2">
+            <Grid item xs={9}>
+              <Typography variant="h3" className="sobre">Sobre nós</Typography>
+              <Typography variant="h6" className="texto">Somos desenvolvedores que visando a qualidade de vida das gerações futuras, decidimos começar mudando o presente.</Typography>
 
-    return (
-        <>
-            
-                <Box padding={4}>
-                <Typography variant="h4" gutterBottom color='textPrimary' component="h4" align="center" className="titulo" > Nossa equipe </Typography>
-                </Box>
+              <Typography variant="h6" className="texto">Pensando na ODS-6, Água limpa e saneamento, que visa garantir disponibilidade e manejo sustentável de água e saneamento para todos, nós criamos uma rede social que busca interação entre professores e alunos desenvolvendo o conhecimento de todos. </Typography>
 
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='fundo1' >
-
-                <Grid alignItems="center" item xs={6} className='card1'>
-                    <Box paddingX={10} >
-                        <h1>Amanda Marques</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis
-                            reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem
-                            inventore dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
-                        </p>
-                        <a href="https://www.linkedin.com/in/amanda-marques-furtado/" target="_blank"rel="noreferrer" >
-                            <LinkedInIcon className='redes1' />
-                        </a>
-                        <a href="https://github.com/AmandaMFurtado" target="_blank" rel="noreferrer" >
-                            <GitHubIcon className='redes1' />
-                        </a>
-                        <a href="andaemc@gmail.com" target="_blank">
-                            <EmailIcon className='redes1' />
-                        </a>
-                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
-                          <LinkedInIcon className='redes1' />
-                      </a>
-                    </Box>
-                </Grid>
-                <Grid item xs={6} className='card'>
-                    <img className='img' src="https://i.imgur.com/cZ4j2f7.png" alt="Bruno Feliz" />
-                </Grid>
+              <Typography variant="h6" className="texto">O Projeto Água Viva tem como objetivo unir educação e ideias em beneficio da população, ensinando desde jovem como pode ser divertido e fácil racionalizar água e melhorar a qualidade de vida com a reciclagem.</Typography>
             </Grid>
 
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='fundo1'>
-                <Grid item xs={6} className='card'>
-                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="Bruno Feliz" />
-                </Grid>
-                <Grid alignItems="center" item xs={6}>
-                    <Box paddingX={10}>
-                        <h1>Bruno Felix</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-                            corporis reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem
-                            dolorem inventore dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
-                        </p>
-                        <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
-                            <GitHubIcon className='redes1' />
-                        </a>
-                        <a href="acquaquality.pi@gmail.com" target="_blank">
-                            <EmailIcon className='redes1' />
-                        </a>
-                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
-                          <LinkedInIcon className='redes1' />
-                      </a>
-                    </Box>
-                </Grid>
+            <Grid item xs={3}>
+              <img src="" width="170" height="170" className='' />
             </Grid>
 
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='fundo1'>
-                <Grid alignItems="center" item xs={6} >
-                    <Box paddingX={10}>
-                        <h1>Cibele França</h1>
-                        <p>
-                            MeninoNey é top, nunca devia ter saído do Santos, amo vocês meus santistas
-                        </p>
-                        <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
-                            <GitHubIcon className='redes1' />
-                        </a>
-                        <a href="acquaquality.pi@gmail.com" target="_blank">
-                            <EmailIcon className='redes1' />
-                        </a>
-                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
-                          <LinkedInIcon className='redes1' />
-                      </a>
-                    </Box>
-                </Grid>
-                <Grid item xs={6} className='card'>
-                    <img className='img' src="https://i.imgur.com/BOdWp3q.png" alt="" />
-                </Grid>
+          </Grid>
+        </Box>
+
+        <Box paddingX={20} className='alinha'>
+          <Grid className="container">
+            <Grid item xs={12}>
+              <Typography className="time" variant="h3">Nossa equipe</Typography>
             </Grid>
-
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='fundo1'>
-                <Grid item xs={6} className='card'>
-                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="Iago Vieira" />
-                </Grid>
-                <Grid alignItems="center" item xs={6} >
-                    <Box paddingX={10}>
-                        <h1>Iago Vieira</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis
-                            reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem inventore
-                            dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
-                        </p>
-                        <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
-                            <GitHubIcon className='redes1' />
-                        </a>
-                        <a href="acquaquality.pi@gmail.com" target="_blank" >
-                            <EmailIcon className='redes1' />
-                            <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
-                          <LinkedInIcon className='redes1' />
-                      </a>
-                        </a>
-                    </Box>
-                </Grid>
-
+            <Grid item xs={4} className='alinhar'>
+              <div id="passar_mouse">
+                <img src="https://i.imgur.com/cZ4j2f7.png" width="150" height="150" />
+                <div id="mostrar">Amanda, com 30 anos e espírito aventureiro, é uma mulher curiosa, que antes de entrar no mundo da tecnologia, se desenvolveu em logística e hotelaria. Fala inglês e começou a aprender coreano. Comunicativa, divertida, gosta de ajudar os amigos e resolver problemas, busca se realocar no mercado tech.</div></div>
             </Grid>
-
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='fundo1'>
-                <Grid alignItems="center" item xs={6} >
-                    <Box paddingX={10}>
-                        <h1>Lucas Oi</h1>
-                        <p>
-                            Olá, eu sou o Lucas Oi o desenvolvedor mais cafeterio deste grupo!! 😜
-                        </p>
-                        <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
-                            <GitHubIcon className='redes1' />
-                        </a>
-                        <a href="acquaquality.pi@gmail.com" target="_blank" >
-                            <EmailIcon className='redes1' />
-                        </a>
-                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
-                          <LinkedInIcon className='redes1' />
-                      </a>
-                    </Box>
-                </Grid>
-                <Grid item xs={6} className='card'>
-                    <img className='img' src="https://i.imgur.com/lVwgmAG.jpg" alt="Lucas Oi" />
-                </Grid>
+            <Grid item xs={4} className='alinhar'>
+              <div id="passar_mouse">
+                <img src="https://i.imgur.com/49wY73O.png" width="150" height="150" />
+                <div id="mostrar">Cleyfson Angelo 25 anos, apaixonado por esportes e também por filmes de drama, formado como desenvolvedor junior através da GeneratonBrasil e também licenciado em história pela Uninove. Proativo, ama trabalhar em equipe e participar com o grupo , sempre buscando aprender coisas novas.</div></div>
             </Grid>
-
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='fundo1'>
-                <Grid item xs={6} className='card'>
-                    <img className='img' src="https://i.imgur.com/OhuIOWe.jpg" alt="Vitoria Oliveira" />
-                </Grid>
-                <Grid alignItems="center" item xs={6} >
-                    <Box paddingX={10}>
-                        <h1>Vitoria Oliveira</h1>
-                        <p>
-                        Full Stack Java Developer Jr
-                        Estudante de Engenharia da Computação
-                        
-                        </p>
-                        <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
-                            <GitHubIcon className='redes1' />
-                        </a>
-                        <a href="acquaquality.pi@gmail.com" target="_blank"  >
-                            <EmailIcon className='redes1' />
-                        </a>
-                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
-                          <LinkedInIcon className='redes1'/>
-                      </a>
-                    </Box>
-                </Grid>
+            <Grid item xs={4} className='alinhar'>
+              <div id="passar_mouse">
+                <img src="https://i.imgur.com/1EV9fty.png" width="150" height="150" />
+                <div id="mostrar">Sou o Evandro, tenho 31 anos, formado recentemente como desenvolvedor Fullstack em Java pela Generation Brasil. Busco sempre aperfeiçoar meus conhecimentos técnicos através de cursos e vídeos. Gosto de ajudar meus colegas, trocando informações e ouvindo opiniões, atrás sempre da melhor resolução.</div></div>
             </Grid>
-
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='fundo1'>
-                <Grid alignItems="center" item xs={6}>
-                    <Box paddingX={10}>
-                        <h1>Vitoria Romão</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis
-                            reprehenderit repudiandae vel ipsum quaerat nemo repellendus quidem dolorem inventore
-                            dicta placeat impedit quos consectetur magni, ut sapiente eveniet aliquid?
-                        </p>
-                        <a href="https://github.com/AquaQuality" target="_blank" rel="noreferrer" >
-                            <GitHubIcon className='redes1' />
-                        </a>
-                        <a href="acquaquality.pi@gmail.com" target="_blank" >
-                            <EmailIcon className='redes1' />
-                        </a>
-                        <a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-53755b189/" target="_blank">
-                          <LinkedInIcon className='redes1' />
-                      </a>
-                    </Box>
-                </Grid>
-                <Grid item xs={6} className='card'>
-                    <img className='img' src="https://i.imgur.com/OjpYMCc.jpg" alt="Vitoria Romão" />
-                </Grid>
+            <Grid item xs={3} className='alinhar'>
+              <div id="passar_mouse">
+                <img src="https://i.imgur.com/VWdWENY.png" width="150" height="150" />
+                <div id="mostrar">Sou o Raif, tenho 25 anos, formado como desenvolvedor Fullstack em Java pela Generation Brasil. Gosto de criar coisas novas e entender como elas funcionam. Prefiro sempre trabalhar em equipe, pois me ensina muito sobre comunicação e resiliência. Atualmente continuo estudando novas tecnologias.</div></div>
             </Grid>
-
-        </>
-
-    )
+            <Grid item xs={3} className='alinhar'>
+              <div id="passar_mouse">
+                <img src="https://i.imgur.com/aFMXsKS.png" width="150" height="150" />
+                <div id="mostrar">Sabrina Moura Gandra, 21 anos residente de Guarulhos, gosta de pinta quadros e ir ao teatro/cinema, é estudante de Análise e Desenvolvimento de Sistemas. Ingressou na área de tecnologia recentemente motivada pela curiosidade e objetivo de proporcionar uma melhor experiêcia ao cliente.</div></div>
+            </Grid>
+            <Grid item xs={3} className='alinhar'>
+              <div id="passar_mouse">
+                <img src="https://i.imgur.com/OhuIOWe.jpg" width="150" height="150" />
+                <div id="mostrar">Scarlatt, com 24 anos e ama ficção científica. Uma pessoa não binária. Desmontou eletrônicos e brinquedos quando menor para descobrir como funcionavam. Fala inglês, é comunicative, proative, ama desafios e planejar soluções. Desenvolvedore Java FullStack em busca de uma oportunidade na área tech.</div></div>
+            </Grid>
+            <Grid item xs={3} className='alinhar'>
+              <div id="passar_mouse">
+                <img src="https://i.imgur.com/srrPksO.png" width="150" height="150" />
+                <div id="mostrar">Olá! Eu sou a Vicky, tenho 23 anos e sou extremamente curiosa, brincalhona, calma e que gosta de ajudar. Tenho uma enorme paixão por tecnologia e trabalhar nesse projeto, além de aumentar isso, me proporcionou adquirir habilidades e conhecimentos, que com certeza me ajudarão nessa nova jornada!</div></div>
+            </Grid>
+          </Grid>
+        </Box>
+      </Box>
+    </>
+  )
 }
 
 export default Sobrenos;
-
-
-
-
-
-
-
