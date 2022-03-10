@@ -87,19 +87,19 @@ function CadastroUsuario() {
 
                     <form onSubmit={onSubmit} className=''>
                         <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='nome' label='Nome' variant='outlined' name='nome' margin='normal' fullWidth required />
+                            id='nome' label='Nome' variant='outlined' name='nome' margin='normal' fullWidth placeholder='Insira o seu nome completo' required />
 
                         <TextField value={user.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='foto' label='Foto' variant='outlined' name='foto' margin='normal' fullWidth required />
+                            id='foto' label='Foto' variant='outlined' name='foto' margin='normal' fullWidth placeholder='Insira um link para imagem' required />
 
                         <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='usuario' label='Usuario' variant='outlined' name='usuario' margin='normal' fullWidth required />
+                            id='usuario' label='Usuario' variant='outlined' name='usuario' margin='normal' fullWidth placeholder='Insira um e-mail' required />
 
                         <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth placeholder='Insira no minimo 8 caracteres' required />
 
                         <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)}
-                            id='confirmarSenha' label='Confirmar senha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth required />
+                            id='confirmarSenha' label='Confirmar senha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth placeholder='Insira no minimo 8 caracteres' required />
 
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/login' className='text-decorator-none'>

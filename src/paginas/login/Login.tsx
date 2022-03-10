@@ -93,10 +93,10 @@ function Login() {
         <form onSubmit={onSubmit} className='form-login' noValidate>
 
           <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-            id="usuario" label="Usuario" name="usuario" autoComplete="usuario" variant="outlined" margin="normal" autoFocus required fullWidth />
+            id="usuario" label="Usuario" name="usuario" autoComplete="usuario" variant="outlined" margin="normal" autoFocus fullWidth placeholder='Insira o seu email' required/>
 
           <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-            id="senha" label="Senha" name="senha" type="password" variant="outlined" margin="normal" autoComplete="current-password" required fullWidth />
+            id="senha" label="Senha" name="senha" type="password" variant="outlined" margin="normal" autoComplete="current-password" fullWidth placeholder='Insira a sua senha' required />
 
 
           <Button type="submit" fullWidth variant="contained" color="primary" className='submit'><LoginIcon fontSize="large" /></Button>
@@ -106,7 +106,7 @@ function Login() {
         </form>
         <Box display='flex' justifyContent='center' marginTop={2}>
           <Box marginRight={1}>
-            <Typography variant='subtitle1' gutterBottom align='center' className="texto" >Não tem uma conta?</Typography>
+            <Typography variant='subtitle1' gutterBottom align='center' className="text1" >Não tem uma conta?</Typography>
           </Box>
           <Link to='/cadastrousuario' className='text-decorator-none' >
             <Typography variant='subtitle1' gutterBottom align='center' className='text'> Cadastre-se</Typography>
