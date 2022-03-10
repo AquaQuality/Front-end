@@ -1,8 +1,8 @@
 .card-principal{
     display: flex;
     border-radius: 30px;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     background: linear-gradient(36deg, #13b4eac5 8%, #005581c5 89%)!important;
 }
 
