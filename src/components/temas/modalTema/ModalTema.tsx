@@ -5,6 +5,7 @@ import { Button, Box } from "@material-ui/core"
 import CloseIcon from '@material-ui/icons/Close';
 import './ModalTema.css';
 import CadastroTema from '../cadastroTema/CadastroTema';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 function getModalStyle() {
 
@@ -24,7 +25,6 @@ const useStyles = makeStyles((theme: Theme) =>
       position: 'absolute',
       width: 400,
       backgroundColor: theme.palette.background.paper,
-      border: '2px solid #000',
       boxShadow: theme.shadows[5],
       padding: theme.spacing(2, 4, 3),
     },
@@ -58,7 +58,7 @@ function ModalTema() {
       <Button
         variant="outlined"
         className="btnModalTema"
-        onClick={handleOpen}>Novo tema</Button>
+        onClick={handleOpen}>Tema</Button>
       <Modal
         open={open}
         onClose={handleClose}

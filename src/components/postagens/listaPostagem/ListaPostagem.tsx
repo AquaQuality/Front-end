@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Postagem from '../../../models/Postagem';
 import { busca } from '../../../services/Services'
-import { Box, Card, CardActions, CardContent, Button, Typography, CardMedia } from '@material-ui/core';
+import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
 import './ListaPostagem.css';
 import { useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -12,6 +12,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import UpdateIcon from '@mui/icons-material/Update';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import IconButton from '@mui/material/IconButton';
+import ShareIcon from '@mui/icons-material/Share';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
@@ -57,9 +58,9 @@ function ListaPostagem() {
         posts.map(post => (
 
           <Box m={2} >
-            <Card variant="outlined">
-              <CardContent>
-                
+            <Card variant="outlined" className='post'  >
+              <CardContent >
+
                 <Typography variant="h5" component="h2">
                   {post.titulo}
                 </Typography>
@@ -78,9 +79,9 @@ function ListaPostagem() {
                   Midia
                 </Typography>
                 <Typography variant="body2" className='midia'>
-                {/* <a href={post.midia} target="_blank" rel="noreferrer noopener">
+                  {/* <a href={post.midia} target="_blank" rel="noreferrer noopener">
                 {post.midia}</a>  */}
-                <img src={post.midia} alt="" /> 
+                  <img src={post.midia} alt="" />
                 </Typography>
                 <br />
                 <Typography variant="body1" component="h5" className='text'>
@@ -91,13 +92,19 @@ function ListaPostagem() {
                 </Typography>
               </CardContent>
               <CardActions>
-              <Box>
-                <IconButton aria-label="add to favorites">
-                <FavoriteBorderIcon fontSize='large' className='favorite'/>
-                </IconButton>
-                </Box>
+
                 <Box display="flex" justifyContent="center" mb={1.5}>
 
+                <Box mx={1}>
+                    <Button variant="contained" size='small' color="secondary" className="botao-postagens">
+                      <FavoriteBorderIcon fontSize='large' className='favorite botao-postagens' />
+                    </Button>
+                </Box>
+                <Box mx={1}>
+                    <Button variant="contained" size='small' color="secondary" className="botao-postagens">
+                      <ShareIcon fontSize='large' className='favorite botao-postagens' />
+                    </Button>
+                </Box>
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
                       <Button variant="contained" className="botao-postagens" size='small' color="primary" >
@@ -105,13 +112,15 @@ function ListaPostagem() {
                       </Button>
                     </Box>
                   </Link>
+
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
                       <Button variant="contained" size='small' color="secondary" className="botao-postagens">
-                        <DeleteIcon fontSize='large'/>
+                        <DeleteIcon fontSize='large' />
                       </Button>
                     </Box>
                   </Link>
+                  
                 </Box>
               </CardActions>
             </Card>

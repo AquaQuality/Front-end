@@ -7,6 +7,7 @@ import Postagem from '../../../models/Postagem';
 import { busca, buscaId, post, put } from '../../../services/Services';
 import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/user/userReducer';
+//import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
 import User from '../../../models/User';
 
@@ -164,13 +165,17 @@ function CadastroPost() {
         history.push('/postagens')
     }
 
+
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" component="h1" align="center" >Formulário de cadastro postagem</Typography>
-                <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="titulo" variant="outlined" name="titulo" margin="normal" fullWidth />
-                <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="texto" name="texto" variant="outlined" margin="normal" fullWidth />
-                <TextField value={postagem.midia} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="midia" label="midia" variant="outlined" name="midia" margin="normal" fullWidth />
+                <Typography variant="h3" component="h1" align="center" >Crie uma publicação</Typography>
+                <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} 
+                id="titulo" label="Titulo" variant="outlined" name="titulo" margin="normal" placeholder='Insira um titulo' autoFocus required fullWidth />
+                <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
+                 id="texto" label="Texto" name="texto" variant="outlined" margin="normal" placeholder='Insira no minimo 10 caracteres para o texto' autoFocus required  fullWidth />
+                <TextField value={postagem.midia} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
+                 id="midia" label="Midia" variant="outlined" name="midia" margin="normal" placeholder='Insira o link de uma imagem ou vídeo' fullWidth />
 
                 <FormControl >
                     <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
@@ -188,9 +193,9 @@ function CadastroPost() {
                             ))
                         }
                     </Select>
-                    <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-                    <Button type="submit" variant="contained" color="primary">
-                        Finalizar
+                    <FormHelperText>Escolha um tema para sua publicação</FormHelperText>
+                    <Button type="submit" variant="contained" color="primary" className='bnt-publicar'>
+                        Publicar
                     </Button>
                 </FormControl>
             </form>

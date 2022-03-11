@@ -8,17 +8,16 @@ import './Navbar.css';
 import { Link, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { UserState } from '../../../store/user/userReducer';
-import { addToken} from '../../../store/user/action';
+import { addToken } from '../../../store/user/action';
 import HomeIcon from '@mui/icons-material/Home';
 import { toast } from 'react-toastify';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import LogoutIcon from '@mui/icons-material/Logout';
-import ModalPostagem from '../../postagens/modalPostagem/ModalPostagem';
-import ModalTema from '../../temas/modalTema/ModalTema';
+import WorkIcon from '@material-ui/icons/Work';
 
 function Navbar() {
 
-        const token = useSelector<UserState, UserState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     );
     let history = useHistory();
@@ -45,39 +44,24 @@ function Navbar() {
         navbarComponent = <AppBar position="static">
 
             <Toolbar variant="dense" className='barra'>
-           
+
                 <Link to='/home' className='text-decorator-none'>
                     <Box className='cursor'>
                         <Typography variant="h5" color="inherit">
-                            AcquaQuality
+                            ACQUAQUALITY
                         </Typography>
                     </Box>
                 </Link>
 
                 <Link to='/home' className='text-decorator-none'>
-                <Box mx={1} className='cursor'>
-                    <Box marginRight={1}  >
-                        <HomeIcon  fontSize="large" className='icone'/>
+                    <Box mx={1} className='cursor'>
+                        <Box marginRight={1}  >
+                            <HomeIcon fontSize="large" className='icone' />
+                        </Box>
                     </Box>
-                </Box>
                 </Link>
 
-
-                <Box mx={1} className='cursor'>
-                    <Box marginRight={1} className='botao' >
-                        <ModalPostagem />
-                    </Box>
-                </Box>
-
-                {/*<Link to='/formularioTema' className='text-decorator-none'>
-                    <Box mx={1} className='cursor'>
-                        <Typography variant="h6" color="inherit">
-                            Novo tema
-                        </Typography>
-                    </Box>
-                </Link>*/}
-
-                <Link to='/temas' className='text-decorator-none'>
+                {/*<Link to='/temas' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
                         <Typography variant="h6" color="inherit">
                             Temas
@@ -90,17 +74,12 @@ function Navbar() {
                         <Typography variant='h6' color='inherit'>
                             Postagens
                         </Typography>
-                    </Box>
-                </Link>
-
-                <Box marginRight={1} className='botao' >
-                    <ModalTema />
-                </Box>
+                    </Box> </Link>*/}
 
                 <Link to='/sobrenos' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
                         <Typography variant="h6" color="inherit">
-                            Sobre nós
+                        <WorkIcon fontSize="large" className='icone' />
                         </Typography>
                     </Box>
                 </Link>

@@ -5,19 +5,11 @@
 }
 
 .titulo{
-    color:  rgb(0, 0, 0) !important;
-    font-weight: bold !important;
-}
-.titulo1{
     color: black !important;
+    font-weight: bold !important;
+    padding: 10px;
 }
 
-.botao{
-    border-color: #0065a4!important;
-    background-color: #0065a4 !important;
-    color: white !important;
-    
-}
 
 .postagens{
     background-color: #f0f2f5;
@@ -32,13 +24,31 @@
     background-position: center;
 }
 .paperpost{
-    background-color:#f0f2f5ce;
+    background-color:#f0f2f5;
     border-radius: 30px;
-    padding: 20px;
+    padding: 10px;
 }
-.bemvindo{
+.criar-post{
     margin-top: 50px;
+    background-color: #d8dbdda1;
+    border-radius: 30px;
+    font-size: xx-large;
 }
 .perfil{
-    margin-right: 20px!important;
+    margin-right: 10px!important;
+    margin-top: 50px;
+    
+}
+
+.card-publicacao{
+    display: flex;
+    border-radius: 30px;
+    margin: 10px;
+    background-color: #009edcd7 !important;
+    margin-top: 10px;
+}
+
+.box-criar{
+    border-color:#009edcd7 !important;
+    border-radius: 30px;
 }

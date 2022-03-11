@@ -1,7 +1,7 @@
-.fundo{
-    background-image: linear-gradient(to left,#13b5ea,#72cdf4,#b8e0f7);
+.text-tema{
+    color: black !important;
 }
 
-.text{
-    color: black !important;
+.bnt-criar{
+background-color: #0065a4 !important;
 }
