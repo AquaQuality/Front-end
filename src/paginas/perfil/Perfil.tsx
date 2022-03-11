@@ -62,14 +62,13 @@ function Perfil() {
                     sx={{ width: 300, height: 300 }}
                     variant="square" />
             </Box>
-            <Box>
-                <Box alignItems='center'>                    
+            
+                <Box alignItems='' className='nome'>                    
                     <h2>{user.nome}</h2>
                     <hr />
                 </Box>
-                <Box alignItems='center' className=''>
-                    <Typography><p>Lorem atum nulla magni voluptatibus temporibus. Ea, aliquam.</p> <p>placeat vel qui,perferendis dolores minima voluptatum nulla magni voluptatibus temporibus. Ea, aliquam.</p></Typography>
-                </Box>
+                <Box alignItems='' >
+                    <img className='imagem-perfil' src="https://i.imgur.com/fflDO4i.png" alt="logo" />
             </Box>
             {/** <Grid>
                 <ListaPostagem />

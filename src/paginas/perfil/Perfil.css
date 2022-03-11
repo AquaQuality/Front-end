@@ -39,3 +39,13 @@
     color: #fff;
     text-align: center;
 }
+
+.imagem-perfil{
+height: 200px ;
+width: 300px;
+padding-left: 70px;
+}
+
+.nome{
+    padding-left: 120px;
+}
