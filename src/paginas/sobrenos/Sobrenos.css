@@ -14,6 +14,7 @@
 .fundo{
     background-image: url(../../assets/img/Água.png);
     height: 150%;
+    /*background-repeat: 'no-repeat';*/
 }
 
 .text{
@@ -32,7 +33,7 @@ p{
 
 .redes1{
     font-size: 20px!important;
-    color: rgb(0, 0, 0);
+    color: #005581c5;
     padding: 5px;
 }
 
@@ -101,13 +102,13 @@ p{
 .alinha{
     justify-content: center;
     text-align: center;
-    padding: 25px;
     border-radius: 25px;
 }
 
 
 .time{
     color: #000000;
+    margin-top: 70px;
 }
 .logo2{
     justify-content: center;
