@@ -8,6 +8,7 @@ import { busca, buscaId, post, put } from '../../../services/Services';
 import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/user/userReducer';
 import { toast } from 'react-toastify';
+import User from '../../../models/User';
 
 function CadastroPost() {
 
@@ -41,14 +42,42 @@ function CadastroPost() {
             categoriaPostagem: '',
             descricao: ''
         })
-        const [postagem, setPostagem] = useState<Postagem>({
-            id: 0,
-            usuario:null,
-            titulo: '',
-            texto: '',
-            midia: '',
-            tema: null
+    const [postagem, setPostagem] = useState<Postagem>({
+        id: 0,
+        titulo: '',
+        texto: '',
+        midia: '',
+        tema: null
+    })
+
+    const [user, setUser] = useState<User>({
+        id: +id,     // Faz uma conversão de String para Number
+        nome: '',
+        usuario: '',
+        senha: '',
+        foto: ''
+    })
+
+    useEffect(() => {
+        if (token === "") {
+            alert("Você precisa estar logado")
+            history.push("/login")
+        }
+    }, [token])
+
+    async function findById(id: string) {
+        buscaId(`/usuarios/${id}`, setUser, {
+            headers: {
+                'Authorization': token
+            }
         })
+    }
+    
+    useEffect(() => {
+        if (id !== undefined) {
+            findById(id)
+        }
+    }, [id])
 
     useEffect(() => {
         setPostagem({
