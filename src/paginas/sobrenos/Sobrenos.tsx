@@ -14,11 +14,14 @@ function Sobrenos() {
                 <Box paddingX={20} className="box">
                     <Grid className="container2" justifyContent='center'>
                         <Grid item xs={12} alignItems='center' justifyContent='center'>
-                        <img src="https://i.imgur.com/U8cvwuV.png" alt="" className='logo2'/>
+                            <img src="https://i.imgur.com/U8cvwuV.png" alt="" className='logo2' />
                             <Typography variant="h3" className="sobre">AcquaQuality</Typography>
-                            <Typography variant="h6" className="texto">Falar de valores é algo imprescindível aqui na AcquaQuality, pois não há como sustentar nossa palavra sem levar nossos ideais. Foram eles que nos fizeram chegar até aqui e com isso nos conectamos várias pessoas com o mesmo propósito: Ajudar o meio ambiente. </Typography>
+                            <Typography variant="h6" className="texto">Sempre que nos deparamos com problemas criamos novas ideias, e dessa vez não foi diferente. Após percebermos inúmeros problemas no saneamento básico e na distribuição de água potável na região da Grande São Paulo decidimos criar uma rede de pessoas dispostas a ajudar. Nossa rede social usa como parâmetro os Objetivos de Desenvolvimento Sustentável (ODS) da ONU, mais especificadamente a claúsula 6.6-b "Apoiar e fortalecer a participação das comunidades locais, para melhorar a gestão da água e do saneamento.". Acreditamos que  juntos conseguimos a força que precisamos para tornar nossa região melhor.
+                             <p>Vem fazer parte desse projeto com a gente!</p>
+                            </Typography>
 
-                            <Typography variant="h4" className="texto">Nossos valores são: </Typography>
+                            <Typography variant="h4" className="texto">Falar de valores é algo imprescindível aqui na AcquaQuality, pois não há como sustentar nossa palavra sem levar nossos ideais. Foram eles que nos fizeram chegar até aqui e com isso nos conectamos várias pessoas com o mesmo propósito: Ajudar o meio ambiente.
+                            <p>Nossos valores são:</p> </Typography>
 
                             <Typography variant="h6" className="texto"><p>Sustentabilidade;</p>
                                 <p>Respeito à vida, às pessoas e ao meio ambiente;</p>
@@ -39,9 +42,9 @@ function Sobrenos() {
                         </Grid>
                         <Grid item xs={4} className='alinhar'>
                             <div id="passar_mouse">
-                                <img src="https://i.imgur.com/cZ4j2f7.png"  alt='Amanda Marques'width="150" height="150" className='img3' />
+                                <img src="https://i.imgur.com/cZ4j2f7.png" alt='Amanda Marques' width="150" height="150" className='img3' />
                                 <div id="mostrar"><b>Amanda Marques</b>
-                                <p>Sou uma mulher de família, forte, otimista e leal, não me deixo abater com as dificuldades da vida, luto pelos meus objetivos com muita garra e determinação aprendo com meus desafios e me reinvento  a cada aprendizado. Estou sempre em busca de conhecimento que me faça crescer profissionalmente e como ser humano.</p></div></div>
+                                    <p>Sou uma mulher de família, forte, otimista e leal, não me deixo abater com as dificuldades da vida, luto pelos meus objetivos com muita garra e determinação aprendo com meus desafios e me reinvento  a cada aprendizado. Estou sempre em busca de conhecimento que me faça crescer profissionalmente e como ser humano.</p></div></div>
                             <a href="https://github.com/AmandaMFurtado" target="_blank" rel="noreferrer" >
                                 <GitHubIcon className='redes1' />
                             </a>
@@ -54,7 +57,7 @@ function Sobrenos() {
                         </Grid>
                         <Grid item xs={4} className='alinhar'>
                             <div id="passar_mouse">
-                                <img src="https://i.imgur.com/KS5OGHd.jpg"alt='Bruno Felix' width="150" height="150" className='img3' />
+                                <img src="https://i.imgur.com/KS5OGHd.jpg" alt='Bruno Felix' width="150" height="150" className='img3' />
                                 <div id="mostrar"><b>Bruno Felix</b> <p>Um fanático por tecnologia e suas diretrizes em desenvolvimento, busco sempre estar atento a tendências tecnológicas e conhecer sobre os assuntos dos quais quero me especializar e agregar
                                     habilidades em minha carreira, tais como desenvolvimento de sistemas, cloud computing, banco de
                                     dados, gestão ágil entre outras.
@@ -92,7 +95,7 @@ function Sobrenos() {
                             <div id="passar_mouse">
                                 <img src="https://imgur.com/3zTAXAL.jpg" alt='Iago Vieira' width="150" height="150" className='img3' />
                                 <div id="mostrar"><b>Iago Vieira</b>
-                                <p>Tenho 21 anos e sou um apaixonado por tecnologia. Procuro sempre me mantar informado nas novas tecnologias do mercado e me aperfeiçoar mais. Espero contribuir para um mundo cada vez mais integrado e conectado</p></div></div>
+                                    <p>Tenho 21 anos e sou um apaixonado por tecnologia. Procuro sempre me mantar informado nas novas tecnologias do mercado e me aperfeiçoar mais. Espero contribuir para um mundo cada vez mais integrado e conectado</p></div></div>
                             <a href="https://github.com/IagoVieiraa" target="_blank" rel="noreferrer" >
                                 <GitHubIcon className='redes1' />
                             </a>
@@ -107,7 +110,7 @@ function Sobrenos() {
                             <div id="passar_mouse">
                                 <img src="https://i.imgur.com/lVwgmAG.jpg" alt='Lucas Oi' width="150" height="150" className='img3' />
                                 <div id="mostrar"><b>Lucas Oi</b>
-                                <p> Formado como pessoa desenvolvedora Fullstack Java JR. pela Generation Brasil, além de cursar o 6º ciclo de engenharia elétrica, estou sempre em busca de novos desafios, gosto de café, estar na natureza e tocar violão.</p></div></div>
+                                    <p> Formado como pessoa desenvolvedora Fullstack Java JR. pela Generation Brasil, além de cursar o 6º ciclo de engenharia elétrica, estou sempre em busca de novos desafios, gosto de café, estar na natureza e tocar violão.</p></div></div>
                             <a href="https://github.com/LucasOii" target="_blank" rel="noreferrer" >
                                 <GitHubIcon className='redes1' />
                             </a>
@@ -122,7 +125,7 @@ function Sobrenos() {
                             <div id="passar_mouse">
                                 <img src="https://i.imgur.com/OhuIOWe.jpg" alt='Vitoria Oliveira' width="150" height="150" className='img3' />
                                 <div id="mostrar"><b>Vitoria Oliveira</b><p>Desenvolvedora Full Stack Java Jr, estudante de Engenharia da Computação. Busco sempre novos conhecimentos, Tenho facilidade em me adaptar a novas rotinas, gosto de resolver problemas e gosto de trabalhar em equipe.
-</p></div></div>
+                                </p></div></div>
                             <a href="https://github.com/viisoli" target="_blank" rel="noreferrer" >
                                 <GitHubIcon className='redes1' />
                             </a>

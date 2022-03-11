@@ -4,8 +4,7 @@
     width: 100vh;
     min-height: 80vh;
     background-size: cover;
-    background-position: center;
-    padding-left: 100px;  
+    background-position: center; 
 }
 
 .textos2{
@@ -32,9 +31,8 @@
 .root2{
     background-image: url(../../assets/img/Água.png);
     color: black;
-    margin: 0;
-    padding: 2em 0;
-    height: 100vh;
+    padding: 2em;
+    height: 150vh;
           
 }
 
@@ -42,4 +40,11 @@
     width: 80%;
     margin-top: 10px;
 
+}
+.box{
+    justify-content: center;
+
+}
+.MuiOutlinedInput-input {
+    padding: 0px;
 }
