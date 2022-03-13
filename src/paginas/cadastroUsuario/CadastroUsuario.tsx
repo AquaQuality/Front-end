@@ -82,7 +82,8 @@ function CadastroUsuario() {
       <CssBaseline />
         <div className='paper2' >
             <img src="https://i.imgur.com/U8cvwuV.png" alt="logo"/>
-        
+                <Box paddingX={5} className='box'>
+                    
                 <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Cadastre-se</Typography>
 
                     <form onSubmit={onSubmit} className=''>
@@ -112,7 +113,8 @@ function CadastroUsuario() {
                             </Button>
                         </Box>
                     </form>
-                                </div>
+                </Box>
+                </div>
             </Grid>
     );
 }
