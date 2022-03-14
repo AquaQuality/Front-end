@@ -25,12 +25,13 @@
 
 .card-imagem{
     max-height: 400px;
-    border-radius: 30px;
+    border-radius: 30px!important;
     object-fit: center;
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+
     
 }
 
