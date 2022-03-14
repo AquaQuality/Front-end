@@ -13,6 +13,7 @@ import User from '../../../models/User';
 
 function CadastroPost() {
 
+
     let history = useHistory();
     const { id } = useParams<{ id: string }>();
     const [temas, setTemas] = useState<Tema[]>([])
@@ -183,7 +184,6 @@ function CadastroPost() {
     function back() {
         history.push('/postagens')
     }
-
 
     return (
         <Container maxWidth="sm" className="topo">

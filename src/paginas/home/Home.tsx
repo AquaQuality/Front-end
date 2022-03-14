@@ -50,20 +50,19 @@ function Home() {
                     </Box>
                     <Box alignItems='Center' className='box-icones'>
                         <ul>
-                       
                        <br/>
-                       <Typography> <GroupIcon />Grupos </Typography>
+                       <Typography> <GroupIcon className='icones'/>  Grupos </Typography>
                        <br/>
-                       <Typography> <EventIcon/>Eventos </Typography>
+                       <Typography> <EventIcon className='icones'/>  Eventos </Typography>
                        <br/>
-                       <Typography> <VolunteerActivismIcon/>Doações </Typography>
+                       <Typography> <VolunteerActivismIcon className='icones'/>  Doações </Typography>
                        <br/>
-                       <Typography variant='h6' component="h6"> <CommentIcon/> Mensagens </Typography>
+                       <Typography > <CommentIcon className='icones'/>  Mensagens </Typography>
                        </ul>
                     
                     </Box>
                     <Box alignItems='' >
-                    <img className='imagem-perfil' src="https://i.imgur.com/fflDO4i.png" alt="logo" />
+                    <img className='imagem-perfil box-logo' src="https://i.imgur.com/fflDO4i.png" alt="logo" />
             </Box>
                 </Grid>
 

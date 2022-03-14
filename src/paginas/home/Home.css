@@ -21,7 +21,7 @@
 .paperpost{
     background-color:#f0f2f5;
     border-radius: 30px;
-    /*padding: 10px;*/
+
 }
 .criar-post{
     margin-top: 50px;
@@ -56,3 +56,25 @@
     margin-top: 30px;
     padding: auto;
 }
+
+.box-logo{
+    display: flex;
+    background-color: #d8dbdda1;
+    border-radius: 30px;
+    margin-top: 30px;
+    
+}
+
+.icones{
+    font-size: 20px! important;
+    color: #005581c5;
+    
+    }
+
+    .imagem-perfil{
+        display: flex;
+        align-items: center;
+        height: 300px ;
+        width: 430px;
+        
+    }
