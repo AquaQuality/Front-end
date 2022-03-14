@@ -9,11 +9,12 @@
 .card-container-imagem{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     margin: 0 40px;
     border-radius: 30px;
     margin-bottom: 40px;
     padding: 10px;
+    
 }
 
 .card-container-info{

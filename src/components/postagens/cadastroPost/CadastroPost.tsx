@@ -146,7 +146,7 @@ function CadastroPost() {
                 <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
                  id="texto" label="Texto" name="texto" variant="outlined" margin="normal" placeholder='Insira no minimo 10 caracteres para o texto' autoFocus required  fullWidth />
                 <TextField value={postagem.midia} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
-                 id="midia" label="Midia" variant="outlined" name="midia" margin="normal" placeholder='Insira o link de uma imagem ou vídeo' fullWidth />
+                 id="midia" label="Midia" variant="outlined" name="midia" margin="normal" placeholder='Insira o link de uma imagem ou vídeo' autoFocus fullWidth />
 
                 <FormControl >
                     <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>

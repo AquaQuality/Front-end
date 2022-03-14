@@ -10,11 +10,6 @@
     padding: 10px;
 }
 
-
-.postagens{
-    background-color: #f0f2f5;
-}
-
 .imagem1{
     background-image: url(../../assets/img/vetorlogo.png);
     background-repeat: 'no-repeat';
@@ -33,6 +28,7 @@
     background-color: #d8dbdda1;
     border-radius: 30px;
     font-size: xx-large;
+   
 }
 .perfil{
     margin-right: 10px!important;
@@ -51,4 +47,19 @@
 .box-criar{
     border-color:#009edcd7 !important;
     border-radius: 30px;
+}
+
+.icone{
+    margin-top: 10px;
+    background-color: #005581;
+    padding-left: 200px;
+    text-align: center;
+}
+
+.box-icones{
+    display: flex;
+    background-color: #d8dbdda1;
+    border-radius: 30px;
+    margin-top: 30px;
+    padding: auto;
 }

@@ -9,6 +9,8 @@ import { toast } from 'react-toastify';
 import Perfil from '../perfil/Perfil';
 import ModalTema from '../../components/temas/modalTema/ModalTema'
 import ListaPostagem from '../../components/postagens/listaPostagem/ListaPostagem';
+import GroupIcon from '@mui/icons-material/Group';
+import GroupAddIcon from '@mui/icons-material/GroupAdd';
 
 function Home() {
 
@@ -42,9 +44,26 @@ function Home() {
                     <Box className='perfil'>
                         <Perfil />
                     </Box>
+                    <Box alignItems='Center' className='box-icones'>
+                        <ul>
+                       <Typography>Amigos </Typography>
+                       <br/>
+                       <Typography>Grupos </Typography>
+                       <br/>
+                       <Typography>Eventos </Typography>
+                       <br/>
+                       <Typography>Doações </Typography>
+                       <br/>
+                       <Typography>Mensagens </Typography>
+                       </ul>
+                    
+                    </Box>
+                    <Box alignItems='' >
+                    <img className='imagem-perfil' src="https://i.imgur.com/fflDO4i.png" alt="logo" />
+            </Box>
                 </Grid>
 
-                <Grid xs={7} className='postagens'>
+                <Grid xs={7} className='caixa'>
                 <Box paddingX={20} className="criar-post">
                         <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center" >Comece uma nova publicação:</Typography>
                         <Box display="flex" justifyContent="center">
