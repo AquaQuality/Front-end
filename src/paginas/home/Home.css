@@ -49,13 +49,6 @@
     border-radius: 30px;
 }
 
-.icone{
-    margin-top: 10px;
-    background-color: #005581;
-    padding-left: 200px;
-    text-align: center;
-}
-
 .box-icones{
     display: flex;
     background-color: #d8dbdda1;

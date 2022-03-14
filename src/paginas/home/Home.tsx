@@ -11,6 +11,10 @@ import ModalTema from '../../components/temas/modalTema/ModalTema'
 import ListaPostagem from '../../components/postagens/listaPostagem/ListaPostagem';
 import GroupIcon from '@mui/icons-material/Group';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
+import CommentIcon from '@mui/icons-material/Comment';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import EventIcon from '@mui/icons-material/Event';
+
 
 function Home() {
 
@@ -46,15 +50,15 @@ function Home() {
                     </Box>
                     <Box alignItems='Center' className='box-icones'>
                         <ul>
-                       <Typography>Amigos </Typography>
+                       
                        <br/>
-                       <Typography>Grupos </Typography>
+                       <Typography> <GroupIcon />Grupos </Typography>
                        <br/>
-                       <Typography>Eventos </Typography>
+                       <Typography> <EventIcon/>Eventos </Typography>
                        <br/>
-                       <Typography>Doações </Typography>
+                       <Typography> <VolunteerActivismIcon/>Doações </Typography>
                        <br/>
-                       <Typography>Mensagens </Typography>
+                       <Typography variant='h6' component="h6"> <CommentIcon/> Mensagens </Typography>
                        </ul>
                     
                     </Box>
