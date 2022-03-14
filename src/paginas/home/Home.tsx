@@ -64,7 +64,7 @@ function Home() {
                 </Grid>
 
                 <Grid xs={7} className='caixa'>
-                <Box paddingX={20} className="criar-post">
+                <Box  className="criar-post">
                         <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center" >Comece uma nova publicação:</Typography>
                         <Box display="flex" justifyContent="center">
                         <Box marginRight={1} className='botao' >

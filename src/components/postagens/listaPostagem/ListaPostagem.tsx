@@ -79,10 +79,11 @@ function ListaPostagem() {
               <CardHeader
               avatar={
                 <Avatar
-                src={user.foto}
-                alt={user.nome}
-                sx={{ width: 50, height: 50 }}
-                variant="square" />
+               alt={user.nome}
+              src={user.foto}
+              sx={{ width: 56, height: 56 }}
+              variant="rounded"
+              />
         }
         title={post.usuario?.nome}
                 />
@@ -108,14 +109,6 @@ function ListaPostagem() {
                   <img src={post.midia} alt="" />
                 </Typography>
                 <br />
-            
-                <Typography variant="body1" component="h5" className='text'>
-                  Usuario
-                </Typography>
-                <Typography variant="body2" component="p">
-                  {post.usuario?.nome}
-                </Typography>
-              
               </CardContent>
               <CardActions>
 
