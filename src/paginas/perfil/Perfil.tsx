@@ -60,7 +60,7 @@ function Perfil() {
                     src={user.foto}
                     alt={user.nome}
                     sx={{ width: 300, height: 300 }}
-                    variant="square" />
+                    variant="square" /> 
                     
             </Box>
             

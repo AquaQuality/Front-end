@@ -58,13 +58,13 @@ function CadastroPost() {
         tema: null
     })
 
-    const [user, setUser] = useState<User>({
+   /* const [user, setUser] = useState<User>({
         id: +id,     // Faz uma conversão de String para Number
         nome: '',
         usuario: '',
         senha: '',
         foto: ''
-    })
+    })*/
 
     useEffect(() => {
         if (token === "") {
