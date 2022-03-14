@@ -84,12 +84,14 @@ function ListaPostagem() {
                   <img src={post.midia} alt="" />
                 </Typography>
                 <br />
+            
                 <Typography variant="body1" component="h5" className='text'>
                   Usuario
                 </Typography>
                 <Typography variant="body2" component="p">
                   {post.usuario?.nome}
                 </Typography>
+              
               </CardContent>
               <CardActions>
 
