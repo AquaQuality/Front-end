@@ -83,6 +83,7 @@ function CadastroUsuario() {
         <div className='paper2' >
             <img src="https://i.imgur.com/U8cvwuV.png" alt="logo"/>
                 <Box paddingX={5} className='box'>
+                    
                 <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Cadastre-se</Typography>
 
                     <form onSubmit={onSubmit} className=''>
@@ -90,7 +91,7 @@ function CadastroUsuario() {
                             id='nome' label='Nome' variant='outlined' name='nome' margin='normal' fullWidth placeholder='Insira o seu nome completo' required />
 
                         <TextField value={user.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='foto' label='Foto' variant='outlined' name='foto' margin='normal' fullWidth placeholder='Insira um link para imagem' required />
+                            id='foto' label='Foto' variant='outlined' name='foto' margin='normal' fullWidth placeholder='Insira um link para imagem'  />
 
                         <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id='usuario' label='Usuario' variant='outlined' name='usuario' margin='normal' fullWidth placeholder='Insira um e-mail' required />

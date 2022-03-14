@@ -61,15 +61,14 @@ function Perfil() {
                     alt={user.nome}
                     sx={{ width: 300, height: 300 }}
                     variant="square" />
+                    
             </Box>
             
                 <Box alignItems='' className='nome'>                    
                     <h2>{user.nome}</h2>
                     <hr />
                 </Box>
-                <Box alignItems='' >
-                    <img className='imagem-perfil' src="https://i.imgur.com/fflDO4i.png" alt="logo" />
-            </Box>
+               
             {/** <Grid>
                 <ListaPostagem />
             </Grid> */}

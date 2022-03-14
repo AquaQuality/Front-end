@@ -9,11 +9,12 @@
 .card-container-imagem{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     margin: 0 40px;
     border-radius: 30px;
     margin-bottom: 40px;
     padding: 10px;
+    
 }
 
 .card-container-info{
@@ -25,12 +26,13 @@
 
 .card-imagem{
     max-height: 400px;
-    border-radius: 30px;
+    border-radius: 30px!important;
     object-fit: center;
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+
     
 }
 

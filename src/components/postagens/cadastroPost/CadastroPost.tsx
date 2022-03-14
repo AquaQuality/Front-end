@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useEffect, useState } from 'react'
+import React, { ChangeEvent, useEffect, useState } from 'react';
 import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
 import './CadastroPost.css';
 import { useHistory, useParams } from 'react-router-dom';
@@ -36,6 +36,13 @@ function CadastroPost() {
 
         }
     }, [token])
+
+    
+    // Pega o ID guardado no Store
+    const userId = useSelector<UserState, UserState["id"]>(
+        (state) => state.id
+    );
+    
 
     const [tema, setTema] = useState<Tema>(
         {
@@ -80,6 +87,15 @@ function CadastroPost() {
         }
     }, [id])
 
+        const [user, setUser] = useState<User>({
+            id: +userId,    // Faz uma conversão de String para Number
+            nome: '',
+            usuario: '',
+            senha: '',
+            foto: ''
+        })
+        
+
     useEffect(() => {
         setPostagem({
             ...postagem,
@@ -115,10 +131,13 @@ function CadastroPost() {
         setPostagem({
             ...postagem,
             [e.target.name]: e.target.value,
-            tema: tema
+            tema: tema,
+            usuario: user
         })
 
     }
+
+    
 
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
@@ -175,7 +194,7 @@ function CadastroPost() {
                 <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
                  id="texto" label="Texto" name="texto" variant="outlined" margin="normal" placeholder='Insira no minimo 10 caracteres para o texto' autoFocus required  fullWidth />
                 <TextField value={postagem.midia} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
-                 id="midia" label="Midia" variant="outlined" name="midia" margin="normal" placeholder='Insira o link de uma imagem ou vídeo' fullWidth />
+                 id="midia" label="Midia" variant="outlined" name="midia" margin="normal" placeholder='Insira o link de uma imagem ou vídeo' autoFocus fullWidth />
 
                 <FormControl >
                     <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
