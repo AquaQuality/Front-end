@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useEffect, useState } from 'react'
+import React, { ChangeEvent, useEffect, useState } from 'react';
 import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
 import './CadastroPost.css';
 import { useHistory, useParams } from 'react-router-dom';
@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/user/userReducer';
 //import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import User from '../../../models/User';
 
 function CadastroPost() {
 
@@ -36,6 +37,13 @@ function CadastroPost() {
         }
     }, [token])
 
+    
+    // Pega o ID guardado no Store
+    const userId = useSelector<UserState, UserState["id"]>(
+        (state) => state.id
+    );
+    
+
     const [tema, setTema] = useState<Tema>(
         {
             id: 0,
@@ -50,6 +58,15 @@ function CadastroPost() {
             midia: '',
             tema: null
         })
+
+        const [user, setUser] = useState<User>({
+            id: +userId,    // Faz uma conversão de String para Number
+            nome: '',
+            usuario: '',
+            senha: '',
+            foto: ''
+        })
+        
 
     useEffect(() => {
         setPostagem({
@@ -86,10 +103,13 @@ function CadastroPost() {
         setPostagem({
             ...postagem,
             [e.target.name]: e.target.value,
-            tema: tema
+            tema: tema,
+            usuario: user
         })
 
     }
+
+    
 
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()

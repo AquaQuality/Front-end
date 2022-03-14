@@ -13,6 +13,9 @@ import UpdateIcon from '@mui/icons-material/Update';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import IconButton from '@mui/material/IconButton';
 import ShareIcon from '@mui/icons-material/Share';
+import CardHeader from '@mui/material/CardHeader';
+import Avatar from '@mui/material/Avatar';
+import User from '../../../models/User';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
@@ -52,6 +55,18 @@ function ListaPostagem() {
 
   }, [posts.length])
 
+  const id = useSelector<UserState, UserState["id"]>(
+    (state) => state.id
+  );
+
+  const [user, setUser] = useState<User>({
+    id: +id,     // Faz uma conversão de String para Number
+    nome: '',
+    usuario: '',
+    senha: '',
+    foto: ''
+})
+
   return (
     <>
       {
@@ -61,6 +76,17 @@ function ListaPostagem() {
             <Card variant="outlined" className='post'  >
               <CardContent >
 
+              <CardHeader
+              avatar={
+                <Avatar
+                src={user.foto}
+                alt={user.nome}
+                sx={{ width: 50, height: 50 }}
+                variant="square" />
+        }
+        title={post.usuario?.nome}
+                />
+                
                 <Typography variant="h5" component="h2">
                   {post.titulo}
                 </Typography>
@@ -79,17 +105,17 @@ function ListaPostagem() {
                   Midia
                 </Typography>
                 <Typography variant="body2" className='midia'>
-                  {/* <a href={post.midia} target="_blank" rel="noreferrer noopener">
-                {post.midia}</a>  */}
                   <img src={post.midia} alt="" />
                 </Typography>
                 <br />
+            
                 <Typography variant="body1" component="h5" className='text'>
                   Usuario
                 </Typography>
                 <Typography variant="body2" component="p">
                   {post.usuario?.nome}
                 </Typography>
+              
               </CardContent>
               <CardActions>
 
