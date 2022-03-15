@@ -4,7 +4,6 @@ import Home from './paginas/home/Home';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Sobrenos from './paginas/sobrenos/Sobrenos';
-import Contato from './paginas/contato/Contato';
 import Login from './paginas/login/Login';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import ListaTema from './components/temas/listaTema/ListaTema';

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Postagem from '../../../models/Postagem';
 import { busca } from '../../../services/Services'
-import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
+import { Box, Card, CardActions, CardContent, Button, Typography, TextField } from '@material-ui/core';
 import './ListaPostagem.css';
 import { useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -16,6 +16,7 @@ import ShareIcon from '@mui/icons-material/Share';
 import CardHeader from '@mui/material/CardHeader';
 import Avatar from '@mui/material/Avatar';
 import User from '../../../models/User';
+import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
@@ -121,6 +122,11 @@ function ListaPostagem() {
                 </Box>
                 <Box mx={1}>
                     <Button variant="contained" size='small' color="secondary" className="botao-postagens">
+                      <ChatBubbleOutlineIcon fontSize='large' className='favorite botao-postagens' />
+                    </Button>
+                </Box>
+                <Box mx={1}>
+                    <Button variant="contained" size='small' color="secondary" className="botao-postagens">
                       <ShareIcon fontSize='large' className='favorite botao-postagens' />
                     </Button>
                 </Box>
@@ -141,8 +147,10 @@ function ListaPostagem() {
                   </Link>
                   
                 </Box>
+                
               </CardActions>
             </Card>
+            
           </Box>
         ))
       }
